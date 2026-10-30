@@ -37,6 +37,7 @@ class Observer: AccessibilityService() {
 }
 class Control:BroadcastReceiver() {
  override fun onReceive(c:Context,i:Intent) {
+  Log.i("UX_AX","CONTROL ${i.getStringExtra("command")} activity=${MainActivity.instance!=null} observer=${Observer.instance!=null}")
   when(i.getStringExtra("command")) {
    "tree" -> Observer.instance?.snapshot()
    "focus" -> Observer.instance?.focus(i.getStringExtra("label") ?: "Imię")

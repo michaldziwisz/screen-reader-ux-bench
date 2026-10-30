@@ -32,6 +32,8 @@ shell("input","keyevent","4");shell("input","keyevent","3")
 (OUT/"talkback-package.txt").write_text(shell("dumpsys","package","com.google.android.marvin.talkback"))
 (OUT/"accessibility.txt").write_text(shell("dumpsys","accessibility"))
 (OUT/"properties.txt").write_text(shell("getprop"))
+collector_file=(OUT/"continuous-logcat.txt").open("w")
+collector=subprocess.Popen(["adb","logcat","-v","epoch"],stdout=collector_file,stderr=subprocess.STDOUT)
 failed=False
 for variant in ["GRUPY","PLASKI"]:
  r={"variant":variant,"evidence":"live_reader","steps":[],"error":None}
@@ -39,7 +41,7 @@ for variant in ["GRUPY","PLASKI"]:
  def step(kind,action):
   adb("logcat","-c")
   shell("log","-t","UXMARK",kind)
-  action();time.sleep(1.3)
+  action();time.sleep(5 if kind=="tts-control" else 1.3)
   raw=logs();records=parse(raw)
   with (OUT/(variant+"-speech.log")).open("a") as f:f.write("\n# "+kind+"\n"+raw)
   phrases=[x["payload"]["text"] for x in records if x["tag"]=="UX_TTS" and isinstance(x["payload"],dict)]
@@ -48,8 +50,7 @@ for variant in ["GRUPY","PLASKI"]:
   entry={"kind":kind,"phrases":phrases,"words":len(" ".join(phrases).split()),"marker_to_tts_ms":round((first-mark)*1000,3) if mark and first else None,"records":records}
   r["steps"].append(entry);save();return entry
  try:
-  shell("am","force-stop","org.uxbench")
-  shell("am","start","-n","org.uxbench/.MainActivity","--es","variant",variant)
+  shell("am","start","--activity-clear-task","--activity-new-task","-n","org.uxbench/.MainActivity","--es","variant",variant)
   time.sleep(3)
   probe=step("tts-control",lambda:control("probe"))
   r["tts_positive"]=any("Kontrola kanału mowy" in x for x in probe["phrases"])
@@ -70,4 +71,5 @@ for variant in ["GRUPY","PLASKI"]:
   save();(OUT/(variant+"-activity.txt")).write_text(shell("dumpsys","activity","activities"))
   with (OUT/(variant+".png")).open("wb") as f:subprocess.run(["adb","exec-out","screencap","-p"],stdout=f,check=False)
 (OUT/"full-logcat.txt").write_text(adb("logcat","-d","-v","epoch"))
+collector.terminate();collector.wait(timeout=10);collector_file.close()
 if failed:raise SystemExit(1)

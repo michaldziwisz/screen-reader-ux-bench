@@ -50,7 +50,7 @@ class MainActivity:Activity() {
   fields["imie"]?.requestFocus()
  }
  fun dialog() {AlertDialog.Builder(this).setTitle("Potwierdzenie").setMessage("Czy na pewno wysłać zamówienie do realizacji?").setPositiveButton("Tak") {d,_->d.dismiss()}.setNegativeButton("Nie") {d,_->d.dismiss()}.show()}
- fun probe() {tts=TextToSpeech(this,{status-> if(status==TextToSpeech.SUCCESS) tts?.speak("Kontrola kanału mowy",TextToSpeech.QUEUE_FLUSH,null,"probe")},"org.uxbench")}
+ fun probe() {android.util.Log.i("UX_AX","PROBE_REQUEST");tts=TextToSpeech(this,{status-> android.util.Log.i("UX_AX","TTS_INIT $status");if(status==TextToSpeech.SUCCESS) tts?.speak("Kontrola kanału mowy",TextToSpeech.QUEUE_FLUSH,null,"probe")},"org.uxbench")}
  override fun onKeyShortcut(keyCode:Int,event:KeyEvent):Boolean {
   if(event.isCtrlPressed && keyCode==KeyEvent.KEYCODE_S) {fields["zapisz"]?.performClick();return true}
   return super.onKeyShortcut(keyCode,event)

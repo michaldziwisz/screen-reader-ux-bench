@@ -5,7 +5,7 @@ import android.media.AudioFormat
 import org.json.JSONObject
 
 class LogTts: TextToSpeechService() {
- override fun onIsLanguageAvailable(l:String?,c:String?,v:String?) = TextToSpeech.LANG_COUNTRY_VAR_AVAILABLE
+ override fun onIsLanguageAvailable(l:String?,c:String?,v:String?) = if(l in listOf("pol","eng","pl","en")) TextToSpeech.LANG_COUNTRY_AVAILABLE else TextToSpeech.LANG_NOT_SUPPORTED
  override fun onGetLanguage() = arrayOf("pol","POL","")
  override fun onLoadLanguage(l:String?,c:String?,v:String?) = TextToSpeech.LANG_COUNTRY_VAR_AVAILABLE
  override fun onStop() {}
