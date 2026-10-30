@@ -28,7 +28,7 @@ class Harness:
   return self.shell(*a)
  def logs(self):return self.adb('logcat','-d','-v','epoch',*TAGS)
  def gate(self):
-  text=self.shell('dumpsys','window','windows')
+  text=self.shell('dumpsys','window')
   focused=[x for x in text.splitlines() if 'mCurrentFocus=' in x]
   if not any(PKG in x for x in focused):raise RuntimeError('Foreground gate: '+str(focused))
  def key(self,*keys):self.gate();return self.shell('input','keyevent',*keys)
@@ -60,7 +60,7 @@ class Harness:
      self.focus('search')
      for i in range(3):self.step('gesture:'+direction,lambda d=direction:self.control('gesture',direction=d))
     self.focus('search')
-    for i in range(3):self.step('heading:Alt-Ctrl-Right',lambda:self.combo('57','113','22'))
+    for i in range(3):self.step('heading:Alt-H',lambda:self.combo('57','36'))
     self.focus('folder_0');self.step('tree:expand-Documenty',lambda:self.control('action',target='folder_0',action=262144));self.focus('folder_1');self.step('tree:expand-Umowy',lambda:self.control('action',target='folder_1',action=262144));self.focus('folder_2');self.focus('folder_3');self.step('tree-expanded',lambda:self.control('tree'));self.step('tree:collapse-Umowy',lambda:self.control('action',target='folder_1',action=524288))
    else:
     for i,j in [(0,1),(0,2),(0,3),(1,0),(1,1)]:self.focus(f'cell_{i}_{j}')
