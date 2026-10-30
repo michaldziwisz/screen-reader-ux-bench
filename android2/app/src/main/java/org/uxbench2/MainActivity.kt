@@ -29,7 +29,7 @@ class MainActivity:Activity() {
   val f=JSONObject(assets.open("fixture.json").bufferedReader().readText());records=f.getJSONArray("records")
   val scroll=ScrollView(this);root=LinearLayout(this);root.orientation=1;root.setPadding(12,12,12,12);scroll.addView(root);setContentView(scroll)
   val tools=section("Narzędzia");val bar=LinearLayout(this)
-  for(name in listOf("Nowy","Otwórz","Zapisz","Usuń","Kopiuj","Wklej"))bar.addView(Button(this).apply {text=name},LinearLayout.LayoutParams(0,48,1f))
+  for((i,name) in listOf("Nowy","Otwórz","Zapisz","Usuń","Kopiuj","Wklej").withIndex())bar.addView(Button(this).apply {text=name;identify(this,"button_$i")},LinearLayout.LayoutParams(0,48,1f))
   tools.addView(bar);search=EditText(this);search.hint="Szukaj";search.contentDescription="Szukaj";search.isSingleLine=true;identify(search,"search");tools.addView(search)
   val fg=section("Foldery");tree=RecyclerView(this);tree.layoutManager=LinearLayoutManager(this);identify(tree,"folders");treeAdapter=TreeAdapter();tree.adapter=treeAdapter;tree.isNestedScrollingEnabled=false;fg.addView(tree,LinearLayout.LayoutParams(-1,240));rebuildTree()
   val pg=section("Pliki")
@@ -48,12 +48,19 @@ class MainActivity:Activity() {
  }
  override fun onDestroy(){if(instance===this)instance=null;tts.shutdown();super.onDestroy()}
  fun probe(){tts.speak("Kontrola kanału mowy",TextToSpeech.QUEUE_FLUSH,null,"positive")}
- fun anchor(target:String){val id=resources.getIdentifier(target,"id",packageName);findViewById<View>(id)?.requestFocus()}
+ fun anchor(target:String){
+   val id=resources.getIdentifier(target,"id",packageName)
+   val focus={log("anchor",JSONObject().put("target",target).put("accepted",findViewById<View>(id)?.requestFocus()?:false))}
+   if(target.startsWith("row_")){
+    val rv=findViewById<RecyclerView>(resources.getIdentifier("files","id",packageName))
+    rv.scrollToPosition(target.removePrefix("row_").toInt());rv.postDelayed({focus()},250)
+   }else focus()
+  }
  fun emit(mode:String,count:Int) {
   status.accessibilityLiveRegion=when(mode){"polite"->View.ACCESSIBILITY_LIVE_REGION_POLITE;"assertive"->View.ACCESSIBILITY_LIVE_REGION_ASSERTIVE;else->View.ACCESSIBILITY_LIVE_REGION_NONE}
   for(i in 1..count){val s=if(count==1)"Kontrola komunikatu $mode" else "Plik $i z 5 skopiowany";log("emit",JSONObject().put("mode",mode).put("text",s));when(mode){"toast"->Toast.makeText(this,s,Toast.LENGTH_SHORT).show();"snackbar"->Snackbar.make(root,s,Snackbar.LENGTH_SHORT).show();else->status.text=s}}
  }
- fun state(){log("state",JSONObject().put("selectedRow",selectedRow).put("selectedFolder",selectedFolder).put("detailsSelectionStart",details.selectionStart).put("detailsSelectionEnd",details.selectionEnd).put("focusId",currentFocus?.let{resources.getResourceEntryName(it.id)}?:""))}
+ fun state(){log("state",JSONObject().put("selectedRow",selectedRow).put("selectedFolder",selectedFolder).put("detailsSelectionStart",details.selectionStart).put("detailsSelectionEnd",details.selectionEnd).put("focusId",currentFocus?.let{runCatching{resources.getResourceEntryName(it.id)}.getOrDefault("unknown") }?:""))}
  fun rebuildTree(){visible.clear();fun visit(nodes:List<Folder>,depth:Int){for(n in nodes){visible.add(n to depth);if(n.expanded)visit(n.children,depth+1)}};visit(folders,0);treeAdapter.notifyDataSetChanged()}
  inner class Holder(val t:TextView):RecyclerView.ViewHolder(t)
  inner class FileAdapter:RecyclerView.Adapter<Holder>() {

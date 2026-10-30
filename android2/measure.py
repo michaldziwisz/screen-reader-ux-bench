@@ -4,7 +4,7 @@ from pathlib import Path
 PKG='org.uxbench2'
 TALKBACK='com.google.android.marvin.talkback/.TalkBackService'
 OBSERVER=PKG+'/.Observer'
-TAGS=['UX_TTS:I','UX_AX:I','UX_TREE:I','UX_APP:I','UX_ACTION:I','UXMARK:I','*:S']
+TAGS=['UX_TTS:I','UX_AX:I','UX_TREE:I','UX_APP:I','UX_ACTION:I','UXMARK:I','AndroidRuntime:E','*:S']
 def parse(raw):
  records=[]
  for line in raw.splitlines():
@@ -53,14 +53,17 @@ class Harness:
    self.focus(first);p=self.focus('search');self.result['reader_positive']=any('Szukaj' in s for s in p['phrases'])
    if not self.result['tts_positive'] or not self.result['reader_positive']:raise RuntimeError('Positive speech control failed')
    self.step('tree-initial',lambda:self.control('tree'))
+   if bursts:
+    self.step('anchor-messages',lambda:self.control('anchor',target='search'));time.sleep(2)
+    for mode in ['plain','polite','assertive','toast','snackbar']:
+     self.step('single:'+mode,lambda m=mode:self.control('emit',mode=m,count=1),7)
+     for repeat in range(1,7):self.step(f'burst:{mode}:{repeat}',lambda m=mode:self.control('emit',mode=m,count=5),9)
    self.focus(first)
    if presentation=='RECYCLER':
     for i in range(1,5):self.focus('row_'+str(i))
     for direction in ['right','up','down']:
      self.focus('search')
      for i in range(3):self.step('gesture:'+direction,lambda d=direction:self.control('gesture',direction=d))
-    self.focus('search')
-    for i in range(3):self.step('heading:Alt-H',lambda:self.combo('57','36'))
     self.focus('folder_0');self.step('tree:expand-Documenty',lambda:self.control('action',target='folder_0',action=262144));self.focus('folder_1');self.step('tree:expand-Umowy',lambda:self.control('action',target='folder_1',action=262144));self.focus('folder_2');self.focus('folder_3');self.step('tree-expanded',lambda:self.control('tree'));self.step('tree:collapse-Umowy',lambda:self.control('action',target='folder_1',action=524288))
    else:
     for i,j in [(0,1),(0,2),(0,3),(1,0),(1,1)]:self.focus(f'cell_{i}_{j}')
@@ -77,11 +80,9 @@ class Harness:
     e=self.step('details-to-search:Tab',lambda:self.key('61'),.8)
     states=[x['payload']['data'] for x in e['records'] if x['tag']=='UX_APP' and isinstance(x['payload'],dict) and x['payload'].get('kind')=='state']
     if states and states[-1].get('focusId')=='search':break
-   if bursts:
-    self.step('anchor-messages',lambda:self.control('anchor',target='search'));time.sleep(2)
-    for mode in ['plain','polite','assertive','toast','snackbar']:
-     self.step('single:'+mode,lambda m=mode:self.control('emit',mode=m,count=1),7)
-     for repeat in range(1,7):self.step(f'burst:{mode}:{repeat}',lambda m=mode:self.control('emit',mode=m,count=5),9)
+   if presentation=='RECYCLER':
+    self.focus('search')
+    for i in range(3):self.step('heading:Alt-H',lambda:self.combo('57','36'))
    self.focus(first);after=self.focus('search');self.result['reader_positive_after']=any('Szukaj' in s for s in after['phrases'])
   except Exception as e:self.result['error']=str(e)
   finally:
