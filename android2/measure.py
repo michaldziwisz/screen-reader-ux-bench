@@ -104,6 +104,21 @@ def main():
  h.shell('settings','put','secure','enabled_accessibility_services',TALKBACK+':'+OBSERVER);time.sleep(12)
  h.shell('input','keyevent','4');h.shell('input','keyevent','3')
  for name,args in [('talkback-package.txt',('dumpsys','package','com.google.android.marvin.talkback')),('accessibility.txt',('dumpsys','accessibility')),('properties.txt',('getprop',))]:(h.out/name).write_text(h.shell(*args))
+ if os.environ.get('BENCH_GESTURES_ONLY')=='true':
+  h.result={'variant':'GESTY','presentation':'EXTRA','evidence':'live_reader','steps':[],'error':None}
+  h.shell('am','start','-f','0x10008000','-n',PKG+'/.MainActivity');time.sleep(4)
+  h.focus('row_0');control=h.focus('search')
+  h.result['reader_positive']=any('Szukaj' in s for s in control['phrases'])
+  if not h.result['reader_positive']:raise RuntimeError('Gesture positive control failed')
+  for target,setting in [('search','headings'),('details','lines')]:
+   h.focus(target);selected=False
+   for i in range(16):
+    s=h.step('reading-control:'+setting,lambda:h.control('gesture',direction='cycle'))
+    if any(setting.lower() in x.lower() for x in s['phrases']):selected=True;break
+   h.result[setting+'_selected']=selected
+   if selected:
+    for i in range(6):h.step('reading-'+setting+':down',lambda:h.control('gesture',direction='down'))
+  h.save();return
  failed=[]
  for v,p,b in [('NAZWA','RECYCLER',True),('STAN','RECYCLER',True),('NAZWA','TABLE',False)]:
   r=h.measure(v,p,b)

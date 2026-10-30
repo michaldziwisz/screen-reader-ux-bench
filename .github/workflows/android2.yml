@@ -1,5 +1,13 @@
 name: Pomiar 2 Android TalkBack
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      scenario:
+        type: choice
+        options: [full, gestures]
+        default: full
+env:
+  BENCH_GESTURES_ONLY: ${{ inputs.scenario == 'gestures' && 'true' || 'false' }}
 permissions:
   contents: read
 defaults:
