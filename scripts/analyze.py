@@ -84,14 +84,15 @@ def android(rid):
     seq.append({"id":android_id(node),"label":node.get("label",node.get("text","")),"value":node.get("text",""),"role":node["role"],"text":t,"words":words(t),"action":kind,"focus_event":bool(events),"marker_to_tts_ms":s["marker_to_tts_ms"],"state":{k:node.get(k) for k in ["enabled","checked","selected"]}})
    return seq
   seq=sequence("Tab","anchor-tab")
-  alt=sequence("Alt-Right","anchor-reader-next") if any(s["kind"]=="Alt-Right" for s in d["steps"]) else []
+  next_mode="hardware-Alt-Right" if any(s["kind"]=="hardware-Alt-Right" for s in d["steps"]) else "Alt-Right"
+  alt=sequence(next_mode,"anchor-hardware" if next_mode=="hardware-Alt-Right" else "anchor-reader-next") if any(s["kind"]==next_mode for s in d["steps"]) else []
   tree=[r["payload"] for s in d["steps"] if s["kind"]=="tree" for r in android_records(s,"UX_TREE")]
   before=[r["payload"] for s in d["steps"] if s["kind"]=="dialog-tree-before" for r in android_records(s,"UX_TREE")]
   after=[r["payload"] for s in d["steps"] if s["kind"]=="dialog-tree-after" for r in android_records(s,"UX_TREE")]
   nswipes=sum(s["kind"]=="swipe-next" for s in d["steps"])
   moved=sum(any(r["payload"].get("event")==32768 for r in android_records(s,"UX_AX")) for s in d["steps"] if s["kind"]=="swipe-next")
   lat=[s["marker_to_tts_ms"] for s in seq[1:] if s["marker_to_tts_ms"] is not None and s["marker_to_tts_ms"]>=0]
-  data={"platform":"android","variant":v,"evidence":"live_reader_TTS_input","source":source(p,rid),"stops":seq,"summary":summary(seq),"reader_next":alt,"reader_next_summary":summary(alt),"tree":tree,"swipe_attempts":nswipes,"swipe_focus_events":moved,"dialog_closed":any(n["text"]=="TAK" for n in before) and not any(n["text"]=="TAK" for n in after),"shortcut_saved":any("Zapisano zamówienie"in android_text(s) for s in d["steps"] if s["kind"]=="shortcut-Ctrl-S"),"marker_to_tts_median_ms":statistics.median(lat) if lat else None,"marker_to_tts_n":len(lat)}
+  data={"platform":"android","variant":v,"evidence":"live_reader_TTS_input","source":source(p,rid),"stops":seq,"summary":summary(seq),"reader_next":alt,"reader_next_mode":next_mode,"reader_next_summary":summary(alt),"tree":tree,"swipe_attempts":nswipes,"swipe_focus_events":moved,"dialog_closed":any(n["text"]=="TAK" for n in before) and not any(n["text"]=="TAK" for n in after),"shortcut_saved":any("Zapisano zamówienie"in android_text(s) for s in d["steps"] if s["kind"]=="shortcut-Ctrl-S"),"marker_to_tts_median_ms":statistics.median(lat) if lat else None,"marker_to_tts_n":len(lat)}
   data["cycle_length"]=next((i for i,s in enumerate(seq[1:],1) if s["id"]=="imie"),None)
   cycle=seq[1:data["cycle_length"]+1] if data["cycle_length"] else seq[1:]
   data["cycle_words_median"]=statistics.median(s["words"] for s in cycle)

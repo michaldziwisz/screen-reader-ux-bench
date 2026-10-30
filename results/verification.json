@@ -1,0 +1,65 @@
+{
+  "datasets": [
+    {
+      "platform": "macos",
+      "variant": "GRUPY",
+      "source_hash": true,
+      "json_equal": true,
+      "counts": true
+    },
+    {
+      "platform": "macos",
+      "variant": "PLASKI",
+      "source_hash": true,
+      "json_equal": true,
+      "counts": true
+    },
+    {
+      "platform": "ios",
+      "variant": "GRUPY",
+      "source_hash": true,
+      "json_equal": true,
+      "counts": true
+    },
+    {
+      "platform": "ios",
+      "variant": "PLASKI",
+      "source_hash": true,
+      "json_equal": true,
+      "counts": true
+    },
+    {
+      "platform": "android",
+      "variant": "GRUPY",
+      "source_hash": true,
+      "json_equal": true,
+      "counts": true
+    },
+    {
+      "platform": "android",
+      "variant": "PLASKI",
+      "source_hash": true,
+      "json_equal": true,
+      "counts": true
+    },
+    {
+      "platform": "catalyst",
+      "variant": "GRUPY",
+      "source_hash": true,
+      "json_equal": true,
+      "counts": true
+    },
+    {
+      "platform": "catalyst",
+      "variant": "PLASKI",
+      "source_hash": true,
+      "json_equal": true,
+      "counts": true
+    }
+  ],
+  "workflow_count": 17,
+  "complete_downloads": true,
+  "report_identical": true,
+  "report_sha256": "83500594d95ef2032692a5b6f970988fe582f6ecea468aab264ad332efa08f86",
+  "passed": true
+}

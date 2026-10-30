@@ -1,0 +1,3112 @@
+{
+  "variant": "PLASKI",
+  "evidence": "live_reader_macos_catalyst_NOT_iOS",
+  "steps": [
+    {
+      "kind": "anchor",
+      "item": "Zapisz zamówienie button",
+      "phrases": [
+        "UXBench UXBench window Zapisz zamówienie button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Imię",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "imie",
+          "AXRole": "AXTextField",
+          "AXSelected": "0",
+          "AXValue": "",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Imię edit text, Press Control@VOOutputDirective(SpeechShortPause)-Option@VOOutputDirective(SpeechShortPause)-Space to begin editing.",
+      "phrases": [
+        "Imię edit text, is editing"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Kurier",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "sposob_0",
+          "AXRole": "AXButton",
+          "AXSelected": "1",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Paczkomat button",
+      "phrases": [
+        "Paczkomat button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Paczkomat",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "sposob_1",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Odbiór osobisty button",
+      "phrases": [
+        "Odbiór osobisty button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Odbiór osobisty",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "sposob_2",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Anuluj button",
+      "phrases": [
+        ""
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Anuluj",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "anuluj",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Polska Kraj button",
+      "phrases": [
+        "Kraj Polska button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Kraj",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "kraj",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "AXValue": "Polska",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Wystaw fakturę off switch",
+      "phrases": [
+        "Wystaw fakturę off switch"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Wystaw fakturę",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "faktura",
+          "AXRole": "AXCheckBox",
+          "AXSelected": "0",
+          "AXSubrole": "AXSwitch",
+          "AXValue": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Zapisz jako plik button",
+      "phrases": [
+        "Zapisz jako plik button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Zapisz jako plik",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "plik",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Zamówienie 1",
+      "phrases": [
+        ""
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Zamówienie 1",
+          "AXEnabled": "1",
+          "AXFocused": "0",
+          "AXIdentifier": "order_1",
+          "AXRole": "AXStaticText",
+          "AXSelected": "0",
+          "AXValue": "",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Zapisz zamówienie button",
+      "phrases": [
+        "Leaving Ostatnie zamówienia. Zapisz zamówienie button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Zapisz zamówienie",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "zapisz",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Nazwisko edit text, is editing",
+      "phrases": [
+        ""
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Nazwisko",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "nazw",
+          "AXRole": "AXTextField",
+          "AXSelected": "0",
+          "AXValue": "",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Nazwisko edit text, Press Control@VOOutputDirective(SpeechShortPause)-Option@VOOutputDirective(SpeechShortPause)-Space to begin editing.",
+      "phrases": [
+        "Nazwisko edit text, is editing"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Zapisz na newsletter",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "news",
+          "AXRole": "AXCheckBox",
+          "AXSelected": "0",
+          "AXSubrole": "AXSwitch",
+          "AXValue": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "1 Liczba sztuk edit text, is editing",
+      "phrases": [
+        "Zapisz na newsletter off switch"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Liczba sztuk",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "szt",
+          "AXRole": "AXTextField",
+          "AXSelected": "0",
+          "AXValue": "1",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Pokaż komunikat button",
+      "phrases": [
+        "Pokaż komunikat button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Pokaż komunikat",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "komunikat",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Imię edit text, is editing",
+      "phrases": [
+        "Imię edit text, is editing"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Imię",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "imie",
+          "AXRole": "AXTextField",
+          "AXSelected": "0",
+          "AXValue": "",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Kurier button",
+      "phrases": [
+        ""
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Kurier",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "sposob_0",
+          "AXRole": "AXButton",
+          "AXSelected": "1",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Paczkomat button",
+      "phrases": [
+        "Paczkomat button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Paczkomat",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "sposob_1",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Odbiór osobisty button",
+      "phrases": [
+        "Odbiór osobisty button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Odbiór osobisty",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "sposob_2",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Anuluj button",
+      "phrases": [
+        "Leaving Sposób dostawy. Anuluj button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Anuluj",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "anuluj",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Polska Kraj button",
+      "phrases": [
+        "Kraj Polska button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Kraj",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "kraj",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "AXValue": "Polska",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Wystaw fakturę off switch",
+      "phrases": [
+        "Wystaw fakturę off switch"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Wystaw fakturę",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "faktura",
+          "AXRole": "AXCheckBox",
+          "AXSelected": "0",
+          "AXSubrole": "AXSwitch",
+          "AXValue": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Zapisz jako plik button",
+      "phrases": [
+        ""
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Zapisz jako plik",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "plik",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Zamówienie 1",
+      "phrases": [
+        "Zapisz jako plik button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Zamówienie 1",
+          "AXEnabled": "1",
+          "AXFocused": "0",
+          "AXIdentifier": "order_1",
+          "AXRole": "AXStaticText",
+          "AXSelected": "0",
+          "AXValue": "",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Zapisz zamówienie button",
+      "phrases": [
+        "Leaving Ostatnie zamówienia. Zapisz zamówienie button"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Zapisz zamówienie",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "zapisz",
+          "AXRole": "AXButton",
+          "AXSelected": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Nazwisko edit text, is editing",
+      "phrases": [
+        "Nazwisko edit text, is editing"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Nazwisko",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "nazw",
+          "AXRole": "AXTextField",
+          "AXSelected": "0",
+          "AXValue": "",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    },
+    {
+      "kind": "Tab",
+      "item": "Zapisz na newsletter off switch",
+      "phrases": [
+        "Zapisz na newsletter off switch"
+      ],
+      "after": {
+        "focus": {
+          "AXDescription": "Zapisz na newsletter",
+          "AXEnabled": "1",
+          "AXFocused": "1",
+          "AXIdentifier": "news",
+          "AXRole": "AXCheckBox",
+          "AXSelected": "0",
+          "AXSubrole": "AXSwitch",
+          "AXValue": "0",
+          "children": []
+        },
+        "front_bundle": "org.uxbench.ios",
+        "front_pid": 3924,
+        "pid": 3924
+      }
+    }
+  ],
+  "tree": {
+    "focus": {
+      "AXFocused": "1",
+      "AXRole": "AXGroup",
+      "AXSubrole": "iOSContentGroup",
+      "children": [
+        {
+          "AXEnabled": "1",
+          "AXFocused": "0",
+          "AXRole": "AXGroup",
+          "AXSelected": "0",
+          "children": [
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXRole": "AXGroup",
+              "AXSelected": "0",
+              "children": [
+                {
+                  "AXDescription": "Zapisz zamówienie",
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXIdentifier": "zapisz",
+                  "AXRole": "AXButton",
+                  "AXSelected": "0",
+                  "children": []
+                },
+                {
+                  "AXDescription": "Ostatnie zamówienia",
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXIdentifier": "lista",
+                  "AXRole": "AXGroup",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "order_1",
+                      "AXRole": "AXGroup",
+                      "AXSelected": "0",
+                      "AXValue": "",
+                      "children": [
+                        {
+                          "AXDescription": "Zamówienie 1",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "order_1",
+                          "AXRole": "AXStaticText",
+                          "AXSelected": "0",
+                          "AXValue": "",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "order_2",
+                      "AXRole": "AXGroup",
+                      "AXSelected": "0",
+                      "AXValue": "",
+                      "children": [
+                        {
+                          "AXDescription": "Zamówienie 2",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "order_2",
+                          "AXRole": "AXStaticText",
+                          "AXSelected": "0",
+                          "AXValue": "",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "order_3",
+                      "AXRole": "AXGroup",
+                      "AXSelected": "0",
+                      "AXValue": "",
+                      "children": [
+                        {
+                          "AXDescription": "Zamówienie 3",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "order_3",
+                          "AXRole": "AXStaticText",
+                          "AXSelected": "0",
+                          "AXValue": "",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "order_4",
+                      "AXRole": "AXGroup",
+                      "AXSelected": "0",
+                      "AXValue": "",
+                      "children": [
+                        {
+                          "AXDescription": "Zamówienie 4",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "order_4",
+                          "AXRole": "AXStaticText",
+                          "AXSelected": "0",
+                          "AXValue": "",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "order_5",
+                      "AXRole": "AXGroup",
+                      "AXSelected": "0",
+                      "AXValue": "",
+                      "children": [
+                        {
+                          "AXDescription": "Zamówienie 5",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "order_5",
+                          "AXRole": "AXStaticText",
+                          "AXSelected": "0",
+                          "AXValue": "",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "order_6",
+                      "AXRole": "AXGroup",
+                      "AXSelected": "0",
+                      "AXValue": "",
+                      "children": [
+                        {
+                          "AXDescription": "Zamówienie 6",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "order_6",
+                          "AXRole": "AXStaticText",
+                          "AXSelected": "0",
+                          "AXValue": "",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "order_7",
+                      "AXRole": "AXGroup",
+                      "AXSelected": "0",
+                      "AXValue": "",
+                      "children": [
+                        {
+                          "AXDescription": "Zamówienie 7",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "order_7",
+                          "AXRole": "AXStaticText",
+                          "AXSelected": "0",
+                          "AXValue": "",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "order_8",
+                      "AXRole": "AXGroup",
+                      "AXSelected": "0",
+                      "AXValue": "",
+                      "children": [
+                        {
+                          "AXDescription": "Zamówienie 8",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "order_8",
+                          "AXRole": "AXStaticText",
+                          "AXSelected": "0",
+                          "AXValue": "",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "AXDescription": "Nazwisko",
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXIdentifier": "nazw",
+                  "AXRole": "AXTextField",
+                  "AXSelected": "0",
+                  "AXValue": "",
+                  "children": []
+                },
+                {
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXGroup",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXDescription": "Zapisz na newsletter",
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "news",
+                      "AXRole": "AXCheckBox",
+                      "AXSelected": "0",
+                      "AXSubrole": "AXSwitch",
+                      "AXValue": "0",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "AXDescription": "Liczba sztuk",
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXIdentifier": "szt",
+                  "AXRole": "AXTextField",
+                  "AXSelected": "0",
+                  "AXValue": "1",
+                  "children": []
+                },
+                {
+                  "AXDescription": "Pokaż komunikat",
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXIdentifier": "komunikat",
+                  "AXRole": "AXButton",
+                  "AXSelected": "0",
+                  "children": []
+                },
+                {
+                  "AXDescription": "Imię",
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXIdentifier": "imie",
+                  "AXRole": "AXTextField",
+                  "AXSelected": "0",
+                  "AXValue": "",
+                  "children": []
+                },
+                {
+                  "AXDescription": "Sposób dostawy",
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXGroup",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXDescription": "Kurier",
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "sposob_0",
+                      "AXRole": "AXButton",
+                      "AXSelected": "1",
+                      "children": []
+                    },
+                    {
+                      "AXDescription": "Paczkomat",
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "sposob_1",
+                      "AXRole": "AXButton",
+                      "AXSelected": "0",
+                      "children": []
+                    },
+                    {
+                      "AXDescription": "Odbiór osobisty",
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "sposob_2",
+                      "AXRole": "AXButton",
+                      "AXSelected": "0",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "AXDescription": "Anuluj",
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXIdentifier": "anuluj",
+                  "AXRole": "AXButton",
+                  "AXSelected": "0",
+                  "children": []
+                },
+                {
+                  "AXDescription": "Kraj",
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXIdentifier": "kraj",
+                  "AXRole": "AXButton",
+                  "AXSelected": "0",
+                  "AXValue": "Polska",
+                  "children": []
+                },
+                {
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXGroup",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXDescription": "Wystaw fakturę",
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "faktura",
+                      "AXRole": "AXCheckBox",
+                      "AXSelected": "0",
+                      "AXSubrole": "AXSwitch",
+                      "AXValue": "0",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "AXDescription": "Zapisz jako plik",
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXIdentifier": "plik",
+                  "AXRole": "AXButton",
+                  "AXSelected": "0",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "front_bundle": "org.uxbench.ios",
+    "front_pid": 3924,
+    "pid": 3924,
+    "tree": {
+      "AXRole": "AXApplication",
+      "AXTitle": "UXBench",
+      "children": [
+        {
+          "AXFocused": "0",
+          "AXIdentifier": "SceneWindow",
+          "AXRole": "AXWindow",
+          "AXSubrole": "AXStandardWindow",
+          "AXTitle": "UXBench",
+          "children": [
+            {
+              "AXFocused": "1",
+              "AXRole": "AXGroup",
+              "AXSubrole": "iOSContentGroup",
+              "children": [
+                {
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXGroup",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXRole": "AXGroup",
+                      "AXSelected": "0",
+                      "children": [
+                        {
+                          "AXDescription": "Zapisz zamówienie",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "zapisz",
+                          "AXRole": "AXButton",
+                          "AXSelected": "0",
+                          "children": []
+                        },
+                        {
+                          "AXDescription": "Ostatnie zamówienia",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "lista",
+                          "AXRole": "AXGroup",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "order_1",
+                              "AXRole": "AXGroup",
+                              "AXSelected": "0",
+                              "AXValue": "",
+                              "children": [
+                                {
+                                  "AXDescription": "Zamówienie 1",
+                                  "AXEnabled": "1",
+                                  "AXFocused": "0",
+                                  "AXIdentifier": "order_1",
+                                  "AXRole": "AXStaticText",
+                                  "AXSelected": "0",
+                                  "AXValue": "",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "order_2",
+                              "AXRole": "AXGroup",
+                              "AXSelected": "0",
+                              "AXValue": "",
+                              "children": [
+                                {
+                                  "AXDescription": "Zamówienie 2",
+                                  "AXEnabled": "1",
+                                  "AXFocused": "0",
+                                  "AXIdentifier": "order_2",
+                                  "AXRole": "AXStaticText",
+                                  "AXSelected": "0",
+                                  "AXValue": "",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "order_3",
+                              "AXRole": "AXGroup",
+                              "AXSelected": "0",
+                              "AXValue": "",
+                              "children": [
+                                {
+                                  "AXDescription": "Zamówienie 3",
+                                  "AXEnabled": "1",
+                                  "AXFocused": "0",
+                                  "AXIdentifier": "order_3",
+                                  "AXRole": "AXStaticText",
+                                  "AXSelected": "0",
+                                  "AXValue": "",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "order_4",
+                              "AXRole": "AXGroup",
+                              "AXSelected": "0",
+                              "AXValue": "",
+                              "children": [
+                                {
+                                  "AXDescription": "Zamówienie 4",
+                                  "AXEnabled": "1",
+                                  "AXFocused": "0",
+                                  "AXIdentifier": "order_4",
+                                  "AXRole": "AXStaticText",
+                                  "AXSelected": "0",
+                                  "AXValue": "",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "order_5",
+                              "AXRole": "AXGroup",
+                              "AXSelected": "0",
+                              "AXValue": "",
+                              "children": [
+                                {
+                                  "AXDescription": "Zamówienie 5",
+                                  "AXEnabled": "1",
+                                  "AXFocused": "0",
+                                  "AXIdentifier": "order_5",
+                                  "AXRole": "AXStaticText",
+                                  "AXSelected": "0",
+                                  "AXValue": "",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "order_6",
+                              "AXRole": "AXGroup",
+                              "AXSelected": "0",
+                              "AXValue": "",
+                              "children": [
+                                {
+                                  "AXDescription": "Zamówienie 6",
+                                  "AXEnabled": "1",
+                                  "AXFocused": "0",
+                                  "AXIdentifier": "order_6",
+                                  "AXRole": "AXStaticText",
+                                  "AXSelected": "0",
+                                  "AXValue": "",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "order_7",
+                              "AXRole": "AXGroup",
+                              "AXSelected": "0",
+                              "AXValue": "",
+                              "children": [
+                                {
+                                  "AXDescription": "Zamówienie 7",
+                                  "AXEnabled": "1",
+                                  "AXFocused": "0",
+                                  "AXIdentifier": "order_7",
+                                  "AXRole": "AXStaticText",
+                                  "AXSelected": "0",
+                                  "AXValue": "",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "order_8",
+                              "AXRole": "AXGroup",
+                              "AXSelected": "0",
+                              "AXValue": "",
+                              "children": [
+                                {
+                                  "AXDescription": "Zamówienie 8",
+                                  "AXEnabled": "1",
+                                  "AXFocused": "0",
+                                  "AXIdentifier": "order_8",
+                                  "AXRole": "AXStaticText",
+                                  "AXSelected": "0",
+                                  "AXValue": "",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "AXDescription": "Nazwisko",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "nazw",
+                          "AXRole": "AXTextField",
+                          "AXSelected": "0",
+                          "AXValue": "",
+                          "children": []
+                        },
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXGroup",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXDescription": "Zapisz na newsletter",
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "news",
+                              "AXRole": "AXCheckBox",
+                              "AXSelected": "0",
+                              "AXSubrole": "AXSwitch",
+                              "AXValue": "0",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "AXDescription": "Liczba sztuk",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "szt",
+                          "AXRole": "AXTextField",
+                          "AXSelected": "0",
+                          "AXValue": "1",
+                          "children": []
+                        },
+                        {
+                          "AXDescription": "Pokaż komunikat",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "komunikat",
+                          "AXRole": "AXButton",
+                          "AXSelected": "0",
+                          "children": []
+                        },
+                        {
+                          "AXDescription": "Imię",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "imie",
+                          "AXRole": "AXTextField",
+                          "AXSelected": "0",
+                          "AXValue": "",
+                          "children": []
+                        },
+                        {
+                          "AXDescription": "Sposób dostawy",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXGroup",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXDescription": "Kurier",
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "sposob_0",
+                              "AXRole": "AXButton",
+                              "AXSelected": "1",
+                              "children": []
+                            },
+                            {
+                              "AXDescription": "Paczkomat",
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "sposob_1",
+                              "AXRole": "AXButton",
+                              "AXSelected": "0",
+                              "children": []
+                            },
+                            {
+                              "AXDescription": "Odbiór osobisty",
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "sposob_2",
+                              "AXRole": "AXButton",
+                              "AXSelected": "0",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "AXDescription": "Anuluj",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "anuluj",
+                          "AXRole": "AXButton",
+                          "AXSelected": "0",
+                          "children": []
+                        },
+                        {
+                          "AXDescription": "Kraj",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "kraj",
+                          "AXRole": "AXButton",
+                          "AXSelected": "0",
+                          "AXValue": "Polska",
+                          "children": []
+                        },
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXGroup",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXDescription": "Wystaw fakturę",
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "faktura",
+                              "AXRole": "AXCheckBox",
+                              "AXSelected": "0",
+                              "AXSubrole": "AXSwitch",
+                              "AXValue": "0",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "AXDescription": "Zapisz jako plik",
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXIdentifier": "plik",
+                          "AXRole": "AXButton",
+                          "AXSelected": "0",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXRole": "AXButton",
+              "AXSubrole": "AXCloseButton"
+            },
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXRole": "AXButton",
+              "AXSubrole": "AXFullScreenButton",
+              "children": [
+                {
+                  "AXFocused": "0",
+                  "AXRole": "AXGroup",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXRole": "AXButton",
+              "AXSubrole": "AXMinimizeButton"
+            }
+          ]
+        },
+        {
+          "AXEnabled": "1",
+          "AXFocused": "0",
+          "AXRole": "AXMenuBar",
+          "AXSelected": "0",
+          "children": [
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXRole": "AXMenuBarItem",
+              "AXSelected": "0",
+              "AXTitle": "Apple",
+              "children": [
+                {
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXMenu",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_aboutThisMacRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "About This Mac",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_systemInformationRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "System Information",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_systemSettingsRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "System Settings…",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_appStoreRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "App Store",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_recentsRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Recent Items",
+                      "children": [
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXMenu",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Applications",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_recentItemRequested:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Installer",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_recentItemRequested:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Show “Installer” in Finder",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_recentItemRequested:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "System Settings",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_recentItemRequested:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Show “System Settings” in Finder",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Documents",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_recentItemRequested:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "AnkaGuestAddons.pkg",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_recentItemRequested:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Show “AnkaGuestAddons.pkg” in Finder",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Servers",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_clearRecentItemsRequested:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Clear Menu",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_forceQuitPanelRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Force Quit…",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_forceQuitRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Force Quit UXBench",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_sleepRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Sleep",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_restartRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Restart…",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_restartNowRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Restart",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_shutDownRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Shut Down…",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_shutDownNowRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Shut Down",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_lockScreenRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Lock Screen",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_logOutRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Log Out Anka…",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_logOutNowRequested:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Log Out Anka",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXIdentifier": "com.apple.menu.application",
+              "AXRole": "AXMenuBarItem",
+              "AXSelected": "0",
+              "AXTitle": "UXBench",
+              "children": [
+                {
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXMenu",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "orderFrontStandardAboutPanel:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "About UXBench",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "com.apple.menu.services",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Services",
+                      "children": [
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXMenu",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_processRequest:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Activity Monitor",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_processRequest:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Allocations & Leaks",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_processRequest:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "File Activity",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_processRequest:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "System Trace",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_processRequest:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Time Profile Active Application",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_processRequest:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Time Profile App Under Mouse",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_processRequest:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Time Profile Entire System",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_processRequest:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Toggle Instruments Recording",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_configureServicesMenu:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Services Settings…",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "hide:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Hide UXBench",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "hideOtherApplications:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Hide Others",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "unhideAllApplications:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Show All",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "terminate:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Quit UXBench",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "NSAlternateQuitMenuItem",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Quit and Keep Windows",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXIdentifier": "com.apple.menu.file",
+              "AXRole": "AXMenuBarItem",
+              "AXSelected": "0",
+              "AXTitle": "File",
+              "children": [
+                {
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXMenu",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "performClose:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Close",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "closeAll:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Close All",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "duplicate:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Duplicate",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "move:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Move",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "rename:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Rename…",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "export:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Export As…",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXIdentifier": "com.apple.menu.edit",
+              "AXRole": "AXMenuBarItem",
+              "AXSelected": "0",
+              "AXTitle": "Edit",
+              "children": [
+                {
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXMenu",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "undo:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Undo",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "redo:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Redo",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "cut:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Cut",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "copy:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Copy",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "paste:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Paste",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "pasteAndMatchStyle:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Paste and Match Style",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "delete:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Delete",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "selectAll:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Select All",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "find:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Find…",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "findAndReplace:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Find & Replace",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "findNext:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Find Next",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "findPrevious:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Find Previous",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "useSelectionForFind:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Use Selection for Find",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "com.apple.menu.spelling",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Spelling and Grammar",
+                      "children": [
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXMenu",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "showGuessPanel:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Show Spelling and Grammar",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "checkSpelling:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Check Document Now",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "toggleContinuousSpellChecking:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Check Spelling While Typing",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "toggleGrammarChecking:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Check Grammar With Spelling",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "toggleAutomaticSpellingCorrection:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Correct Spelling Automatically",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "com.apple.menu.substitutions",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Substitutions",
+                      "children": [
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXMenu",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "orderFrontSubstitutionsPanel:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Smart Substitutions",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "toggleSmartInsertDelete:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Smart Copy/Paste",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "toggleAutomaticQuoteSubstitution:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Smart Quotes",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "toggleAutomaticDashSubstitution:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Smart Dashes",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "toggleAutomaticLinkDetection:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Smart Links",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "toggleAutomaticTextReplacement:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Text Replacement",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "com.apple.menu.transformations",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Transformations",
+                      "children": [
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXMenu",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "uppercaseWord:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Make Upper Case",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "lowercaseWord:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Make Lower Case",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "capitalizeWord:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Capitalize",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "com.apple.command.speech",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Speech",
+                      "children": [
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXMenu",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "startSpeaking:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Start Speaking",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "stopSpeaking:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Stop Speaking",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_NSMenuItemAutoFillIdentifier",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "AutoFill",
+                      "children": [
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXMenu",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_handleInsertFromContactsCommand:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Contact…",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_handleInsertFromPasswordsCommand:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Passwords…",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "startDictation:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Start Dictation…",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "orderFrontCharacterPalette:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Emoji & Symbols",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXIdentifier": "com.apple.menu.format",
+              "AXRole": "AXMenuBarItem",
+              "AXSelected": "0",
+              "AXTitle": "Format",
+              "children": [
+                {
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXMenu",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "com.apple.menu.font",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Font",
+                      "children": [
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXMenu",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "show_fonts",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Show Fonts",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "toggleBoldface:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Bold",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "toggleItalics:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Italic",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "toggleUnderline:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Underline",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "increaseSize:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Bigger",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "decreaseSize:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Smaller",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "orderFrontColorPanel:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Show Colors",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "copyFont:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Copy Style",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "pasteFont:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Paste Style",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "com.apple.menu.text",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Text",
+                      "children": [
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXMenu",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "alignLeft:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Align Left",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "alignCenter:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Center",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "alignJustified:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Justify",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "alignRight:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Align Right",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "com.apple.menu.writing-direction",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Writing Direction",
+                              "children": [
+                                {
+                                  "AXEnabled": "1",
+                                  "AXFocused": "0",
+                                  "AXRole": "AXMenu",
+                                  "AXSelected": "0",
+                                  "children": [
+                                    {
+                                      "AXEnabled": "0",
+                                      "AXFocused": "0",
+                                      "AXIdentifier": "makeTextWritingDirectionNatural:",
+                                      "AXRole": "AXMenuItem",
+                                      "AXSelected": "0",
+                                      "AXTitle": "Default",
+                                      "children": []
+                                    },
+                                    {
+                                      "AXEnabled": "0",
+                                      "AXFocused": "0",
+                                      "AXIdentifier": "makeTextWritingDirectionRightToLeft:",
+                                      "AXRole": "AXMenuItem",
+                                      "AXSelected": "0",
+                                      "AXTitle": "Right to Left",
+                                      "children": []
+                                    },
+                                    {
+                                      "AXEnabled": "0",
+                                      "AXFocused": "0",
+                                      "AXIdentifier": "makeTextWritingDirectionLeftToRight:",
+                                      "AXRole": "AXMenuItem",
+                                      "AXSelected": "0",
+                                      "AXTitle": "Left to Right",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXIdentifier": "com.apple.menu.view",
+              "AXRole": "AXMenuBarItem",
+              "AXSelected": "0",
+              "AXTitle": "View",
+              "children": [
+                {
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXMenu",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "toggleToolbarShown:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Show Toolbar",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "runToolbarCustomizationPalette:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Customize Toolbar…",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "toggleSidebar:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Show Sidebar",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "toggleFullScreen:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Enter Full Screen",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXIdentifier": "com.apple.menu.window",
+              "AXRole": "AXMenuBarItem",
+              "AXSelected": "0",
+              "AXTitle": "Window",
+              "children": [
+                {
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXMenu",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "performMiniaturize:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Minimize",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "miniaturizeAll:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Minimize All",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "performZoom:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Zoom",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "zoomAll:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Zoom All",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_zoomFill:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Fill",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_zoomCenter:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Center",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Move & Resize",
+                      "children": [
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXMenu",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Halves",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomLeft:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Left",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomRight:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Right",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomTop:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Top",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomBottom:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Bottom",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Quarters",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomTopLeft:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Top Left",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomTopRight:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Top Right",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomBottomLeft:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Bottom Left",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomBottomRight:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Bottom Right",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Arrange",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomLeftAndRight:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Left & Right",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomLeftThreeUp:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Left & Quarters",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomRightAndLeft:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Right & Left",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomRightThreeUp:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Right & Quarters",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomTopAndBottom:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Top & Bottom",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomTopThreeUp:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Top & Quarters",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomBottomAndTop:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Bottom & Top",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomBottomThreeUp:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Bottom & Quarters",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomQuarters:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Quarters",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "0",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_zoomUntile:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Return to Previous Size",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Full Screen Tile",
+                      "children": [
+                        {
+                          "AXEnabled": "1",
+                          "AXFocused": "0",
+                          "AXRole": "AXMenu",
+                          "AXSelected": "0",
+                          "children": [
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_tileLeft:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Left of Screen",
+                              "children": []
+                            },
+                            {
+                              "AXEnabled": "1",
+                              "AXFocused": "0",
+                              "AXIdentifier": "_tileRight:",
+                              "AXRole": "AXMenuItem",
+                              "AXSelected": "0",
+                              "AXTitle": "Right of Screen",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXIdentifier": "_removeWindowFromStageManagerSet:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Remove Window from Set",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "arrangeInFront:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Bring All to Front",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "alternateArrangeInFront:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "Arrange in Front",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "0",
+                      "AXFocused": "0",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "",
+                      "children": []
+                    },
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "makeKeyAndOrderFront:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "UXBench",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "AXEnabled": "1",
+              "AXFocused": "0",
+              "AXIdentifier": "com.apple.menu.help",
+              "AXRole": "AXMenuBarItem",
+              "AXSelected": "0",
+              "AXTitle": "Help",
+              "children": [
+                {
+                  "AXEnabled": "1",
+                  "AXFocused": "0",
+                  "AXRole": "AXMenu",
+                  "AXSelected": "0",
+                  "children": [
+                    {
+                      "AXEnabled": "1",
+                      "AXFocused": "0",
+                      "AXIdentifier": "showHelp:",
+                      "AXRole": "AXMenuItem",
+                      "AXSelected": "0",
+                      "AXTitle": "UXBench Help",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "positive": true
+}

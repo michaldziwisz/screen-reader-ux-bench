@@ -1,0 +1,8 @@
+{
+  "unit_exit": 0,
+  "unit_output": "test_leg_accounting (test_metrics.MetricsTests.test_leg_accounting) ... ok\ntest_missing_not_zero (test_metrics.MetricsTests.test_missing_not_zero) ... ok\ntest_no_implied_wrap (test_metrics.MetricsTests.test_no_implied_wrap) ... ok\ntest_reference_paths (test_metrics.MetricsTests.test_reference_paths) ... ok\ntest_words (test_metrics.MetricsTests.test_words) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nOK\n",
+  "mutation_incorrect_steps_exit": 1,
+  "restored_valid_exit": 0,
+  "android_non_ci_guard_exit": 1,
+  "input_restored_sha256": "4675cf326f8e2113d0d39464101c2ecb52be7ce6ff7e8b75ad23977e507cd28d"
+}

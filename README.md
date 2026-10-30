@@ -30,6 +30,10 @@ gh workflow run macos.yml
 gh workflow run catalyst.yml
 python3 scripts/fetch_runs.py
 python3 -m unittest discover -s scripts -p 'test_*.py' -v
+# Odtworzenie wyliczeń opublikowanej kampanii po pobraniu jej artefaktów:
+python3 scripts/analyze.py --android 41120875415 --macos 41118572905 --ios 41117258635 --catalyst 41118577430
+python3 scripts/report.py
+python3 scripts/verify_results.py
 ```
 
 Wymagane są uprawnienia do uruchamiania Actions. W obcym koncie należy użyć własnego forka. Skrypt pobierający wyniki odmawia zaakceptowania historii przekraczającej budżet tej kampanii. Nie uruchamia się kolejnych workflow automatycznie.
@@ -39,6 +43,8 @@ Android: Ubuntu 24.04, API 35, obraz Google Play x86_64, profil Pixel 2, Gradle 
 Apple: runner `macos-15`, Xcode 16.4. Dla iOS wybrano iPad Pro 13 cali (M4), iOS 18.5. Etykieta runnera nie jest niezmiennym obrazem dysku: dokładna wersja obrazu i systemu jest zapisana w artefaktach. Guidepup 0.39.0, setup 0.29.3 i XcodeGen 2.46.0 są przypięte.
 
 Warianty noszą nazwy `GRUPY` i `PLASKI`. Zmieniają jednocześnie grupowanie i kolejność, więc pomiar nie izoluje samego wpływu nazw grup. Każda platforma wykorzystuje własne kontrolki. Na przykład UIKit nie ma natywnego przycisku opcji i używa przycisków z cechą zaznaczenia. Wyniki nie służą do rankingu systemów operacyjnych.
+
+Generator `report.py` zapisuje `WYNIK.md` oraz `../RAPORT.md`; należy uruchamiać go z katalogu repo w osobnym katalogu roboczym. `verify_results.py` sprawdza sumy plików źródłowych, równość kopii, komplet wariantów i rachunki. Androidowy wynik ilościowy dotyczy Tab z TalkBack, nie gestów; nieskuteczne próby swipe i Alt+Right są opisane oddzielnie.
 
 `results/` zawiera wybrany wynik końcowy i materiał źródłowy z publicznych runnerów. `WYNIK.md` opisuje liczby i ograniczenia. Cała historia prób oraz zrzuty ekranów pozostają w artefaktach Actions, a po pobraniu w ignorowanym katalogu `wyniki/`. Zielony workflow oznacza wykonanie skryptu, nie brak błędów dostępności. Audyt XCTest zapisuje wykryte problemy zamiast celowo przerywać pomiar.
 

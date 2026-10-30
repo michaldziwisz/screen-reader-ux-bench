@@ -1,0 +1,69 @@
+{
+  "macos": {
+    "source": {
+      "path": "wyniki/macos/41118572905/macos-measure/GRUPY.json",
+      "sha256": "e4a4590612dea909cfb4c7ae78f054fe41bb2c71be9ed575283b1ad4ca50a17c",
+      "run": "41118572905",
+      "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41118572905"
+    },
+    "runner": [
+      "Version: 20261021.618",
+      "Image: macos-15-arm64",
+      "Version: 20261028.0489.1"
+    ],
+    "files": {
+      "versions.txt": "ProductName:\t\tmacOS\nProductVersion:\t\t15.8.2\nBuildVersion:\t\t24H232\nXcode 16.4\nBuild version 16F6\nmacos15\n",
+      "voiceover-plist.txt": "{\n  \"CFBundleAllowMixedLocalizations\" => 1\n  \"CFBundleDevelopmentRegion\" => \"English\"\n  \"CFBundleDisplayName\" => \"VoiceOver\"\n  \"CFBundleExecutable\" => \"VoiceOverStarter\"\n  \"CFBundleIconFile\" => \"VoiceOver\"\n  \"CFBundleIdentifier\" => \"com.apple.VoiceOver\"\n  \"CFBundleInfoDictionaryVersion\" => \"6.0\"\n  \"CFBundleName\" => \"VoiceOver\"\n  \"CFBundlePackageType\" => \"APPL\"\n  \"CFBundleShortVersionString\" => \"10\"\n  \"CFBundleSignature\" => \"????\"\n  \"CFBundleVersion\" => \"964.12.11\"\n  \"LSBackgroundOnly\" => 1\n  \"LSLaunchDLabel\" => \"com.apple.VoiceOver\"\n  \"LSMinimumSystemVersion\" => \"10.7.0\"\n  \"LSUIElement\" => \"1\"\n  \"NSAppleScriptEnabled\" => 1\n  \"NSBluetoothAlwaysUsageDescription\" => \"Used for portable preference\"\n  \"NSHighResolutionCapable\" => 1\n  \"NSHumanReadableCopyright\" => \"Copyright © 2004-2024 Apple Inc. All Rights Reserved.\"\n  \"NSSupportsSuddenTermination\" => \"YES\"\n  \"OSAScriptingDefinition\" => \"VoiceOver.sdef\"\n  \"POSIXSpawnType\" => \"Interactive\"\n}\n"
+    }
+  },
+  "ios": {
+    "source": {
+      "path": "wyniki/ios/41117258635/ios-measure/attachments/F88524EB-0777-4643-AAF1-6696C3128E06.json",
+      "sha256": "17cf6d6104014195bfb8fac2d9e9768b7228e953aecbca450442df5c2b7fd40f",
+      "run": "41117258635",
+      "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41117258635"
+    },
+    "runner": [
+      "Version: 20261021.618",
+      "Image: macos-15-arm64",
+      "Version: 20261028.0489.1"
+    ],
+    "files": {
+      "versions.txt": "ProductName:\t\tmacOS\nProductVersion:\t\t15.8.2\nBuildVersion:\t\t24H232\nXcode 16.4\nBuild version 16F6\n"
+    }
+  },
+  "android": {
+    "source": {
+      "path": "wyniki/android/41120875415/android-measure/GRUPY.json",
+      "sha256": "b9c4d0eb205027dbb852f08a19de4233f2d8b83ebfc0419b739456b5248e7129",
+      "run": "41120875415",
+      "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41120875415"
+    },
+    "runner": [
+      "Version: 20261021.618",
+      "Image: ubuntu-24.04",
+      "Version: 20261025.353.1"
+    ],
+    "files": {
+      "runner.txt": "ubuntu24\n20261026.354.1\n",
+      "talkback_version": "versionCode=60138361 minSdk=26 targetSdk=35\nversionName=15.0.0.639625893",
+      "android_properties": "[ro.build.fingerprint]: [google/sdk_gphone64_x86_64/emu64xa:15/AE3A.240806.036/12592187:user/release-keys]\n[ro.build.version.release]: [15]\n[ro.build.version.sdk]: [35]\n[ro.product.model]: [sdk_gphone64_x86_64]"
+    }
+  },
+  "catalyst": {
+    "source": {
+      "path": "wyniki/catalyst/41118577430/catalyst-measure/catalyst-GRUPY.json",
+      "sha256": "5b028889ea2a88db000a05fc3d114f26a4d16eb1d00bc0823c0d343158dbf6c8",
+      "run": "41118577430",
+      "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41118577430"
+    },
+    "runner": [
+      "Version: 20261021.618",
+      "Image: macos-15-arm64",
+      "Version: 20261028.0489.1"
+    ],
+    "files": {
+      "versions.txt": "ProductName:\t\tmacOS\nProductVersion:\t\t15.8.2\nBuildVersion:\t\t24H232\nXcode 16.4\nBuild version 16F6\n"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "positive_control": {
+    "outside_repo": true,
+    "exit_code": 1,
+    "rule": "github",
+    "restored": true
+  },
+  "tracked_scan": {
+    "files": 52,
+    "findings": [],
+    "exit_code": 0
+  }
+}

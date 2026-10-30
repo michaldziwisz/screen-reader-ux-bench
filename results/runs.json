@@ -1,0 +1,172 @@
+[
+  {
+    "conclusion": "success",
+    "createdAt": "2026-10-30T20:08:17Z",
+    "databaseId": 41120875415,
+    "headSha": "1fc76b3722443bdc25369f71598d77eb57d68853",
+    "status": "completed",
+    "updatedAt": "2026-10-30T20:19:34Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41120875415",
+    "workflowName": "Android TalkBack"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-10-30T20:03:11Z",
+    "databaseId": 41120203817,
+    "headSha": "bfa41594a0b768ee59746b7d472611cd3d111112",
+    "status": "completed",
+    "updatedAt": "2026-10-30T20:07:13Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41120203817",
+    "workflowName": "Android TalkBack"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-10-30T19:58:20Z",
+    "databaseId": 41119543530,
+    "headSha": "ecedf434f663b676e1f50536b022fbc479a48f62",
+    "status": "completed",
+    "updatedAt": "2026-10-30T20:01:22Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41119543530",
+    "workflowName": "Android TalkBack"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-10-30T19:50:56Z",
+    "databaseId": 41118577430,
+    "headSha": "3f7f717f0731c9050bbf7ffa55d440d9f7daa143",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:54:04Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41118577430",
+    "workflowName": "Catalyst przybliżenie"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-10-30T19:50:54Z",
+    "databaseId": 41118572905,
+    "headSha": "3f7f717f0731c9050bbf7ffa55d440d9f7daa143",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:53:47Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41118572905",
+    "workflowName": "macOS VoiceOver"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-10-30T19:48:28Z",
+    "databaseId": 41118246911,
+    "headSha": "42e298c89e34d6b98adb400600798256d6e98a6f",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:50:23Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41118246911",
+    "workflowName": "Catalyst przybliżenie"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-10-30T19:48:26Z",
+    "databaseId": 41118242572,
+    "headSha": "42e298c89e34d6b98adb400600798256d6e98a6f",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:50:15Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41118242572",
+    "workflowName": "macOS VoiceOver"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-10-30T19:48:11Z",
+    "databaseId": 41118208720,
+    "headSha": "241831f876c605d9112bf4bfca607767bf3cae30",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:56:24Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41118208720",
+    "workflowName": "Android TalkBack"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-10-30T19:45:34Z",
+    "databaseId": 41117853216,
+    "headSha": "7dfe4d3e2f706dd81541c26f01c82a81ad28f97c",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:47:53Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41117853216",
+    "workflowName": "Catalyst przybliżenie"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-10-30T19:45:32Z",
+    "databaseId": 41117848919,
+    "headSha": "7dfe4d3e2f706dd81541c26f01c82a81ad28f97c",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:47:20Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41117848919",
+    "workflowName": "macOS VoiceOver"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-10-30T19:44:02Z",
+    "databaseId": 41117642301,
+    "headSha": "5b821671372b86d50518c83d4c1f9d38ca1f1e48",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:47:03Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41117642301",
+    "workflowName": "Android TalkBack"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-10-30T19:42:33Z",
+    "databaseId": 41117442426,
+    "headSha": "b486f7eff37bf2580e949e3858b2fa8582794d48",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:43:54Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41117442426",
+    "workflowName": "Catalyst przybliżenie"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-10-30T19:41:58Z",
+    "databaseId": 41117361067,
+    "headSha": "8bcbe6042cd6c4d6dfd79b1330ef0fe38bfc2f11",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:44:27Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41117361067",
+    "workflowName": "macOS VoiceOver"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-10-30T19:41:12Z",
+    "databaseId": 41117258635,
+    "headSha": "f3cfd272000863252b95f676a58f26e5d3e4df91",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:46:22Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41117258635",
+    "workflowName": "iOS drzewo dostępności"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-10-30T19:39:35Z",
+    "databaseId": 41117041338,
+    "headSha": "5416ce5e8f19e5bc93ba43716046cfb77964652b",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:43:14Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41117041338",
+    "workflowName": "Android TalkBack"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-10-30T19:39:00Z",
+    "databaseId": 41116964774,
+    "headSha": "be2bff317416336c115c3852268759eaba692422",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:40:51Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41116964774",
+    "workflowName": "macOS VoiceOver"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-10-30T19:36:40Z",
+    "databaseId": 41116654791,
+    "headSha": "58b1843c947ec8dfc48e91bb55c4d25c8bcf0286",
+    "status": "completed",
+    "updatedAt": "2026-10-30T19:38:48Z",
+    "url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41116654791",
+    "workflowName": "Rozpoznanie CI"
+  }
+]
