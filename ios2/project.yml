@@ -1,0 +1,38 @@
+name: UXBench
+options:
+  bundleIdPrefix: org.uxbench
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    CODE_SIGNING_ALLOWED: NO
+    IPHONEOS_DEPLOYMENT_TARGET: '17.0'
+targets:
+  UXBench:
+    type: application
+    platform: iOS
+    sources: [App.swift, ../shared2/Fixture.swift, ../shared2/fixture.json]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.uxbench.ios2
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: NO
+        TARGETED_DEVICE_FAMILY: '1,2'
+        SUPPORTS_MACCATALYST: YES
+  BenchTests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [Tests.swift]
+    dependencies:
+      - target: UXBench
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  UXBench:
+    build:
+      targets:
+        UXBench: all
+        BenchTests: [test]
+    test:
+      targets: [BenchTests]
