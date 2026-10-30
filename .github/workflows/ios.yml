@@ -1,0 +1,28 @@
+name: iOS drzewo dostępności
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  measure:
+    runs-on: macos-15
+    timeout-minutes: 30
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+      - run: mkdir -p out; sw_vers > out/versions.txt; xcodebuild -version >> out/versions.txt; xcrun simctl list --json > out/simulators.json
+      - run: curl -fsSL https://github.com/yonaskolb/XcodeGen/releases/download/2.46.0/xcodegen.zip -o out/xcodegen.zip; unzip -q out/xcodegen.zip -d out/xcodegen; out/xcodegen/xcodegen/bin/xcodegen generate --spec ios/project.yml
+      - run: xcodebuild test -project ios/UXBench.xcodeproj -scheme UXBench -destination 'platform=iOS Simulator,name=iPad Pro 13-inch (M4),OS=18.5' -resultBundlePath out/IOS.xcresult CODE_SIGNING_ALLOWED=NO 2>&1 | tee out/test.log
+        timeout-minutes: 20
+      - if: always()
+        run: xcrun xcresulttool export attachments --path out/IOS.xcresult --output-path out/attachments
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ios-measure
+          path: |
+            out/versions.txt
+            out/simulators.json
+            out/test.log
+            out/attachments/
+            out/IOS.xcresult/
