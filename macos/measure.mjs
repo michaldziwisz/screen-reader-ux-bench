@@ -30,7 +30,7 @@ try {
    await step('probe',()=>key('Control+Alt+F3'));
    r.positive=r.steps.some(x=>x.phrases.join(' ').includes('Imię'));
    if(!r.positive) throw Error('Positive speech control failed');
-   for(let i=0;i<36;i++)await step('Tab',()=>key('Tab'));
+   for(let i=0;i<48;i++)await step('Tab',()=>key('Tab'));
    if(new Set(r.steps.filter(s=>s.kind==='Tab').map(s=>s.after.focus?.AXIdentifier)).size<6)throw Error('Tab positive movement control failed');
    await step('anchor-VO',()=>key('Meta+i'));
    let previousItem='';const entered=new Set();
@@ -40,6 +40,16 @@ try {
     else if(/group|table|scroll area/i.test(s.item) && !entered.has(s.item)) {entered.add(s.item);await step('VO+Shift+Down',()=>key('Control+Alt+Shift+ArrowDown'));}
     if(s.item==='Zapisz jako plik button')break;
     previousItem=s.item;
+   }
+   // Pełna sekwencja od początku obszaru. Osobna od drogi od Imienia.
+   await step('VO-top',()=>key('Control+Alt+Home'));
+   let topPrevious='';const topEntered=new Set();
+   for(let i=0;i<60;i++){
+    const s=await step('VO-top:next',()=>key('Control+Alt+ArrowRight'));
+    if(s.item===topPrevious)await step('VO-top:out',()=>key('Control+Alt+Shift+ArrowUp'));
+    else if(/group|table|scroll area/i.test(s.item) && !topEntered.has(s.item)){topEntered.add(s.item);await step('VO-top:in',()=>key('Control+Alt+Shift+ArrowDown'));}
+    if(s.item==='Zapisz jako plik button')break;
+    topPrevious=s.item;
    }
    await step('shortcut-save',()=>key('Meta+s'));
    await step('shortcut-dialog',()=>key('Meta+k'));
