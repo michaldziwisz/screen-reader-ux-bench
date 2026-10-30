@@ -1,0 +1,25 @@
+name: Pomiar 2 macOS VoiceOver
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  measure:
+    runs-on: macos-15
+    timeout-minutes: 35
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+      - run: mkdir -p out/UXBench.app/Contents/MacOS; sw_vers > out/versions.txt; xcodebuild -version >> out/versions.txt; printenv ImageOS ImageVersion >> out/versions.txt; plutil -p /System/Library/CoreServices/VoiceOver.app/Contents/Info.plist > out/voiceover-plist.txt
+      - run: swiftc shared2/Fixture.swift macos2/main.swift -o out/UXBench.app/Contents/MacOS/UXBench; swiftc macos2/Probe.swift -o out/probe
+      - run: python3 scripts/mac_bundle.py
+      - run: npm ci --no-audit --no-fund
+      - run: npx guidepup setup --ci; npx guidepup install voiceover
+        timeout-minutes: 6
+      - run: defaults write NSGlobalDomain AppleKeyboardUIMode -int 3; node macos2/measure.mjs
+        timeout-minutes: 25
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: macos2-measure
+          path: out/

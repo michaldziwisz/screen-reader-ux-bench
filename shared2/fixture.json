@@ -1,0 +1,144 @@
+{
+  "records": [
+    {
+      "Nazwa": "Umowa najmu",
+      "Data": "01.10.2026",
+      "Rozmiar": "12 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Faktura marzec",
+      "Data": "02.10.2026",
+      "Rozmiar": "49 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Raport kwartalny",
+      "Data": "03.10.2026",
+      "Rozmiar": "86 KB",
+      "Stan": "oczekuje"
+    },
+    {
+      "Nazwa": "Zdjęcie paszportowe",
+      "Data": "04.10.2026",
+      "Rozmiar": "123 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Notatki ze spotkania",
+      "Data": "05.10.2026",
+      "Rozmiar": "160 KB",
+      "Stan": "błąd"
+    },
+    {
+      "Nazwa": "Budżet domowy",
+      "Data": "06.10.2026",
+      "Rozmiar": "197 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Wniosek urlopowy",
+      "Data": "07.10.2026",
+      "Rozmiar": "234 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Faktura kwiecień",
+      "Data": "08.10.2026",
+      "Rozmiar": "271 KB",
+      "Stan": "oczekuje"
+    },
+    {
+      "Nazwa": "Lista zakupów",
+      "Data": "09.10.2026",
+      "Rozmiar": "308 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Opis projektu",
+      "Data": "10.10.2026",
+      "Rozmiar": "345 KB",
+      "Stan": "błąd"
+    },
+    {
+      "Nazwa": "Harmonogram prac",
+      "Data": "11.10.2026",
+      "Rozmiar": "382 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Kosztorys remontu",
+      "Data": "12.10.2026",
+      "Rozmiar": "419 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Prezentacja dla zarządu",
+      "Data": "13.10.2026",
+      "Rozmiar": "456 KB",
+      "Stan": "oczekuje"
+    },
+    {
+      "Nazwa": "Gwarancja pralki",
+      "Data": "14.10.2026",
+      "Rozmiar": "493 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Instrukcja routera",
+      "Data": "15.10.2026",
+      "Rozmiar": "530 KB",
+      "Stan": "błąd"
+    },
+    {
+      "Nazwa": "Mapa dojazdu",
+      "Data": "16.10.2026",
+      "Rozmiar": "567 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Plan lekcji",
+      "Data": "17.10.2026",
+      "Rozmiar": "604 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Regulamin konkursu",
+      "Data": "18.10.2026",
+      "Rozmiar": "641 KB",
+      "Stan": "oczekuje"
+    },
+    {
+      "Nazwa": "Świadectwo pracy",
+      "Data": "19.10.2026",
+      "Rozmiar": "678 KB",
+      "Stan": "zsynchronizowany"
+    },
+    {
+      "Nazwa": "Testament wzór",
+      "Data": "20.10.2026",
+      "Rozmiar": "715 KB",
+      "Stan": "błąd"
+    }
+  ],
+  "folders": {
+    "Dokumenty": {
+      "Umowy": {
+        "Najem": {},
+        "Praca": {}
+      },
+      "Faktury": {
+        "2025": {},
+        "2026": {},
+        "Korekty": {}
+      },
+      "Raporty": {}
+    },
+    "Zdjęcia": {
+      "Wakacje": {},
+      "Rodzina": {}
+    },
+    "Muzyka": {}
+  },
+  "details": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu"
+}
