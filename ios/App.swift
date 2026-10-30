@@ -53,7 +53,8 @@ final class FormController:UIViewController,UITableViewDataSource,UITableViewDel
  @objc func cancel(){view.endEditing(true)}
  @objc func dialog(){view.endEditing(true);let a=UIAlertController(title:"Potwierdzenie",message:"Czy na pewno wysłać zamówienie do realizacji?",preferredStyle:.alert);a.addAction(UIAlertAction(title:"Tak",style:.default));a.addAction(UIAlertAction(title:"Nie",style:.default));present(a,animated:false)}
  @objc func file(){let url=FileManager.default.temporaryDirectory.appendingPathComponent("zamowienie.txt");try? "Zamówienie testowe".write(to:url,atomically:true,encoding:.utf8);present(UIDocumentPickerViewController(forExporting:[url]),animated:false)}
- override var keyCommands:[UIKeyCommand]? {[UIKeyCommand(title:"Zapisz zamówienie",action:#selector(save),input:"s",modifierFlags:.command)]}
+ @objc func focusFirst(){first.becomeFirstResponder()}
+ override var keyCommands:[UIKeyCommand]? {[UIKeyCommand(title:"Zapisz zamówienie",action:#selector(save),input:"s",modifierFlags:.command),UIKeyCommand(title:"Imię",action:#selector(focusFirst),input:"i",modifierFlags:.command)]}
  func tableView(_ t:UITableView,numberOfRowsInSection s:Int)->Int {8}
  func tableView(_ t:UITableView,cellForRowAt path:IndexPath)->UITableViewCell {let cell=UITableViewCell(style:.default,reuseIdentifier:nil);cell.textLabel?.text="Zamówienie \(path.row+1)";cell.accessibilityIdentifier="order_\(path.row+1)";return cell}
 }

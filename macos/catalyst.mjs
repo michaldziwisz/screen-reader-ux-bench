@@ -1,0 +1,23 @@
+import {voiceOver as vo} from '@guidepup/guidepup';
+import {spawn,execFileSync} from 'node:child_process';
+import fs from 'node:fs';
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+await vo.start({capture:'initial',timeout:20000});
+try {
+ for(const variant of ['GRUPY','PLASKI']) {
+  const p=spawn('out/Catalyst/Build/Products/Debug-maccatalyst/UXBench.app/Contents/MacOS/UXBench',[variant]);
+  const r={variant,evidence:'live_reader_macos_catalyst_NOT_iOS',steps:[]};
+  try{
+   await wait(4000);
+   r.tree=JSON.parse(execFileSync('out/probe',[String(p.pid),'tree'],{encoding:'utf8'}));
+   for(let i=0;i<26;i++){
+    await vo.clearSpokenPhraseLog();
+    await vo.press(i===0?'Meta+i':'Tab',{capture:'initial',application:'org.uxbench.ios'});
+    r.steps.push({kind:i===0?'anchor':'Tab',item:await vo.itemText(),phrases:await vo.spokenPhraseLog()});
+   }
+   r.positive=r.steps.some(s=>s.phrases.join(' ').includes('Imię'));
+   if(!r.positive)throw Error('Positive control failed');
+  }catch(e){r.error=String(e);process.exitCode=1;}
+  finally{fs.writeFileSync(`out/catalyst-${variant}.json`,JSON.stringify(r,null,2));p.kill('SIGTERM');}
+ }
+}finally{await vo.stop();}

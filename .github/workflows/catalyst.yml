@@ -1,0 +1,27 @@
+name: Catalyst przybliżenie
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  measure:
+    runs-on: macos-15
+    timeout-minutes: 25
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+      - run: mkdir -p out; sw_vers > out/versions.txt; xcodebuild -version >> out/versions.txt
+      - run: curl -fsSL https://github.com/yonaskolb/XcodeGen/releases/download/2.46.0/xcodegen.zip -o out/xcodegen.zip; unzip -q out/xcodegen.zip -d out/xcodegen; out/xcodegen/xcodegen/bin/xcodegen generate --spec ios/project.yml
+      - run: xcodebuild build -project ios/UXBench.xcodeproj -scheme UXBench -destination 'platform=macOS,variant=Mac Catalyst' -derivedDataPath out/Catalyst CODE_SIGNING_ALLOWED=NO 2>&1 | tee out/build.log; swiftc macos/Probe.swift -o out/probe
+      - run: npm ci --no-audit --no-fund; npx guidepup setup --ci; npx guidepup install voiceover
+        timeout-minutes: 6
+      - run: defaults write NSGlobalDomain AppleKeyboardUIMode -int 3; node macos/catalyst.mjs
+        timeout-minutes: 10
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: catalyst-measure
+          path: |
+            out/*.txt
+            out/*.json
+            out/*.log
