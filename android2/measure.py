@@ -57,7 +57,7 @@ class Harness:
     self.step('anchor-messages',lambda:self.control('anchor',target='search'));time.sleep(2)
     for mode in ['plain','polite','assertive','toast','snackbar']:
      self.step('single:'+mode,lambda m=mode:self.control('emit',mode=m,count=1),7)
-     for repeat in range(1,7):self.step(f'burst:{mode}:{repeat}',lambda m=mode:self.control('emit',mode=m,count=5),9)
+     for repeat in range(1,7):self.step(f'burst:{mode}:{repeat}',lambda m=mode:self.control('emit',mode=m,count=5),20 if mode=='toast' else 9)
    self.focus(first)
    if presentation=='RECYCLER':
     for i in range(1,5):self.focus('row_'+str(i))
@@ -112,6 +112,17 @@ def main():
  h.shell('settings','put','secure','enabled_accessibility_services',TALKBACK+':'+OBSERVER);time.sleep(12)
  h.shell('input','keyevent','4');h.shell('input','keyevent','3')
  for name,args in [('talkback-package.txt',('dumpsys','package','com.google.android.marvin.talkback')),('accessibility.txt',('dumpsys','accessibility')),('properties.txt',('getprop',))]:(h.out/name).write_text(h.shell(*args))
+ if os.environ.get('BENCH_TOAST_ONLY')=='true':
+  for variant in ['NAZWA','STAN']:
+   h.result={'variant':variant,'presentation':'TOAST','evidence':'live_reader','steps':[],'error':None}
+   h.shell('am','start','-f','0x10008000','-n',PKG+'/.MainActivity','--es','variant',variant);time.sleep(4)
+   p=h.step('positive-tts',lambda:h.control('probe'),5);h.result['tts_positive']=any('Kontrola kanału mowy' in x for x in p['phrases'])
+   h.focus('row_0');p=h.focus('search');h.result['reader_positive']=any('Szukaj' in x for x in p['phrases'])
+   if not h.result['tts_positive'] or not h.result['reader_positive']:raise RuntimeError('Toast controls failed')
+   h.step('single:toast',lambda:h.control('emit',mode='toast',count=1),20)
+   for repeat in range(1,7):h.step(f'burst:toast:{repeat}',lambda:h.control('emit',mode='toast',count=5),20)
+   h.focus('row_0');p=h.focus('search');h.result['reader_positive_after']=any('Szukaj' in x for x in p['phrases']);h.save()
+  return
  if os.environ.get('BENCH_GESTURES_ONLY')=='true':
   h.result={'variant':'GESTY','presentation':'EXTRA','evidence':'live_reader','steps':[],'error':None}
   h.shell('am','start','-f','0x10008000','-n',PKG+'/.MainActivity');time.sleep(4)
