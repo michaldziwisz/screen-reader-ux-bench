@@ -3,6 +3,19 @@ import {spawn,execFileSync} from 'node:child_process';
 import fs from 'node:fs';
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 const probe=(pid,tree=false)=>JSON.parse(execFileSync('out/probe',[String(pid),...(tree?['tree']:[])],{encoding:'utf8',timeout:5000}));
+// Guidepup capture odpytuje dopiero PO akcji. Dla serii potrzebny jest odczyt równoległy.
+async function sampleDuring(fn){
+ const samples=[];const baseline=await vo.lastSpokenPhrase();let done=false;let error=null;
+ const start=performance.now();const action=fn().then(()=>{done=true;},e=>{error=e;done=true;});
+ while(!done || performance.now()-start<1600){
+  const t=performance.now();try{samples.push({ms:t-start,text:await vo.lastSpokenPhrase()});}catch(e){samples.push({ms:t-start,error:String(e)});}
+  await wait(40);
+ }
+ await action;if(error)throw error;
+ let previous=baseline;const phrases=[];
+ for(const x of samples){if(x.text && x.text!==previous){phrases.push(x.text);previous=x.text;}}
+ return {baseline,samples,phrases,method:'concurrent last-phrase polling; lower bound, not speech queue'};
+}
 let seq=0;
 async function command(data){const c={...data,seq:String(++seq)};fs.writeFileSync('out/command.tmp',JSON.stringify(c));fs.renameSync('out/command.tmp','out/command.json');for(let i=0;i<80;i++){await wait(60);try{const s=JSON.parse(fs.readFileSync('out/state.json'));if(s.seq===c.seq)return s;}catch{}}throw Error('IPC acknowledgement missing');}
 let started=false;
@@ -19,8 +32,8 @@ try{
     const before=probe(proc.pid);if(before.front_pid!==proc.pid && !/voiceover/i.test(before.front_bundle))throw Error('PID gate '+JSON.stringify(before));
     await vo.clearSpokenPhraseLog();
     let captureResult=null;
-    if(full)captureResult=await vo.capture(fn,{capture:true,timeout:18000});else await fn();
-    const phrases=await vo.spokenPhraseLog();const item=await vo.itemText();
+    if(full)captureResult=await sampleDuring(fn);else await fn();
+    const phrases=full?captureResult.phrases:await vo.spokenPhraseLog();const item=await vo.itemText();
     const entry={kind,phrases,item,captureResult,words:phrases.join(' ').trim().split(/\s+/u).filter(Boolean).length,after:probe(proc.pid),app:await command({command:'state'})};
     r.steps.push(entry);save();return entry;
    }
@@ -50,8 +63,9 @@ try{
    await focus('search');await wait(2000);
    for(const mode of ['plain','low','medium','high']){
     await step('single:'+mode,()=>command({command:'emit',mode,count:1}).then(()=>wait(6000)),true);
-    for(let repeat=1;repeat<=6;repeat++)await step(`burst:${mode}:${repeat}`,()=>command({command:'emit',mode,count:5}).then(()=>wait(7000)),true);
+    for(let repeat=1;repeat<=6;repeat++){await key('burst-baseline','Control+Alt+F3');await step(`burst:${mode}:${repeat}`,()=>command({command:'emit',mode,count:5}).then(()=>wait(8000)),true);}
    }
+   await step('positive-paced-announcements',async()=>{for(let i=1;i<=5;i++){await command({command:'emit',mode:'high',count:1,text:`Kontrola ${i} z 5`});await wait(2500);}},true);
    await key('positive-reader-after','Control+Alt+F3');
    execFileSync('screencapture',['-x',`out/${variant}.png`]);
   }catch(e){r.error=String(e);process.exitCode=1;}

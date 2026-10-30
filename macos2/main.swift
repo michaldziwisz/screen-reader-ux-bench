@@ -49,7 +49,7 @@ final class Bench:NSObject,NSApplicationDelegate,NSTableViewDataSource,NSTableVi
   if cmd=="emit" {
    let mode=c["mode"] as? String ?? "plain";let count=c["count"] as? Int ?? 1
    let priority:NSAccessibilityPriorityLevel=mode=="low" ? .low : mode=="medium" ? .medium : .high
-   for i in 1...count {let text=count==1 ? "Kontrola komunikatu \(mode)" : "Plik \(i) z 5 skopiowany";status.stringValue=text;log("emit",["mode":mode,"text":text]);if mode != "plain" {NSAccessibility.post(element:status,notification:.announcementRequested,userInfo:[.announcement:text,.priority:priority.rawValue])}}
+   for i in 1...count {let text=count==1 ? (c["text"] as? String ?? "Kontrola komunikatu \(mode)") : "Plik \(i) z 5 skopiowany";status.stringValue=text;log("emit",["mode":mode,"text":text]);if mode != "plain" {NSAccessibility.post(element:status,notification:.announcementRequested,userInfo:[.announcement:text,.priority:priority.rawValue])}}
   }
   log("command",c)
   let state:[String:Any]=["seq":seq,"tableSelected":table.selectedRow,"outlineSelected":outline.selectedRow,"outlineRows":outline.numberOfRows,"detailsSelection":[details.selectedRange().location,details.selectedRange().length],"firstResponder":String(describing:window.firstResponder),"events":events]
