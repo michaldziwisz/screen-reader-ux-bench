@@ -8,7 +8,7 @@ final class BenchController:UIViewController,UICollectionViewDelegate {
  let variant=ProcessInfo.processInfo.arguments.contains("STAN") ? "STAN":"NAZWA"
  var cols:[String]{variant=="STAN" ? ["Stan","Rozmiar","Data","Nazwa"] : ["Nazwa","Data","Rozmiar","Stan"]}
  let names=["Dokumenty","Umowy","Najem","Praca","Faktury","2025","2026","Korekty","Raporty","Zdjęcia","Wakacje","Rodzina","Muzyka"]
- let children=[0:[1,4,8],1:[2,3],4:[5,6,7],9:[10,11]]
+ let folderChildren=[0:[1,4,8],1:[2,3],4:[5,6,7],9:[10,11]]
  var tree:UICollectionView!;var files:UICollectionView!;var source:UICollectionViewDiffableDataSource<Int,Int>!;var fileSource:UICollectionViewDiffableDataSource<Int,Int>!
  let status=UILabel();var events:[[String:Any]]=[];var fileSelected = -1
  func identify(_ v:UIView,_ id:String,_ label:String?=nil){v.accessibilityIdentifier=id;if let label=label {v.accessibilityLabel=label}}
@@ -27,7 +27,7 @@ final class BenchController:UIViewController,UICollectionViewDelegate {
   let fg=group("Foldery","folders");let pg=group("Pliki","files");middle.addArrangedSubview(fg);middle.addArrangedSubview(pg);fg.widthAnchor.constraint(equalToConstant:230).isActive=true
   var config=UICollectionLayoutListConfiguration(appearance:.plain);config.showsSeparators=true
   tree=UICollectionView(frame:.zero,collectionViewLayout:UICollectionViewCompositionalLayout.list(using:config));identify(tree,"folders","Foldery");tree.delegate=self;fg.addArrangedSubview(tree);tree.heightAnchor.constraint(equalToConstant:640).isActive=true
-  let registration=UICollectionView.CellRegistration<UICollectionViewListCell,Int>{cell,path,item in var content=cell.defaultContentConfiguration();content.text=self.names[item];content.textProperties.font = .systemFont(ofSize:15);cell.contentConfiguration=content;cell.accessibilityIdentifier="folder_\(item)";cell.accessories=self.children[item] == nil ? []:[.outlineDisclosure()]}
+  let registration=UICollectionView.CellRegistration<UICollectionViewListCell,Int>{cell,path,item in var content=cell.defaultContentConfiguration();content.text=self.names[item];content.textProperties.font = .systemFont(ofSize:15);cell.contentConfiguration=content;cell.accessibilityIdentifier="folder_\(item)";cell.accessories=self.folderChildren[item] == nil ? []:[.outlineDisclosure()]}
   source=UICollectionViewDiffableDataSource<Int,Int>(collectionView:tree){v,path,item in v.dequeueConfiguredReusableCell(using:registration,for:path,item:item)}
   var snapshot=NSDiffableDataSourceSectionSnapshot<Int>();snapshot.append([0,9,12]);snapshot.append([1,4,8],to:0);snapshot.append([2,3],to:1);snapshot.append([5,6,7],to:4);snapshot.append([10,11],to:9);source.apply(snapshot,to:0,animatingDifferences:false)
   files=UICollectionView(frame:.zero,collectionViewLayout:UICollectionViewCompositionalLayout.list(using:config));identify(files,"files","Pliki");files.delegate=self;pg.addArrangedSubview(files);files.heightAnchor.constraint(equalToConstant:640).isActive=true

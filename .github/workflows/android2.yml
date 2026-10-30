@@ -2,6 +2,9 @@ name: Pomiar 2 Android TalkBack
 on: workflow_dispatch
 permissions:
   contents: read
+defaults:
+  run:
+    shell: bash
 jobs:
   measure:
     runs-on: ubuntu-24.04

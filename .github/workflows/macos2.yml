@@ -2,6 +2,9 @@ name: Pomiar 2 macOS VoiceOver
 on: workflow_dispatch
 permissions:
   contents: read
+defaults:
+  run:
+    shell: bash
 jobs:
   measure:
     runs-on: macos-15
