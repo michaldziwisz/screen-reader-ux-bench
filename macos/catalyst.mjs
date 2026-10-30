@@ -12,7 +12,7 @@ try {
    r.tree=JSON.parse(execFileSync('out/probe',[String(p.pid),'tree'],{encoding:'utf8'}));
    for(let i=0;i<26;i++){
     await vo.clearSpokenPhraseLog();
-    await vo.press(i===0?'Meta+i':'Tab',{capture:'initial',application:'UXBench'});
+    await vo.press(i===0?'Meta+i':'Tab',{capture:'initial'});
     r.steps.push({kind:i===0?'anchor':'Tab',item:await vo.itemText(),phrases:await vo.spokenPhraseLog()});
    }
    r.positive=r.steps.some(s=>s.phrases.join(' ').includes('Imię'));

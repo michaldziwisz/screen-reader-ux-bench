@@ -2,7 +2,7 @@ import {voiceOver as vo} from '@guidepup/guidepup';
 import {spawn,execFileSync} from 'node:child_process';
 import fs from 'node:fs';
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
-const key=k=>vo.press(k,{capture:'initial',application:'UXBench'});
+const key=k=>vo.press(k,{capture:'initial'});
 fs.mkdirSync('out',{recursive:true});
 const probe=(pid,tree=false)=>JSON.parse(execFileSync('out/probe',[String(pid),...(tree?['tree']:[])],{encoding:'utf8',timeout:5000}));
 let started=false;
