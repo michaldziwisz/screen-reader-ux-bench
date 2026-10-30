@@ -1,6 +1,7 @@
 import AppKit
 import ApplicationServices
 let pid=pid_t(CommandLine.arguments[1])!
+if CommandLine.arguments.contains("activate") {NSRunningApplication(processIdentifier:pid)?.activate(options:[.activateAllWindows,.activateIgnoringOtherApps]);Thread.sleep(forTimeInterval:1)}
 let app=AXUIElementCreateApplication(pid)
 func attr(_ e:AXUIElement,_ a:String)->Any? {var v:CFTypeRef?;if AXUIElementCopyAttributeValue(e,a as CFString,&v) == .success{return v};return nil}
 func node(_ e:AXUIElement,_ depth:Int=0)->[String:Any] {

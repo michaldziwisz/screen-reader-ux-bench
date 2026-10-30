@@ -9,11 +9,12 @@ try {
   const r={variant,evidence:'live_reader_macos_catalyst_NOT_iOS',steps:[]};
   try{
    await wait(4000);
-   r.tree=JSON.parse(execFileSync('out/probe',[String(p.pid),'tree'],{encoding:'utf8'}));
+   r.tree=JSON.parse(execFileSync('out/probe',[String(p.pid),'activate','tree'],{encoding:'utf8'}));
+   if(r.tree.front_pid!==p.pid)throw Error('Catalyst activation failed');
    for(let i=0;i<26;i++){
     await vo.clearSpokenPhraseLog();
     await vo.press(i===0?'Meta+i':'Tab',{capture:'initial'});
-    r.steps.push({kind:i===0?'anchor':'Tab',item:await vo.itemText(),phrases:await vo.spokenPhraseLog()});
+    r.steps.push({kind:i===0?'anchor':'Tab',item:await vo.itemText(),phrases:await vo.spokenPhraseLog(),after:JSON.parse(execFileSync('out/probe',[String(p.pid)],{encoding:'utf8'}))});
    }
    r.positive=r.steps.some(s=>s.phrases.join(' ').includes('Imię'));
    if(!r.positive)throw Error('Positive control failed');
