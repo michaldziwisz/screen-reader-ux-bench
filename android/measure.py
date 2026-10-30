@@ -1,5 +1,6 @@
 """Pomiar w emulatorze CI. Nigdy nie uruchamiać na urządzeniu prywatnym."""
-import json, subprocess, time, re
+import json, subprocess, time, re, os
+if os.environ.get("CI")!="true":raise SystemExit("Pomiar dozwolony wyłącznie w CI")
 from pathlib import Path
 OUT=Path("out");OUT.mkdir(exist_ok=True)
 def adb(*args,check=True):
@@ -22,9 +23,12 @@ def parse(raw):
    except ValueError:pass
    records.append({"time":float(ts),"tag":tag,"payload":payload})
  return records
+if shell("getprop","ro.kernel.qemu").strip()!="1" or not adb("get-serialno").strip().startswith("emulator-"):
+ raise SystemExit("Odmowa: wymagany emulator")
 shell("settings","put","secure","tts_default_synth","org.uxbench")
 shell("settings","put","secure","tts_default_locale","org.uxbench:pl-PL")
 shell("settings","put","system","font_scale","1.0")
+shell("settings","put","secure","show_ime_with_hard_keyboard","0")
 shell("wm","size","1080x2400");shell("wm","density","160")
 services="com.google.android.marvin.talkback/.TalkBackService:org.uxbench/.Observer"
 shell("settings","put","secure","enabled_accessibility_services",services)
@@ -63,9 +67,13 @@ for variant in ["GRUPY","PLASKI"]:
   step("tree",lambda:control("tree"))
   if not r["tts_positive"] or not r["reader_positive"]:
    raise RuntimeError("Positive control failed")
-  for i in range(65): step("swipe-next",lambda:shell("input","swipe","350","900","800","900","120"))
-  step("anchor-tab",lambda:control("focus","Imię"))
-  for i in range(30):step("Tab",lambda:shell("input","keyevent","61"))
+  for i in range(3): step("swipe-next",lambda:shell("input","swipe","350","900","800","900","120"))
+  r["swipe_moved"]=any(x["tag"]=="UX_AX" and isinstance(x["payload"],dict) and x["payload"].get("event")==32768 for s in r["steps"] if s["kind"]=="swipe-next" for x in s["records"])
+  step("prepare-keyboard",lambda:control("focus","Nazwisko"))
+  step("anchor-reader-next",lambda:control("focus","Imię"))
+  for i in range(65):step("Alt-Right",lambda:shell("input","keycombination","57","22"))
+  step("anchor-tab",lambda:control("anchor"))
+  for i in range(65):step("Tab",lambda:shell("input","keyevent","61"))
   step("shortcut-Ctrl-S",lambda:shell("input","keycombination","113","47"))
   step("dialog-open",lambda:control("dialog"));step("dialog-tree-before",lambda:control("tree"))
   step("dialog-back",lambda:shell("input","keyevent","4"));step("dialog-tree-after",lambda:control("tree"))

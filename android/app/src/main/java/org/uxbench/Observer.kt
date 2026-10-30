@@ -43,6 +43,7 @@ class Control:BroadcastReceiver() {
    "focus" -> Observer.instance?.focus(i.getStringExtra("label") ?: "Imię")
    "dialog" -> MainActivity.instance?.dialog()
    "probe" -> MainActivity.instance?.probe()
+   "anchor" -> MainActivity.instance?.anchor()
   }
  }
 }

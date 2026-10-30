@@ -49,6 +49,7 @@ class MainActivity:Activity() {
   setContentView(ScrollView(this).apply {addView(outer)})
   fields["imie"]?.requestFocus()
  }
+ fun anchor(){fields["imie"]?.requestFocus();fields["imie"]?.performAccessibilityAction(AccessibilityNodeInfo.ACTION_ACCESSIBILITY_FOCUS,null);(getSystemService(INPUT_METHOD_SERVICE) as android.view.inputmethod.InputMethodManager).hideSoftInputFromWindow(window.decorView.windowToken,0)}
  fun dialog() {AlertDialog.Builder(this).setTitle("Potwierdzenie").setMessage("Czy na pewno wysłać zamówienie do realizacji?").setPositiveButton("Tak") {d,_->d.dismiss()}.setNegativeButton("Nie") {d,_->d.dismiss()}.show()}
  fun probe() {android.util.Log.i("UX_AX","PROBE_REQUEST");tts=TextToSpeech(this,{status-> android.util.Log.i("UX_AX","TTS_INIT $status");if(status==TextToSpeech.SUCCESS) tts?.speak("Kontrola kanału mowy",TextToSpeech.QUEUE_FLUSH,null,"probe")},"org.uxbench")}
  override fun onKeyShortcut(keyCode:Int,event:KeyEvent):Boolean {
