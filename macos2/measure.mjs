@@ -1,14 +1,17 @@
 import {voiceOver as vo} from '@guidepup/guidepup';
-import {spawn,execFileSync} from 'node:child_process';
+import {spawn,execFile,execFileSync} from 'node:child_process';
+import {promisify} from 'node:util';
+const execAsync=promisify(execFile);
+async function rawVO(property){return (await execAsync('osascript',['-e',`tell application "VoiceOver" to return ${property}`],{timeout:5000})).stdout.trim();}
 import fs from 'node:fs';
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 const probe=(pid,tree=false)=>JSON.parse(execFileSync('out/probe',[String(pid),...(tree?['tree']:[])],{encoding:'utf8',timeout:5000}));
 // Guidepup capture odpytuje dopiero PO akcji. Dla serii potrzebny jest odczyt równoległy.
 async function sampleDuring(fn){
- const samples=[];const baseline=await vo.lastSpokenPhrase();let done=false;let error=null;
+ const samples=[];const baseline=await rawVO('content of last phrase');let done=false;let error=null;
  const start=performance.now();const action=fn().then(()=>{done=true;},e=>{error=e;done=true;});
  while(!done || performance.now()-start<1600){
-  const t=performance.now();try{samples.push({ms:t-start,text:await vo.lastSpokenPhrase()});}catch(e){samples.push({ms:t-start,error:String(e)});}
+  const t=performance.now();try{samples.push({ms:t-start,text:await rawVO('content of last phrase')});}catch(e){samples.push({ms:t-start,error:String(e)});}
   await wait(40);
  }
  await action;if(error)throw error;
@@ -33,7 +36,7 @@ try{
     await vo.clearSpokenPhraseLog();
     let captureResult=null;
     if(full)captureResult=await sampleDuring(fn);else await fn();
-    const phrases=full?captureResult.phrases:await vo.spokenPhraseLog();const item=await vo.itemText();
+    const phrases=full?captureResult.phrases:await vo.spokenPhraseLog();const item=full?await rawVO('text under cursor of vo cursor'):await vo.itemText();
     const entry={kind,phrases,item,captureResult,words:phrases.join(' ').trim().split(/\s+/u).filter(Boolean).length,after:probe(proc.pid),app:await command({command:'state'})};
     r.steps.push(entry);save();return entry;
    }
