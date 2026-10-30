@@ -28,9 +28,11 @@ class MainActivity:Activity() {
   fields["szt"]=edit("szt","Liczba sztuk","1").apply {(this as EditText).inputType=2}
   fields["faktura"]=label(CheckBox(this).apply {text="Wystaw fakturę"},"faktura","Wystaw fakturę")
   fields["news"]=label(CheckBox(this).apply {text="Zapisz na newsletter"},"news","Zapisz na newsletter")
-  fields["lista"]=LinearLayout(this).apply {
-   orientation=LinearLayout.VERTICAL;contentDescription="Ostatnie zamówienia"
-   for(i in 1..8) addView(TextView(this@MainActivity).apply {text="Zamówienie $i";minimumHeight=32;isFocusable=true;setOnClickListener {isSelected=!isSelected}})
+  fields["lista"]=ListView(this).apply {
+   contentDescription="Ostatnie zamówienia"
+   adapter=ArrayAdapter(this@MainActivity,android.R.layout.simple_list_item_single_choice,(1..8).map {"Zamówienie $it"})
+   choiceMode=ListView.CHOICE_MODE_SINGLE
+   layoutParams=LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,384)
   }
   fields["zapisz"]=button("zapisz","Zapisz zamówienie") {title="Zapisano zamówienie";outer.announceForAccessibility("Zapisano zamówienie")}
   fields["anuluj"]=button("anuluj","Anuluj") {finish()}
