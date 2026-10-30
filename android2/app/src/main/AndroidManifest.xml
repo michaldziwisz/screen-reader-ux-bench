@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<queries><intent><action android:name="android.intent.action.TTS_SERVICE"/></intent></queries>
+<application android:label="UXPomiar2" android:theme="@style/BenchTheme" android:allowBackup="false">
+ <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="stateAlwaysHidden">
+  <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+ </activity>
+ <service android:name=".LogTts" android:exported="true">
+  <intent-filter><action android:name="android.intent.action.TTS_SERVICE"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
+  <meta-data android:name="android.speech.tts" android:resource="@xml/tts"/>
+ </service>
+ <service android:name=".Observer" android:exported="true" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+  <intent-filter><action android:name="android.accessibilityservice.AccessibilityService"/></intent-filter>
+  <meta-data android:name="android.accessibilityservice" android:resource="@xml/observer"/>
+ </service>
+ <receiver android:name=".Control" android:exported="true"><intent-filter><action android:name="org.uxbench2.CONTROL"/></intent-filter></receiver>
+</application>
+<instrumentation android:name=".GestureProbe" android:targetPackage="org.uxbench2" android:functionalTest="true"/>
+</manifest>

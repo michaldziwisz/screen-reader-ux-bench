@@ -1,0 +1,35 @@
+name: Pomiar 2 Android TalkBack
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  measure:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - run: mkdir -p out; printenv ImageOS ImageVersion > out/runner.txt; gradle -p android2 assembleDebug --console=plain 2>&1 | tee out/build.log
+      - run: sudo chmod 666 /dev/kvm
+      - uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          target: google_apis_playstore
+          arch: x86_64
+          profile: pixel_2
+          enable-hw-keyboard: true
+          emulator-boot-timeout: 600
+          script: adb install android2/app/build/outputs/apk/debug/app-debug.apk && python3 android2/measure.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: android2-measure
+          path: |
+            out/
+            android2/app/build/outputs/apk/debug/app-debug.apk
