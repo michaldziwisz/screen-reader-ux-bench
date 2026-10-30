@@ -70,7 +70,9 @@ try{
     await step('single:'+mode,()=>command({command:'emit',mode,count:1}).then(()=>wait(6000)),true);
     for(let repeat=1;repeat<=6;repeat++){await key('burst-baseline','Control+Alt+F3');await step(`burst:${mode}:${repeat}`,()=>command({command:'emit',mode,count:5}).then(()=>wait(8000)),true);}
    }
-   await step('positive-paced-announcements',async()=>{for(let i=1;i<=5;i++){await command({command:'emit',mode:'high',count:1,text:`Kontrola ${i} z 5`});await wait(2500);}},true);
+   const paced=await step('positive-paced-announcements',async()=>{for(let i=1;i<=5;i++){await command({command:'emit',mode:'high',count:1,text:`Kontrola ${i} z 5`});await wait(3000);}},true);
+   r.announcementCapturePositive=[1,2,3,4,5].every(i=>paced.phrases.some(p=>p.includes(`Kontrola ${i} z 5`)));
+   if(!r.announcementCapturePositive)throw Error('Announcement capture control failed');
    await key('positive-reader-after','Control+Alt+F3');
    execFileSync('screencapture',['-x',`out/${variant}.png`]);
   }catch(e){r.error=String(e);process.exitCode=1;}
