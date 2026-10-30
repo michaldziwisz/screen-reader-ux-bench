@@ -119,12 +119,12 @@ def main():
    p=h.step('positive-tts',lambda:h.control('probe'),5);h.result['tts_positive']=any('Kontrola kanału mowy' in x for x in p['phrases'])
    h.focus('row_0');p=h.focus('search');h.result['reader_positive']=any('Szukaj' in x for x in p['phrases'])
    if not h.result['tts_positive'] or not h.result['reader_positive']:raise RuntimeError('Readonly controls failed')
-   h.anchor('details','readonly:entry')
-   h.step('readonly:SET_TEXT',lambda:h.control('action',target='details',action='SET_TEXT'))
-   h.step('readonly:Home',lambda:h.key(122,True))
-   for _ in range(5):h.step('readonly:ArrowDown',lambda:h.key(20))
-   h.anchor('details','readonly:reset');h.step('readonly:Home',lambda:h.key(122,True))
-   h.step('readonly:ACTION_NEXT_LINE',lambda:h.control('action',target='details',action='NEXT_LINE'))
+   h.step('readonly:entry',lambda:h.control('anchor',target='details'));h.focus('details');h.step('readonly:tree',lambda:h.control('tree'))
+   h.step('readonly:SET_TEXT',lambda:h.control('action',target='details',action=2097152))
+   h.step('readonly:Home',lambda:h.combo('113','122'))
+   for _ in range(5):h.step('readonly:ArrowDown',lambda:h.key('20'))
+   h.step('readonly:reset',lambda:h.control('anchor',target='details'));h.step('readonly:Home',lambda:h.combo('113','122'))
+   h.step('readonly:ACTION_NEXT_LINE',lambda:h.control('action',target='details',action=256,granularity=4))
    h.focus('search');h.focus('details');p=h.focus('search');h.result['reader_positive_after']=any('Szukaj' in x for x in p['phrases']);h.save()
   return
  if os.environ.get('BENCH_TOAST_ONLY')=='true':
