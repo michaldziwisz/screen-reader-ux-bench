@@ -92,15 +92,22 @@ def main():
  if os.environ.get('CI')!='true':raise SystemExit('Ten punkt wejścia wymaga CI i emulatora; telefon: measure_device.py')
  h=Harness('out')
  if h.shell('getprop','ro.kernel.qemu').strip()!='1' or not h.adb('get-serialno').strip().startswith('emulator-'):raise SystemExit('Required emulator')
- h.shell('am','start','-n',PKG+'/.MainActivity');time.sleep(2)
+ (h.out/'startup-launch.txt').write_text(h.shell('am','start','-W','-n',PKG+'/.MainActivity'));time.sleep(4)
  h.shell('settings','put','secure','tts_default_synth',PKG);h.shell('settings','put','secure','tts_default_locale',PKG+':pl-PL')
  h.shell('settings','put','secure','show_ime_with_hard_keyboard','0');h.shell('wm','size','1080x2400');h.shell('wm','density','160')
  h.adb('shell','pm','grant','com.google.android.marvin.talkback','android.permission.POST_NOTIFICATIONS',check=False)
  h.shell('settings','put','secure','enabled_accessibility_services',OBSERVER);h.shell('settings','put','secure','accessibility_enabled','1')
- for _ in range(30):
+ for attempt in range(60):
   if 'OBSERVER_READY' in h.logs():break
+  if attempt==25:
+   h.shell('settings','put','secure','enabled_accessibility_services','')
+   h.shell('am','start','-W','-n',PKG+'/.MainActivity')
+   h.shell('settings','put','secure','enabled_accessibility_services',OBSERVER)
   time.sleep(1)
- else:raise RuntimeError('Observer not ready')
+ else:
+  (h.out/'startup-logcat.txt').write_text(h.adb('logcat','-d','-v','epoch'))
+  (h.out/'startup-accessibility.txt').write_text(h.shell('dumpsys','accessibility'))
+  raise RuntimeError('Observer not ready')
  h.shell('settings','put','secure','enabled_accessibility_services',TALKBACK+':'+OBSERVER);time.sleep(12)
  h.shell('input','keyevent','4');h.shell('input','keyevent','3')
  for name,args in [('talkback-package.txt',('dumpsys','package','com.google.android.marvin.talkback')),('accessibility.txt',('dumpsys','accessibility')),('properties.txt',('getprop',))]:(h.out/name).write_text(h.shell(*args))
