@@ -11,7 +11,7 @@ func node(_ e:AXUIElement,_ depth:Int=0)->[String:Any] {
  if depth<18, let children=attr(e,"AXChildren") as? [AXUIElement] {r["children"]=children.map{node($0,depth+1)}}
  return r
 }
-var result:[String:Any]=["pid":pid,"front_pid":NSWorkspace.shared.frontmostApplication?.processIdentifier ?? -1]
+var result:[String:Any]=["pid":pid,"front_pid":NSWorkspace.shared.frontmostApplication?.processIdentifier ?? -1,"front_bundle":NSWorkspace.shared.frontmostApplication?.bundleIdentifier ?? ""]
 if let focused=attr(app,"AXFocusedUIElement") {result["focus"]=node(focused as! AXUIElement)}
 if CommandLine.arguments.contains("tree") {result["tree"]=node(app)}
 print(String(data:try! JSONSerialization.data(withJSONObject:result,options:[.sortedKeys]),encoding:.utf8)!)
