@@ -30,10 +30,17 @@ shell("settings","put","secure","tts_default_locale","org.uxbench:pl-PL")
 shell("settings","put","system","font_scale","1.0")
 shell("settings","put","secure","show_ime_with_hard_keyboard","0")
 shell("wm","size","1080x2400");shell("wm","density","160")
+# Zgoda dotyczy wyłącznie powiadomień systemowego TalkBack w emulatorze.
+(OUT/"startup.txt").write_text(adb("shell","pm","grant","com.google.android.marvin.talkback","android.permission.POST_NOTIFICATIONS",check=False))
+shell("settings","put","secure","enabled_accessibility_services","org.uxbench/.Observer")
+shell("settings","put","secure","accessibility_enabled","1")
+for attempt in range(30):
+ if "OBSERVER_READY" in logs():break
+ time.sleep(1)
+else:raise RuntimeError("Obserwator nie uruchomił się w czasie kontrolnym")
 services="com.google.android.marvin.talkback/.TalkBackService:org.uxbench/.Observer"
 shell("settings","put","secure","enabled_accessibility_services",services)
-shell("settings","put","secure","accessibility_enabled","1")
-time.sleep(8)
+time.sleep(12)
 shell("input","keyevent","4");shell("input","keyevent","3")
 (OUT/"talkback-package.txt").write_text(shell("dumpsys","package","com.google.android.marvin.talkback"))
 (OUT/"accessibility.txt").write_text(shell("dumpsys","accessibility"))
@@ -71,7 +78,12 @@ for variant in ["GRUPY","PLASKI"]:
   r["swipe_moved"]=any(x["tag"]=="UX_AX" and isinstance(x["payload"],dict) and x["payload"].get("event")==32768 for s in r["steps"] if s["kind"]=="swipe-next" for x in s["records"])
   step("prepare-keyboard",lambda:control("focus","Nazwisko"))
   step("anchor-reader-next",lambda:control("focus","Imię"))
-  for i in range(65):step("Alt-Right",lambda:shell("input","keycombination","57","22"))
+  alt_moved=False
+  for i in range(65):
+   s=step("Alt-Right",lambda:shell("input","keycombination","57","22"))
+   alt_moved=alt_moved or any(x["tag"]=="UX_AX" and isinstance(x["payload"],dict) and x["payload"].get("event")==32768 for x in s["records"])
+   if i==2 and not alt_moved:break
+  r["alt_moved"]=alt_moved
   step("anchor-tab",lambda:control("anchor"))
   for i in range(65):step("Tab",lambda:shell("input","keyevent","61"))
   step("shortcut-Ctrl-S",lambda:shell("input","keycombination","113","47"))

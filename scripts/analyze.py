@@ -55,11 +55,65 @@ def ios(rid):
  assert len(out)==2
  return sorted(out,key=lambda x:x["variant"])
 
+LABELS={"imię":"imie","nazwisko":"nazw","kraj":"kraj","liczba sztuk":"szt","wystaw fakturę":"faktura","zapisz na newsletter":"news","kurier":"sposob_0","paczkomat":"sposob_1","odbiór osobisty":"sposob_2","ostatnie zamówienia":"lista","zapisz zamówienie":"zapisz","anuluj":"anuluj","pokaż komunikat":"komunikat","zapisz jako plik":"plik"}
+def android_id(n):
+ t=(n.get("label") or n.get("text","")).casefold()
+ if t.startswith("zamówienie "):return "order_"+t.split()[-1]
+ return LABELS.get(t,t)
+def android_records(s,tag):return [r for r in s["records"] if r["tag"]==tag and isinstance(r["payload"],dict)]
+def android_text(s):
+ mark=next((r["time"] for r in s["records"] if r["tag"]=="UXMARK"),None)
+ return " ".join(r["payload"]["text"] for r in android_records(s,"UX_TTS") if mark is None or r["time"]>=mark)
+def android(rid):
+ out=[]
+ for v in ["GRUPY","PLASKI"]:
+  p=Path(f"wyniki/android/{rid}/android-measure/{v}.json");d=load(p)
+  assert d["tts_positive"] and d["reader_positive"] and not d["error"]
+  def sequence(kind,anchor_name):
+   anchor=next(s for s in d["steps"] if s["kind"]==anchor_name)
+   candidates=android_records(anchor,"UX_AX")
+   node=next((r["payload"]["node"] for r in reversed(candidates) if r["payload"].get("event") in [8,32768]),{"label":"Imię","role":"android.widget.EditText"})
+   seq=[{"id":"imie","label":"Imię","role":"android.widget.EditText","text":android_text(anchor),"words":words(android_text(anchor)),"action":anchor_name,"anchor_requested":True}]
+   for s in d["steps"]:
+    if s["kind"]!=kind:continue
+    records=android_records(s,"UX_AX")
+    events=[r["payload"]["node"] for r in records if r["payload"].get("event")== (8 if kind=="Tab" else 32768) and "node"in r["payload"]]
+    if not events:events=[r["payload"]["node"] for r in records if r["payload"].get("event")==32768 and "node"in r["payload"]]
+    if events:node=events[-1]
+    t=android_text(s)
+    seq.append({"id":android_id(node),"label":node.get("label",node.get("text","")),"value":node.get("text",""),"role":node["role"],"text":t,"words":words(t),"action":kind,"focus_event":bool(events),"marker_to_tts_ms":s["marker_to_tts_ms"],"state":{k:node.get(k) for k in ["enabled","checked","selected"]}})
+   return seq
+  seq=sequence("Tab","anchor-tab")
+  alt=sequence("Alt-Right","anchor-reader-next") if any(s["kind"]=="Alt-Right" for s in d["steps"]) else []
+  tree=[r["payload"] for s in d["steps"] if s["kind"]=="tree" for r in android_records(s,"UX_TREE")]
+  before=[r["payload"] for s in d["steps"] if s["kind"]=="dialog-tree-before" for r in android_records(s,"UX_TREE")]
+  after=[r["payload"] for s in d["steps"] if s["kind"]=="dialog-tree-after" for r in android_records(s,"UX_TREE")]
+  nswipes=sum(s["kind"]=="swipe-next" for s in d["steps"])
+  moved=sum(any(r["payload"].get("event")==32768 for r in android_records(s,"UX_AX")) for s in d["steps"] if s["kind"]=="swipe-next")
+  lat=[s["marker_to_tts_ms"] for s in seq[1:] if s["marker_to_tts_ms"] is not None and s["marker_to_tts_ms"]>=0]
+  data={"platform":"android","variant":v,"evidence":"live_reader_TTS_input","source":source(p,rid),"stops":seq,"summary":summary(seq),"reader_next":alt,"reader_next_summary":summary(alt),"tree":tree,"swipe_attempts":nswipes,"swipe_focus_events":moved,"dialog_closed":any(n["text"]=="TAK" for n in before) and not any(n["text"]=="TAK" for n in after),"shortcut_saved":any("Zapisano zamówienie"in android_text(s) for s in d["steps"] if s["kind"]=="shortcut-Ctrl-S"),"marker_to_tts_median_ms":statistics.median(lat) if lat else None,"marker_to_tts_n":len(lat)}
+  data["cycle_length"]=next((i for i,s in enumerate(seq[1:],1) if s["id"]=="imie"),None)
+  cycle=seq[1:data["cycle_length"]+1] if data["cycle_length"] else seq[1:]
+  data["cycle_words_median"]=statistics.median(s["words"] for s in cycle)
+  save(f"results/android-{v}.json",d);out.append(data)
+ return out
+
+def catalyst(rid):
+ out=[]
+ for v in ["GRUPY","PLASKI"]:
+  p=Path(f"wyniki/catalyst/{rid}/catalyst-measure/catalyst-{v}.json");d=load(p)
+  seq=[stop_mac(s) for s in d["steps"]]
+  data={"platform":"catalyst","variant":v,"source":source(p,rid),"evidence":"live_macos_reader_NOT_iOS_partial","stops":seq,"focused_ids":sorted(set(s["id"] for s in seq)),"empty_windows":sum(not s["text"] for s in seq),"positive":d.get("positive"),"error":d.get("error")}
+  save(f"results/catalyst-{v}.json",d);out.append(data)
+ return out
+
 def main():
- ap=argparse.ArgumentParser();ap.add_argument("--macos");ap.add_argument("--ios");a=ap.parse_args()
+ ap=argparse.ArgumentParser();ap.add_argument("--macos");ap.add_argument("--ios");ap.add_argument("--android");ap.add_argument("--catalyst");a=ap.parse_args()
  out=[]
  if a.macos:out+=macos(a.macos)
  if a.ios:out+=ios(a.ios)
+ if a.android:out+=android(a.android)
+ if a.catalyst:out+=catalyst(a.catalyst)
  save("results/summary.json",out)
  for d in out:print(d["platform"],d["variant"],len(d["stops"]),d.get("summary",d.get("bidirectional_model")))
 if __name__=="__main__":main()
