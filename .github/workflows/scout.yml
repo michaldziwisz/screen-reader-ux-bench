@@ -1,0 +1,45 @@
+name: Rozpoznanie CI
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  android:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: mkdir -p out
+      - run: sudo chmod 666 /dev/kvm
+      - uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          target: google_apis_playstore
+          arch: x86_64
+          profile: pixel_2
+          emulator-boot-timeout: 600
+          script: adb shell getprop > out/android-properties.txt; adb shell pm list packages > out/packages.txt; adb shell dumpsys package com.google.android.marvin.talkback > out/talkback.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: android-scout
+          path: out/
+  apple:
+    runs-on: macos-15
+    timeout-minutes: 15
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+      - run: mkdir -p out; sw_vers > out/macos.txt; xcodebuild -version > out/xcode.txt; xcrun simctl list --json > out/simulators.json; printenv ImageOS ImageVersion >> out/macos.txt
+      - run: npm install --no-audit --no-fund
+      - run: npx guidepup setup --ci
+        timeout-minutes: 5
+      - run: npx guidepup install voiceover
+        timeout-minutes: 3
+      - run: node scripts/scout.mjs
+        timeout-minutes: 3
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: apple-scout
+          path: out/

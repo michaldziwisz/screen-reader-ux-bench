@@ -1,0 +1,11 @@
+wyniki/
+node_modules/
+.cache/
+**/build/
+**/.gradle/
+**/local.properties
+DerivedData/
+out/
+*.xcresult
+*.xcodeproj/
+__pycache__/
