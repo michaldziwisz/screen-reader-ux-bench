@@ -25,6 +25,9 @@ def parse(raw):
  return records
 if shell("getprop","ro.kernel.qemu").strip()!="1" or not adb("get-serialno").strip().startswith("emulator-"):
  raise SystemExit("Odmowa: wymagany emulator")
+# Pierwsze uruchomienie usuwa stan pakietu „stopped” po instalacji.
+shell("am","start","-n","org.uxbench/.MainActivity","--es","variant","GRUPY")
+time.sleep(2)
 shell("settings","put","secure","tts_default_synth","org.uxbench")
 shell("settings","put","secure","tts_default_locale","org.uxbench:pl-PL")
 shell("settings","put","system","font_scale","1.0")
@@ -37,7 +40,10 @@ shell("settings","put","secure","accessibility_enabled","1")
 for attempt in range(30):
  if "OBSERVER_READY" in logs():break
  time.sleep(1)
-else:raise RuntimeError("Obserwator nie uruchomił się w czasie kontrolnym")
+else:
+ (OUT/"startup-logcat.txt").write_text(adb("logcat","-d","-v","epoch"))
+ (OUT/"startup-accessibility.txt").write_text(shell("dumpsys","accessibility"))
+ raise RuntimeError("Obserwator nie uruchomił się w czasie kontrolnym")
 services="com.google.android.marvin.talkback/.TalkBackService:org.uxbench/.Observer"
 shell("settings","put","secure","enabled_accessibility_services",services)
 time.sleep(12)
@@ -84,6 +90,20 @@ for variant in ["GRUPY","PLASKI"]:
    alt_moved=alt_moved or any(x["tag"]=="UX_AX" and isinstance(x["payload"],dict) and x["payload"].get("event")==32768 for x in s["records"])
    if i==2 and not alt_moved:break
   r["alt_moved"]=alt_moved
+  if not alt_moved:
+   (OUT/"emulator-event-codes.txt").write_text(adb("emu","event","codes","EV_KEY"))
+   step("prepare-hardware",lambda:control("focus","Nazwisko"))
+   step("anchor-hardware",lambda:control("focus","Imię"))
+   def hardware_next():
+    adb("emu","event","send","EV_KEY:KEY_LEFTALT:1","EV_KEY:KEY_RIGHT:1","EV_SYN:SYN_REPORT:0")
+    time.sleep(0.08)
+    adb("emu","event","send","EV_KEY:KEY_RIGHT:0","EV_KEY:KEY_LEFTALT:0","EV_SYN:SYN_REPORT:0")
+   hardware_moved=False
+   for i in range(65):
+    s=step("hardware-Alt-Right",hardware_next)
+    hardware_moved=hardware_moved or any(x["tag"]=="UX_AX" and isinstance(x["payload"],dict) and x["payload"].get("event")==32768 for x in s["records"])
+    if i==2 and not hardware_moved:break
+   r["hardware_moved"]=hardware_moved
   step("anchor-tab",lambda:control("anchor"))
   for i in range(65):step("Tab",lambda:shell("input","keyevent","61"))
   step("shortcut-Ctrl-S",lambda:shell("input","keycombination","113","47"))
