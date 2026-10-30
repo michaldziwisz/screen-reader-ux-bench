@@ -3,7 +3,9 @@ import json, subprocess, time, re
 from pathlib import Path
 OUT=Path("out");OUT.mkdir(exist_ok=True)
 def adb(*args,check=True):
- return subprocess.run(["adb",*args],check=check,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=30).stdout
+ r=subprocess.run(["adb",*args],check=False,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=30)
+ if check and r.returncode:raise RuntimeError(str(args)+": "+r.stdout)
+ return r.stdout
 def shell(*args):return adb("shell",*args)
 def control(command,label=None):
  args=["am","broadcast","-n","org.uxbench/.Control","--es","command",command]
@@ -50,10 +52,11 @@ for variant in ["GRUPY","PLASKI"]:
   entry={"kind":kind,"phrases":phrases,"words":len(" ".join(phrases).split()),"marker_to_tts_ms":round((first-mark)*1000,3) if mark and first else None,"records":records}
   r["steps"].append(entry);save();return entry
  try:
-  shell("am","start","--activity-clear-task","--activity-new-task","-n","org.uxbench/.MainActivity","--es","variant",variant)
+  shell("am","start","-f","0x10008000","-n","org.uxbench/.MainActivity","--es","variant",variant)
   time.sleep(3)
   probe=step("tts-control",lambda:control("probe"))
   r["tts_positive"]=any("Kontrola kanału mowy" in x for x in probe["phrases"])
+  step("prepare-anchor",lambda:control("focus","Nazwisko"))
   anchor=step("anchor",lambda:control("focus","Imię"))
   # Odrębna kontrola czytnika, nie tylko wywołania TTS z aplikacji.
   r["reader_positive"]=any("Imię" in x for x in anchor["phrases"])

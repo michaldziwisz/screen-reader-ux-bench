@@ -5,7 +5,7 @@
   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
  </activity>
  <service android:name=".LogTts" android:exported="true">
-  <intent-filter><action android:name="android.intent.action.TTS_SERVICE"/></intent-filter>
+  <intent-filter><action android:name="android.intent.action.TTS_SERVICE"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
   <meta-data android:name="android.speech.tts" android:resource="@xml/tts"/>
  </service>
  <service android:name=".Observer" android:exported="true" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
