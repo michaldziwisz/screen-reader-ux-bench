@@ -13,7 +13,7 @@ import org.json.*
 
 class MainActivity:Activity() {
  companion object { var instance:MainActivity?=null }
- lateinit var root:LinearLayout;lateinit var search:EditText;lateinit var details:EditText;lateinit var status:TextView;lateinit var tts:TextToSpeech
+ lateinit var root:LinearLayout;lateinit var search:EditText;lateinit var details:TextView;lateinit var status:TextView;lateinit var tts:TextToSpeech
  var selectedRow=-1;var selectedFolder="";var variant="NAZWA";var presentation="RECYCLER"
  lateinit var records:JSONArray;val cols get()=if(variant=="STAN") listOf("Stan","Rozmiar","Data","Nazwa") else listOf("Nazwa","Data","Rozmiar","Stan")
  data class Folder(val number:Int,val name:String,val children:List<Folder> = emptyList(),var expanded:Boolean=false)
@@ -42,7 +42,7 @@ class MainActivity:Activity() {
    val rv=RecyclerView(this);rv.layoutManager=LinearLayoutManager(this);rv.isNestedScrollingEnabled=false;identify(rv,"files");rv.adapter=FileAdapter();pg.addView(rv,LinearLayout.LayoutParams(-1,640))
   }
   pg.addView(Button(this).apply {text="Dalej";identify(this,"after_files")})
-  val dg=section("Szczegóły");details=EditText(this);details.setText(f.getString("details"));details.inputType=android.text.InputType.TYPE_CLASS_TEXT or android.text.InputType.TYPE_TEXT_FLAG_MULTI_LINE;details.keyListener=null;details.setTextIsSelectable(true);details.contentDescription="Szczegóły";identify(details,"details");dg.addView(details)
+  val dg=section("Szczegóły");details=TextView(this);details.text=f.getString("details");details.setTextIsSelectable(true);details.contentDescription="Szczegóły";identify(details,"details");dg.addView(details)
   status=text("Gotowe");identify(status,"status");root.addView(status)
   tts=TextToSpeech(this,{},packageName);search.requestFocus();log("ready",JSONObject().put("variant",variant).put("presentation",presentation).put("records",records.length()))
  }
@@ -60,7 +60,7 @@ class MainActivity:Activity() {
   status.accessibilityLiveRegion=when(mode){"polite"->View.ACCESSIBILITY_LIVE_REGION_POLITE;"assertive"->View.ACCESSIBILITY_LIVE_REGION_ASSERTIVE;else->View.ACCESSIBILITY_LIVE_REGION_NONE}
   for(i in 1..count){val s=if(count==1)"Kontrola komunikatu $mode" else "Plik $i z 5 skopiowany";log("emit",JSONObject().put("mode",mode).put("text",s));when(mode){"toast"->Toast.makeText(this,s,Toast.LENGTH_SHORT).show();"snackbar"->Snackbar.make(root,s,Snackbar.LENGTH_SHORT).show();else->status.text=s}}
  }
- fun state(){log("state",JSONObject().put("selectedRow",selectedRow).put("selectedFolder",selectedFolder).put("detailsSelectionStart",details.selectionStart).put("detailsSelectionEnd",details.selectionEnd).put("focusId",currentFocus?.let{runCatching{resources.getResourceEntryName(it.id)}.getOrDefault("unknown") }?:""))}
+ fun state(){log("state",JSONObject().put("selectedRow",selectedRow).put("selectedFolder",selectedFolder).put("detailsText",details.text.toString()).put("detailsSelectionStart",details.selectionStart).put("detailsSelectionEnd",details.selectionEnd).put("focusId",currentFocus?.let{runCatching{resources.getResourceEntryName(it.id)}.getOrDefault("unknown") }?:""))}
  fun rebuildTree(){visible.clear();fun visit(nodes:List<Folder>,depth:Int){for(n in nodes){visible.add(n to depth);if(n.expanded)visit(n.children,depth+1)}};visit(folders,0);treeAdapter.notifyDataSetChanged()}
  inner class Holder(val t:TextView):RecyclerView.ViewHolder(t)
  inner class FileAdapter:RecyclerView.Adapter<Holder>() {

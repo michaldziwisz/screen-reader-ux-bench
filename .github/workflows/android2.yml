@@ -4,9 +4,10 @@ on:
     inputs:
       scenario:
         type: choice
-        options: [full, gestures, toast]
+        options: [full, gestures, toast, readonly]
         default: full
 env:
+  BENCH_READONLY_ONLY: ${{ inputs.scenario == 'readonly' && 'true' || 'false' }}
   BENCH_TOAST_ONLY: ${{ inputs.scenario == 'toast' && 'true' || 'false' }}
   BENCH_GESTURES_ONLY: ${{ inputs.scenario == 'gestures' && 'true' || 'false' }}
 permissions:

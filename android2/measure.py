@@ -112,6 +112,21 @@ def main():
  h.shell('settings','put','secure','enabled_accessibility_services',TALKBACK+':'+OBSERVER);time.sleep(12)
  h.shell('input','keyevent','4');h.shell('input','keyevent','3')
  for name,args in [('talkback-package.txt',('dumpsys','package','com.google.android.marvin.talkback')),('accessibility.txt',('dumpsys','accessibility')),('properties.txt',('getprop',))]:(h.out/name).write_text(h.shell(*args))
+ if os.environ.get('BENCH_READONLY_ONLY')=='true':
+  for variant in ['NAZWA','STAN']:
+   h.result={'variant':variant,'presentation':'READONLY','evidence':'live_reader','steps':[],'error':None}
+   h.shell('am','start','-f','0x10008000','-n',PKG+'/.MainActivity','--es','variant',variant);time.sleep(4)
+   p=h.step('positive-tts',lambda:h.control('probe'),5);h.result['tts_positive']=any('Kontrola kanału mowy' in x for x in p['phrases'])
+   h.focus('row_0');p=h.focus('search');h.result['reader_positive']=any('Szukaj' in x for x in p['phrases'])
+   if not h.result['tts_positive'] or not h.result['reader_positive']:raise RuntimeError('Readonly controls failed')
+   h.anchor('details','readonly:entry')
+   h.step('readonly:SET_TEXT',lambda:h.control('action',target='details',action='SET_TEXT'))
+   h.step('readonly:Home',lambda:h.key(122,True))
+   for _ in range(5):h.step('readonly:ArrowDown',lambda:h.key(20))
+   h.anchor('details','readonly:reset');h.step('readonly:Home',lambda:h.key(122,True))
+   h.step('readonly:ACTION_NEXT_LINE',lambda:h.control('action',target='details',action='NEXT_LINE'))
+   h.focus('search');h.focus('details');p=h.focus('search');h.result['reader_positive_after']=any('Szukaj' in x for x in p['phrases']);h.save()
+  return
  if os.environ.get('BENCH_TOAST_ONLY')=='true':
   for variant in ['NAZWA','STAN']:
    h.result={'variant':variant,'presentation':'TOAST','evidence':'live_reader','steps':[],'error':None}
