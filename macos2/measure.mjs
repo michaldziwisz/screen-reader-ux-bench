@@ -43,6 +43,8 @@ try{
    const key=(kind,k)=>step(kind,()=>vo.press(k,{capture:'initial'}));
    const focus=target=>step('focus-'+target,()=>command({command:'focus',target}).then(()=>wait(400)),true);
    await focus('search');const positive=await key('positive-reader','Control+Alt+F3');r.positive=positive.phrases.join(' ').includes('Szukaj');if(!r.positive)throw Error('Positive reader control failed');
+   r.rawCaptureControl=await sampleDuring(async()=>{await command({command:'focus',target:'details'});await wait(1200);await command({command:'focus',target:'search'});await wait(1200);});
+   if(!r.rawCaptureControl.phrases.some(x=>x.includes('Szukaj')))throw Error('Raw VoiceOver capture control failed');
    for(let i=0;i<20;i++)await key('Tab-cycle','Tab');
    await focus('details');for(let i=0;i<16;i++){const x=await key('details-to-search:Tab','Tab');if(x.after.focus?.AXIdentifier==='search')break;}
    for(const k of ['F6','Control+F6','Shift+F6']){await focus('details');for(let i=0;i<3;i++)await key('area:'+k,k);}

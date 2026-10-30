@@ -13,21 +13,21 @@ final class Bench:NSObject,NSApplicationDelegate,NSTableViewDataSource,NSTableVi
  func id(_ v:NSView,_ name:String,_ label:String) {v.identifier=NSUserInterfaceItemIdentifier(name);v.setAccessibilityIdentifier(name);v.setAccessibilityLabel(label)}
  func group(_ title:String,_ frame:NSRect)->NSView {let v=NSView(frame:frame);v.setAccessibilityElement(true);v.setAccessibilityRole(.group);id(v,"group_"+title,title);return v}
  func applicationDidFinishLaunching(_ n:Notification) {
-  window=NSWindow(contentRect:NSRect(x:40,y:40,width:1200,height:780),styleMask:[.titled,.closable,.resizable],backing:.buffered,defer:false);window.title="UXPomiar2"
-  let root=NSView(frame:NSRect(x:0,y:0,width:1200,height:780));window.contentView=root
-  let tools=group("Narzędzia",NSRect(x:10,y:710,width:1180,height:60));root.addSubview(tools)
+  window=NSWindow(contentRect:NSRect(x:10,y:40,width:1000,height:680),styleMask:[.titled,.closable,.resizable],backing:.buffered,defer:false);window.title="UXPomiar2"
+  let root=NSView(frame:NSRect(x:0,y:0,width:1000,height:680));window.contentView=root
+  let tools=group("Narzędzia",NSRect(x:10,y:610,width:980,height:60));root.addSubview(tools)
   for (i,name) in ["Nowy","Otwórz","Zapisz","Usuń","Kopiuj","Wklej"].enumerated() {let b=NSButton(title:name,target:nil,action:nil);b.frame=NSRect(x:i*90,y:12,width:86,height:32);id(b,"button_\(i)",name);tools.addSubview(b)}
   search.frame=NSRect(x:560,y:14,width:340,height:28);id(search,"search","Szukaj");tools.addSubview(search)
-  let split=NSSplitView(frame:NSRect(x:10,y:190,width:1180,height:510));split.isVertical=true;split.dividerStyle = .thin;id(split,"split","Foldery i pliki");root.addSubview(split)
-  let folders=group("Foldery",NSRect(x:0,y:0,width:280,height:510));let files=group("Pliki",NSRect(x:281,y:0,width:899,height:510));split.addSubview(folders);split.addSubview(files)
+  let split=NSSplitView(frame:NSRect(x:10,y:190,width:980,height:410));split.isVertical=true;split.dividerStyle = .thin;id(split,"split","Foldery i pliki");root.addSubview(split)
+  let folders=group("Foldery",NSRect(x:0,y:0,width:240,height:410));let files=group("Pliki",NSRect(x:241,y:0,width:739,height:410));split.addSubview(folders);split.addSubview(files)
   let oc=NSTableColumn(identifier:NSUserInterfaceItemIdentifier("folder"));oc.title="Folder";outline.addTableColumn(oc);outline.outlineTableColumn=oc;outline.headerView=nil;outline.dataSource=self;outline.delegate=self;outline.rowHeight=25;id(outline,"outline","Foldery");outline.allowsEmptySelection=false
   let os=NSScrollView(frame:folders.bounds);os.autoresizingMask=[.width,.height];os.hasVerticalScroller=true;os.documentView=outline;folders.addSubview(os)
-  for name in columns {let col=NSTableColumn(identifier:NSUserInterfaceItemIdentifier(name));col.title=name;col.width=name=="Nazwa" ? 275:170;col.isEditable=false;table.addTableColumn(col)}
+  for name in columns {let col=NSTableColumn(identifier:NSUserInterfaceItemIdentifier(name));col.title=name;col.width=name=="Nazwa" ? 235 : name=="Data" ? 145 : name=="Rozmiar" ? 115 : 160;col.isEditable=false;table.addTableColumn(col)}
   table.dataSource=self;table.delegate=self;table.rowHeight=23;table.allowsMultipleSelection=false;table.allowsEmptySelection=false;id(table,"table","Pliki")
   let ts=NSScrollView(frame:files.bounds);ts.autoresizingMask=[.width,.height];ts.hasVerticalScroller=true;ts.hasHorizontalScroller=true;ts.documentView=table;files.addSubview(ts)
-  let dg=group("Szczegóły",NSRect(x:10,y:35,width:1180,height:145));root.addSubview(dg)
+  let dg=group("Szczegóły",NSRect(x:10,y:35,width:980,height:145));root.addSubview(dg)
   let ds=NSScrollView(frame:NSRect(x:0,y:0,width:800,height:145));ds.hasVerticalScroller=true;details.frame=ds.bounds;details.isEditable=false;details.isSelectable=true;details.string=detailsText;details.font=NSFont.systemFont(ofSize:15);id(details,"details","Szczegóły");ds.documentView=details;dg.addSubview(ds)
-  status.frame=NSRect(x:10,y:4,width:1180,height:26);id(status,"status","Stan operacji");root.addSubview(status)
+  status.frame=NSRect(x:10,y:4,width:980,height:26);id(status,"status","Stan operacji");root.addSubview(status)
   window.makeKeyAndOrderFront(nil);NSApp.activate(ignoringOtherApps:true);table.selectRowIndexes(IndexSet(integer:0),byExtendingSelection:false);outline.selectRowIndexes(IndexSet(integer:0),byExtendingSelection:false);window.makeFirstResponder(search)
   NSEvent.addLocalMonitorForEvents(matching:.keyDown) {e in self.log("key",["code":e.keyCode,"flags":e.modifierFlags.rawValue]);return e}
   clock=Timer.scheduledTimer(withTimeInterval:0.06,repeats:true) {_ in self.poll()}
