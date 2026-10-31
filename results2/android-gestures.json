@@ -1,0 +1,1510 @@
+{
+  "variant": "GESTY",
+  "presentation": "EXTRA",
+  "evidence": "live_reader",
+  "steps": [
+    {
+      "kind": "focus:row_0",
+      "phrases": [
+        "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany, 1 of 20, In list, 20 items",
+        "Double-tap to activate"
+      ],
+      "words": 20,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/row_0",
+          "label": "",
+          "text": "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany",
+          "role": "android.widget.TextView",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            1,
+            128,
+            16,
+            16908342,
+            256,
+            512,
+            131072
+          ],
+          "item": {
+            "row": 0,
+            "column": 0
+          }
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793401941.987,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793401942.062,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "row_0",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793401942.349,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401942349,
+            "elapsed_ms": 73180,
+            "text": "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany, 1 of 20, In list, 20 items",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401942.885,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401942885,
+            "elapsed_ms": 73717,
+            "text": "Double-tap to activate",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401943.821,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:search",
+      "phrases": [
+        "Editing, Szukaj, Edit box, Out of list",
+        "Double-tap and hold to long press"
+      ],
+      "words": 13,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/search",
+          "label": "Szukaj",
+          "text": "Szukaj",
+          "role": "android.widget.EditText",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": true,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": true,
+          "actions": [
+            4,
+            8,
+            2,
+            128,
+            16,
+            32,
+            16908342,
+            2097152,
+            16908372
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793401945.094,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793401945.107,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "search",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793401945.225,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401945225,
+            "elapsed_ms": 76057,
+            "text": "Editing, Szukaj, Edit box, Out of list",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401945.761,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401945761,
+            "elapsed_ms": 76592,
+            "text": "Double-tap and hold to long press",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401946.743,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:search",
+      "phrases": [
+        "Google Play Protect is turned on, This feature protects your device from harmful apps"
+      ],
+      "words": 14,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793401948.218,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793401948.234,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "search",
+            "action": 64,
+            "ok": false
+          }
+        },
+        {
+          "time": 1793401948.472,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401948472,
+            "elapsed_ms": 79304,
+            "text": "Google Play Protect is turned on, This feature protects your device from harmful apps",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401949.821,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-control:headings",
+      "phrases": [
+        "Proofread"
+      ],
+      "words": 1,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793401951.447,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401951.463,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true cycle"
+        },
+        {
+          "time": 1793401951.884,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed cycle"
+        },
+        {
+          "time": 1793401952.265,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401952265,
+            "elapsed_ms": 83097,
+            "text": "Proofread",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401953.077,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-control:headings",
+      "phrases": [
+        "swipe up or swipe down for suggestions.",
+        "",
+        "Speech rate",
+        "swipe up or swipe down to adjust the setting"
+      ],
+      "words": 18,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793401954.974,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401954974,
+            "elapsed_ms": 85806,
+            "text": "swipe up or swipe down for suggestions.",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401955.041,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401955.064,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true cycle"
+        },
+        {
+          "time": 1793401955.105,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401955105,
+            "elapsed_ms": 85937,
+            "text": "",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401955.463,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed cycle"
+        },
+        {
+          "time": 1793401955.559,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401955559,
+            "elapsed_ms": 86391,
+            "text": "Speech rate",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401956.1,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401956100,
+            "elapsed_ms": 86932,
+            "text": "swipe up or swipe down to adjust the setting",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401956.672,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-control:headings",
+      "phrases": [
+        "Links",
+        "swipe up or swipe down to read by links"
+      ],
+      "words": 10,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793401959.163,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401959.177,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true cycle"
+        },
+        {
+          "time": 1793401959.577,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed cycle"
+        },
+        {
+          "time": 1793401959.625,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401959625,
+            "elapsed_ms": 90456,
+            "text": "Links",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401960.251,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401960251,
+            "elapsed_ms": 91083,
+            "text": "swipe up or swipe down to read by links",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401960.76,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-control:headings",
+      "phrases": [
+        "Controls",
+        "swipe up or swipe down to read by controls"
+      ],
+      "words": 10,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793401962.171,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401962.206,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true cycle"
+        },
+        {
+          "time": 1793401962.613,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed cycle"
+        },
+        {
+          "time": 1793401962.765,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401962765,
+            "elapsed_ms": 93597,
+            "text": "Controls",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401963.392,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401963392,
+            "elapsed_ms": 94224,
+            "text": "swipe up or swipe down to read by controls",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401963.787,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-control:headings",
+      "phrases": [
+        "Headings",
+        "swipe up or swipe down to read by headings"
+      ],
+      "words": 10,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793401964.866,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401964.876,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true cycle"
+        },
+        {
+          "time": 1793401965.317,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed cycle"
+        },
+        {
+          "time": 1793401965.389,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401965389,
+            "elapsed_ms": 96221,
+            "text": "Headings",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401965.924,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401965924,
+            "elapsed_ms": 96756,
+            "text": "swipe up or swipe down to read by headings",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401966.47,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-headings:down",
+      "phrases": [
+        "Foldery"
+      ],
+      "words": 1,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "",
+          "label": "",
+          "text": "",
+          "role": "android.widget.LinearLayout",
+          "heading": false,
+          "pane": "Foldery",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            128,
+            16908342
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793401967.863,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401967.887,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793401968.109,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793401968.525,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401968525,
+            "elapsed_ms": 99356,
+            "text": "Foldery",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401969.487,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-headings:down",
+      "phrases": [
+        "Pliki"
+      ],
+      "words": 1,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "",
+          "label": "",
+          "text": "",
+          "role": "android.widget.LinearLayout",
+          "heading": false,
+          "pane": "Pliki",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            128,
+            16908342
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793401971.835,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401971.868,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793401972.158,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793401972.579,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401972579,
+            "elapsed_ms": 103411,
+            "text": "Pliki",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401973.532,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-headings:down",
+      "phrases": [
+        "Szczegóły"
+      ],
+      "words": 1,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "",
+          "label": "",
+          "text": "",
+          "role": "android.widget.LinearLayout",
+          "heading": false,
+          "pane": "Szczegóły",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            128,
+            16908342
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793401974.589,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401974.603,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793401974.822,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793401975.078,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401975078,
+            "elapsed_ms": 105910,
+            "text": "Szczegóły",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401976.157,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-headings:down",
+      "phrases": [
+        "No next heading"
+      ],
+      "words": 3,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793401977.984,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401977.998,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793401978.214,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793401978.289,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401978289,
+            "elapsed_ms": 109121,
+            "text": "No next heading",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401979.565,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-headings:down",
+      "phrases": [
+        "Narzędzia"
+      ],
+      "words": 1,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "",
+          "label": "",
+          "text": "",
+          "role": "android.widget.LinearLayout",
+          "heading": false,
+          "pane": "Narzędzia",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            128,
+            16908342
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793401981.357,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401981.368,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793401981.588,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793401981.68,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401981680,
+            "elapsed_ms": 112512,
+            "text": "Narzędzia",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401982.923,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-headings:down",
+      "phrases": [
+        "Foldery"
+      ],
+      "words": 1,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "",
+          "label": "",
+          "text": "",
+          "role": "android.widget.LinearLayout",
+          "heading": false,
+          "pane": "Foldery",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            128,
+            16908342
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793401983.873,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401983.891,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793401984.125,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793401984.285,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401984285,
+            "elapsed_ms": 115117,
+            "text": "Foldery",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401985.461,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:details",
+      "phrases": [
+        "Umowa najmu\n",
+        "Utworzono: 01.10.2026\n",
+        "Rozmiar: 12 KB\n",
+        "Stan: zsynchronizowany\n",
+        "Udostępniono: nikomu, Edit box"
+      ],
+      "words": 13,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/details",
+          "label": "Szczegóły",
+          "text": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+          "role": "android.widget.EditText",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": true,
+          "actions": [
+            4,
+            8,
+            1,
+            128,
+            16908342,
+            2097152,
+            256,
+            512,
+            131072
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793401986.063,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793401986.1,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "details",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793401986.277,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401986277,
+            "elapsed_ms": 117109,
+            "text": "Umowa najmu\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401986.388,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401986388,
+            "elapsed_ms": 117220,
+            "text": "Utworzono: 01.10.2026\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401986.529,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401986528,
+            "elapsed_ms": 117360,
+            "text": "Rozmiar: 12 KB\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401986.723,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401986723,
+            "elapsed_ms": 117555,
+            "text": "Stan: zsynchronizowany\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401986.839,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401986839,
+            "elapsed_ms": 117670,
+            "text": "Udostępniono: nikomu, Edit box",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401987.698,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-control:lines",
+      "phrases": [
+        "Paragraphs",
+        "swipe up or swipe down to read by paragraphs"
+      ],
+      "words": 10,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793401988.566,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401988.584,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true cycle"
+        },
+        {
+          "time": 1793401988.983,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed cycle"
+        },
+        {
+          "time": 1793401989.014,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401989013,
+            "elapsed_ms": 119844,
+            "text": "Paragraphs",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401990.463,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401990463,
+            "elapsed_ms": 121295,
+            "text": "swipe up or swipe down to read by paragraphs",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401990.652,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-control:lines",
+      "phrases": [
+        "Lines",
+        "swipe up or swipe down to read by lines"
+      ],
+      "words": 10,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793401991.574,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401991.579,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true cycle"
+        },
+        {
+          "time": 1793401992.061,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed cycle"
+        },
+        {
+          "time": 1793401992.082,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401992082,
+            "elapsed_ms": 122914,
+            "text": "Lines",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401992.65,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401992650,
+            "elapsed_ms": 123482,
+            "text": "swipe up or swipe down to read by lines",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401993.14,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-lines:down",
+      "phrases": [
+        "Gotowe"
+      ],
+      "words": 1,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/status",
+          "label": "",
+          "text": "Gotowe",
+          "role": "android.widget.TextView",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            128,
+            16908342,
+            256,
+            512,
+            131072
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793401994.113,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401994.132,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793401994.347,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793401994.586,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793401994586,
+            "elapsed_ms": 125418,
+            "text": "Gotowe",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793401995.775,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-lines:down",
+      "phrases": [],
+      "words": 0,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793401996.663,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401996.694,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793401996.914,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793401998.276,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-lines:down",
+      "phrases": [],
+      "words": 0,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793401999.016,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793401999.032,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793401999.249,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793402000.597,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-lines:down",
+      "phrases": [
+        "Narzędzia"
+      ],
+      "words": 1,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "",
+          "label": "",
+          "text": "",
+          "role": "android.widget.LinearLayout",
+          "heading": false,
+          "pane": "Narzędzia",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            128,
+            16908342
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793402001.173,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793402001.19,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793402001.418,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793402001.67,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793402001670,
+            "elapsed_ms": 132502,
+            "text": "Narzędzia",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793402002.806,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-lines:down",
+      "phrases": [],
+      "words": 0,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793402003.357,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793402003.387,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793402003.608,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793402005.062,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "reading-lines:down",
+      "phrases": [
+        "NOWY"
+      ],
+      "words": 1,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "",
+          "label": "",
+          "text": "NOWY",
+          "role": "android.widget.Button",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            1,
+            128,
+            16,
+            16908342,
+            256,
+            512,
+            131072
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793402005.699,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL gesture activity=true observer=true"
+        },
+        {
+          "time": 1793402005.717,
+          "tag": "UX_ACTION",
+          "payload": "gesture accepted true down"
+        },
+        {
+          "time": 1793402005.944,
+          "tag": "UX_ACTION",
+          "payload": "gesture completed down"
+        },
+        {
+          "time": 1793402006.185,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793402006184,
+            "elapsed_ms": 137016,
+            "text": "NOWY",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793402007.318,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    }
+  ],
+  "error": null,
+  "reader_positive": true,
+  "headings_selected": true,
+  "lines_selected": true
+}

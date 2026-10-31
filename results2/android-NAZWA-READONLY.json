@@ -1,0 +1,2490 @@
+{
+  "variant": "NAZWA",
+  "presentation": "READONLY",
+  "evidence": "live_reader",
+  "steps": [
+    {
+      "kind": "positive-tts",
+      "phrases": [
+        "Kontrola kanału mowy",
+        "TalkBack on",
+        "Taskbar hidden",
+        "Szukaj",
+        "UXPomiar2",
+        "Editing, Szukaj, Edit box",
+        "Double-tap and hold to long press"
+      ],
+      "words": 19,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/search",
+          "label": "Szukaj",
+          "text": "Szukaj",
+          "role": "android.widget.EditText",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": true,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": true,
+          "actions": [
+            4,
+            8,
+            2,
+            128,
+            16,
+            32,
+            16908342,
+            2097152,
+            16908372
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793404580.297,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL probe activity=true observer=true"
+        },
+        {
+          "time": 1793404580.324,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404580324,
+            "elapsed_ms": 75305,
+            "text": "Kontrola kanału mowy",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404580.356,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404580356,
+            "elapsed_ms": 75337,
+            "text": "TalkBack on",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404581.274,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404581274,
+            "elapsed_ms": 76255,
+            "text": "Taskbar hidden",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404581.851,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404581851,
+            "elapsed_ms": 76831,
+            "text": "Szukaj",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404582.043,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404582043,
+            "elapsed_ms": 77023,
+            "text": "UXPomiar2",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404582.218,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404582218,
+            "elapsed_ms": 77198,
+            "text": "Editing, Szukaj, Edit box",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404582.457,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404582457,
+            "elapsed_ms": 77437,
+            "text": "Double-tap and hold to long press",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404586.481,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:row_0",
+      "phrases": [
+        "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany, 1 of 20, In list, 20 items",
+        "Double-tap to activate"
+      ],
+      "words": 20,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/row_0",
+          "label": "",
+          "text": "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany",
+          "role": "android.widget.TextView",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            1,
+            128,
+            16,
+            16908342,
+            256,
+            512,
+            131072
+          ],
+          "item": {
+            "row": 0,
+            "column": 0
+          }
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793404587.314,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404587.364,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "row_0",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793404587.471,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404587471,
+            "elapsed_ms": 82452,
+            "text": "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany, 1 of 20, In list, 20 items",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404588.053,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404588053,
+            "elapsed_ms": 83033,
+            "text": "Double-tap to activate",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404588.946,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:search",
+      "phrases": [
+        "Editing, Szukaj, Edit box, Out of list",
+        "Double-tap and hold to long press"
+      ],
+      "words": 13,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/search",
+          "label": "Szukaj",
+          "text": "Szukaj",
+          "role": "android.widget.EditText",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": true,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": true,
+          "actions": [
+            4,
+            8,
+            2,
+            128,
+            16,
+            32,
+            16908342,
+            2097152,
+            16908372
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793404589.644,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404589.659,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "search",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793404589.722,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404589721,
+            "elapsed_ms": 84702,
+            "text": "Editing, Szukaj, Edit box, Out of list",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404590.269,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404590269,
+            "elapsed_ms": 85249,
+            "text": "Double-tap and hold to long press",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404591.713,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:entry",
+      "phrases": [
+        "Szczegóły",
+        "Szczegóły"
+      ],
+      "words": 2,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "details"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/details",
+          "label": "Szczegóły",
+          "text": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+          "role": "android.widget.TextView",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": true,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            2,
+            128,
+            16908342,
+            256,
+            512,
+            131072
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793404592.267,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL anchor activity=true observer=true"
+        },
+        {
+          "time": 1793404592.43,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404592430,
+            "elapsed_ms": 87410,
+            "text": "Szczegóły",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404592.45,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404592450,
+            "elapsed_ms": 87430,
+            "text": "Szczegóły",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404593.824,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:details",
+      "phrases": [],
+      "words": 0,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404594.284,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404594.313,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "details",
+            "action": 64,
+            "ok": false
+          }
+        },
+        {
+          "time": 1793404595.891,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:tree",
+      "phrases": [],
+      "words": 0,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404596.32,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL tree activity=true observer=true"
+        },
+        {
+          "time": 1793404596.325,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "",
+            "label": "",
+            "text": "",
+            "role": "android.widget.FrameLayout",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              64,
+              16908342
+            ],
+            "path": "0"
+          }
+        },
+        {
+          "time": 1793404596.325,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "",
+            "label": "",
+            "text": "",
+            "role": "android.widget.ScrollView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16908342
+            ],
+            "path": "0/0"
+          }
+        },
+        {
+          "time": 1793404596.325,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "",
+            "label": "",
+            "text": "",
+            "role": "android.widget.LinearLayout",
+            "heading": false,
+            "pane": "Narzędzia",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              64,
+              16908342
+            ],
+            "path": "0/0/0"
+          }
+        },
+        {
+          "time": 1793404596.325,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "",
+            "label": "",
+            "text": "Narzędzia",
+            "role": "android.widget.TextView",
+            "heading": true,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              64,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/0/0"
+          }
+        },
+        {
+          "time": 1793404596.325,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/button_0",
+            "label": "",
+            "text": "NOWY",
+            "role": "android.widget.Button",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/0/1"
+          }
+        },
+        {
+          "time": 1793404596.326,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/button_1",
+            "label": "",
+            "text": "OTWÓRZ",
+            "role": "android.widget.Button",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/0/2"
+          }
+        },
+        {
+          "time": 1793404596.327,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/button_2",
+            "label": "",
+            "text": "ZAPISZ",
+            "role": "android.widget.Button",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/0/3"
+          }
+        },
+        {
+          "time": 1793404596.327,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/button_3",
+            "label": "",
+            "text": "USUŃ",
+            "role": "android.widget.Button",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/0/4"
+          }
+        },
+        {
+          "time": 1793404596.328,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/button_4",
+            "label": "",
+            "text": "KOPIUJ",
+            "role": "android.widget.Button",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/0/5"
+          }
+        },
+        {
+          "time": 1793404596.328,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/button_5",
+            "label": "",
+            "text": "WKLEJ",
+            "role": "android.widget.Button",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/0/6"
+          }
+        },
+        {
+          "time": 1793404596.328,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/search",
+            "label": "Szukaj",
+            "text": "Szukaj",
+            "role": "android.widget.EditText",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": true,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              32,
+              16908342,
+              2097152
+            ],
+            "path": "0/0/0/7"
+          }
+        },
+        {
+          "time": 1793404596.328,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "",
+            "label": "",
+            "text": "",
+            "role": "android.widget.LinearLayout",
+            "heading": false,
+            "pane": "Foldery",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              64,
+              16908342
+            ],
+            "path": "0/0/1"
+          }
+        },
+        {
+          "time": 1793404596.328,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "",
+            "label": "",
+            "text": "Foldery",
+            "role": "android.widget.TextView",
+            "heading": true,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              64,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/1/0"
+          }
+        },
+        {
+          "time": 1793404596.328,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/folders",
+            "label": "",
+            "text": "",
+            "role": "androidx.recyclerview.widget.RecyclerView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16908342,
+              16908343
+            ],
+            "collection": {
+              "rows": 3,
+              "columns": 1,
+              "hierarchical": false
+            },
+            "path": "0/0/1/1"
+          }
+        },
+        {
+          "time": 1793404596.328,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/folder_0",
+            "label": "",
+            "text": "Dokumenty",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "zwinięte",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072,
+              262144
+            ],
+            "item": {
+              "row": 0,
+              "column": 0
+            },
+            "path": "0/0/1/1/0"
+          }
+        },
+        {
+          "time": 1793404596.329,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/folder_9",
+            "label": "",
+            "text": "Zdjęcia",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "zwinięte",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072,
+              262144
+            ],
+            "item": {
+              "row": 1,
+              "column": 0
+            },
+            "path": "0/0/1/1/1"
+          }
+        },
+        {
+          "time": 1793404596.329,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/folder_12",
+            "label": "",
+            "text": "Muzyka",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 2,
+              "column": 0
+            },
+            "path": "0/0/1/1/2"
+          }
+        },
+        {
+          "time": 1793404596.329,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "",
+            "label": "",
+            "text": "",
+            "role": "android.widget.LinearLayout",
+            "heading": false,
+            "pane": "Pliki",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              64,
+              16908342
+            ],
+            "path": "0/0/2"
+          }
+        },
+        {
+          "time": 1793404596.329,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "",
+            "label": "",
+            "text": "Pliki",
+            "role": "android.widget.TextView",
+            "heading": true,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              64,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/2/0"
+          }
+        },
+        {
+          "time": 1793404596.331,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/files",
+            "label": "",
+            "text": "",
+            "role": "androidx.recyclerview.widget.RecyclerView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16908342,
+              16908343
+            ],
+            "collection": {
+              "rows": 20,
+              "columns": 1,
+              "hierarchical": false
+            },
+            "path": "0/0/2/1"
+          }
+        },
+        {
+          "time": 1793404596.331,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_0",
+            "label": "",
+            "text": "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 0,
+              "column": 0
+            },
+            "path": "0/0/2/1/0"
+          }
+        },
+        {
+          "time": 1793404596.332,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_1",
+            "label": "",
+            "text": "Nazwa: Faktura marzec; Data: 02.10.2026; Rozmiar: 49 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 1,
+              "column": 0
+            },
+            "path": "0/0/2/1/1"
+          }
+        },
+        {
+          "time": 1793404596.332,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_2",
+            "label": "",
+            "text": "Nazwa: Raport kwartalny; Data: 03.10.2026; Rozmiar: 86 KB; Stan: oczekuje",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 2,
+              "column": 0
+            },
+            "path": "0/0/2/1/2"
+          }
+        },
+        {
+          "time": 1793404596.332,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_3",
+            "label": "",
+            "text": "Nazwa: Zdjęcie paszportowe; Data: 04.10.2026; Rozmiar: 123 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 3,
+              "column": 0
+            },
+            "path": "0/0/2/1/3"
+          }
+        },
+        {
+          "time": 1793404596.333,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_4",
+            "label": "",
+            "text": "Nazwa: Notatki ze spotkania; Data: 05.10.2026; Rozmiar: 160 KB; Stan: błąd",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 4,
+              "column": 0
+            },
+            "path": "0/0/2/1/4"
+          }
+        },
+        {
+          "time": 1793404596.333,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_5",
+            "label": "",
+            "text": "Nazwa: Budżet domowy; Data: 06.10.2026; Rozmiar: 197 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 5,
+              "column": 0
+            },
+            "path": "0/0/2/1/5"
+          }
+        },
+        {
+          "time": 1793404596.333,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_6",
+            "label": "",
+            "text": "Nazwa: Wniosek urlopowy; Data: 07.10.2026; Rozmiar: 234 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 6,
+              "column": 0
+            },
+            "path": "0/0/2/1/6"
+          }
+        },
+        {
+          "time": 1793404596.333,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_7",
+            "label": "",
+            "text": "Nazwa: Faktura kwiecień; Data: 08.10.2026; Rozmiar: 271 KB; Stan: oczekuje",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 7,
+              "column": 0
+            },
+            "path": "0/0/2/1/7"
+          }
+        },
+        {
+          "time": 1793404596.334,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_8",
+            "label": "",
+            "text": "Nazwa: Lista zakupów; Data: 09.10.2026; Rozmiar: 308 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 8,
+              "column": 0
+            },
+            "path": "0/0/2/1/8"
+          }
+        },
+        {
+          "time": 1793404596.334,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_9",
+            "label": "",
+            "text": "Nazwa: Opis projektu; Data: 10.10.2026; Rozmiar: 345 KB; Stan: błąd",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 9,
+              "column": 0
+            },
+            "path": "0/0/2/1/9"
+          }
+        },
+        {
+          "time": 1793404596.334,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_10",
+            "label": "",
+            "text": "Nazwa: Harmonogram prac; Data: 11.10.2026; Rozmiar: 382 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 10,
+              "column": 0
+            },
+            "path": "0/0/2/1/10"
+          }
+        },
+        {
+          "time": 1793404596.334,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_11",
+            "label": "",
+            "text": "Nazwa: Kosztorys remontu; Data: 12.10.2026; Rozmiar: 419 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 11,
+              "column": 0
+            },
+            "path": "0/0/2/1/11"
+          }
+        },
+        {
+          "time": 1793404596.336,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_12",
+            "label": "",
+            "text": "Nazwa: Prezentacja dla zarządu; Data: 13.10.2026; Rozmiar: 456 KB; Stan: oczekuje",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 12,
+              "column": 0
+            },
+            "path": "0/0/2/1/12"
+          }
+        },
+        {
+          "time": 1793404596.336,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_13",
+            "label": "",
+            "text": "Nazwa: Gwarancja pralki; Data: 14.10.2026; Rozmiar: 493 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 13,
+              "column": 0
+            },
+            "path": "0/0/2/1/13"
+          }
+        },
+        {
+          "time": 1793404596.336,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_14",
+            "label": "",
+            "text": "Nazwa: Instrukcja routera; Data: 15.10.2026; Rozmiar: 530 KB; Stan: błąd",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 14,
+              "column": 0
+            },
+            "path": "0/0/2/1/14"
+          }
+        },
+        {
+          "time": 1793404596.337,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_15",
+            "label": "",
+            "text": "Nazwa: Mapa dojazdu; Data: 16.10.2026; Rozmiar: 567 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 15,
+              "column": 0
+            },
+            "path": "0/0/2/1/15"
+          }
+        },
+        {
+          "time": 1793404596.337,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_16",
+            "label": "",
+            "text": "Nazwa: Plan lekcji; Data: 17.10.2026; Rozmiar: 604 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 16,
+              "column": 0
+            },
+            "path": "0/0/2/1/16"
+          }
+        },
+        {
+          "time": 1793404596.338,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_17",
+            "label": "",
+            "text": "Nazwa: Regulamin konkursu; Data: 18.10.2026; Rozmiar: 641 KB; Stan: oczekuje",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 17,
+              "column": 0
+            },
+            "path": "0/0/2/1/17"
+          }
+        },
+        {
+          "time": 1793404596.338,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_18",
+            "label": "",
+            "text": "Nazwa: Świadectwo pracy; Data: 19.10.2026; Rozmiar: 678 KB; Stan: zsynchronizowany",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 18,
+              "column": 0
+            },
+            "path": "0/0/2/1/18"
+          }
+        },
+        {
+          "time": 1793404596.338,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/row_19",
+            "label": "",
+            "text": "Nazwa: Testament wzór; Data: 20.10.2026; Rozmiar: 715 KB; Stan: błąd",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "item": {
+              "row": 19,
+              "column": 0
+            },
+            "path": "0/0/2/1/19"
+          }
+        },
+        {
+          "time": 1793404596.338,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/after_files",
+            "label": "",
+            "text": "DALEJ",
+            "role": "android.widget.Button",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              1,
+              64,
+              16,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/2/2"
+          }
+        },
+        {
+          "time": 1793404596.338,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "",
+            "label": "",
+            "text": "",
+            "role": "android.widget.LinearLayout",
+            "heading": false,
+            "pane": "Szczegóły",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              64,
+              16908342
+            ],
+            "path": "0/0/3"
+          }
+        },
+        {
+          "time": 1793404596.339,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "",
+            "label": "",
+            "text": "Szczegóły",
+            "role": "android.widget.TextView",
+            "heading": true,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              64,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/3/0"
+          }
+        },
+        {
+          "time": 1793404596.339,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/details",
+            "label": "Szczegóły",
+            "text": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": true,
+            "a11yFocused": true,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              2,
+              128,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/3/1"
+          }
+        },
+        {
+          "time": 1793404596.341,
+          "tag": "UX_TREE",
+          "payload": {
+            "id": "org.uxbench2:id/status",
+            "label": "",
+            "text": "Gotowe",
+            "role": "android.widget.TextView",
+            "heading": false,
+            "pane": "",
+            "state": "",
+            "focused": false,
+            "a11yFocused": false,
+            "selected": false,
+            "visible": true,
+            "editable": false,
+            "actions": [
+              4,
+              8,
+              64,
+              16908342,
+              256,
+              512,
+              131072
+            ],
+            "path": "0/0/4"
+          }
+        },
+        {
+          "time": 1793404597.878,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:SET_TEXT",
+      "phrases": [],
+      "words": 0,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404598.448,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404598.455,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "details",
+            "action": 2097152,
+            "ok": false
+          }
+        },
+        {
+          "time": 1793404600.022,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:Home",
+      "phrases": [],
+      "words": 0,
+      "command_result": "",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404602.177,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:ArrowDown",
+      "phrases": [],
+      "words": 0,
+      "command_result": "",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 12,
+        "detailsSelectionEnd": 12,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404605.393,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:ArrowDown",
+      "phrases": [
+        "Utworzono: 01.10.2026\n"
+      ],
+      "words": 2,
+      "command_result": "",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 34,
+        "detailsSelectionEnd": 34,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404606.283,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404606283,
+            "elapsed_ms": 101263,
+            "text": "Utworzono: 01.10.2026\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404607.72,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:ArrowDown",
+      "phrases": [
+        "Rozmiar: 12 KB\n"
+      ],
+      "words": 3,
+      "command_result": "",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 49,
+        "detailsSelectionEnd": 49,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404608.21,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404608210,
+            "elapsed_ms": 103190,
+            "text": "Rozmiar: 12 KB\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404609.83,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:ArrowDown",
+      "phrases": [
+        "Stan: zsynchronizowany\n"
+      ],
+      "words": 2,
+      "command_result": "",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 72,
+        "detailsSelectionEnd": 72,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404611.007,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404611007,
+            "elapsed_ms": 105988,
+            "text": "Stan: zsynchronizowany\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404612.669,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:ArrowDown",
+      "phrases": [
+        "Udostępniono: nikomu, End of field"
+      ],
+      "words": 5,
+      "command_result": "",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 92,
+        "detailsSelectionEnd": 92,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404613.573,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404613573,
+            "elapsed_ms": 108553,
+            "text": "Udostępniono: nikomu, End of field",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404615.146,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:reset",
+      "phrases": [],
+      "words": 0,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 92,
+        "detailsSelectionEnd": 92,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404615.743,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL anchor activity=true observer=true"
+        },
+        {
+          "time": 1793404617.301,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:Home",
+      "phrases": [
+        "Umowa najmu\n",
+        "Utworzono: 01.10.2026\n",
+        "Rozmiar: 12 KB\n",
+        "Stan: zsynchronizowany\n",
+        "Udostępniono: nikomu, Beginning of field"
+      ],
+      "words": 14,
+      "command_result": "",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404618.298,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404618298,
+            "elapsed_ms": 113278,
+            "text": "Umowa najmu\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404618.432,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404618432,
+            "elapsed_ms": 113413,
+            "text": "Utworzono: 01.10.2026\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404618.55,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404618550,
+            "elapsed_ms": 113530,
+            "text": "Rozmiar: 12 KB\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404618.682,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404618682,
+            "elapsed_ms": 113662,
+            "text": "Stan: zsynchronizowany\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404618.82,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404618820,
+            "elapsed_ms": 113800,
+            "text": "Udostępniono: nikomu, Beginning of field",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404619.823,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "readonly:ACTION_NEXT_LINE",
+      "phrases": [
+        "Umowa najmu\n"
+      ],
+      "words": 2,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 12,
+        "detailsSelectionEnd": 12,
+        "focusId": "details"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404620.489,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404620.512,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "details",
+            "action": 256,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793404620.58,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404620580,
+            "elapsed_ms": 115560,
+            "text": "Umowa najmu\n",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404622.103,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:search",
+      "phrases": [
+        "Szukaj, Edit box",
+        "Double-tap to edit text, Double-tap and hold to long press"
+      ],
+      "words": 13,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 12,
+        "detailsSelectionEnd": 12,
+        "focusId": "details"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/search",
+          "label": "Szukaj",
+          "text": "Szukaj",
+          "role": "android.widget.EditText",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": true,
+          "actions": [
+            4,
+            8,
+            1,
+            128,
+            16,
+            32,
+            16908342,
+            2097152
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793404622.496,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404622.505,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "search",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793404622.71,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404622710,
+            "elapsed_ms": 117691,
+            "text": "Szukaj, Edit box",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404623.227,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404623227,
+            "elapsed_ms": 118207,
+            "text": "Double-tap to edit text, Double-tap and hold to long press",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404624.039,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:details",
+      "phrases": [
+        "Szczegóły"
+      ],
+      "words": 1,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 12,
+        "detailsSelectionEnd": 12,
+        "focusId": "details"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/details",
+          "label": "Szczegóły",
+          "text": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+          "role": "android.widget.TextView",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": true,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            2,
+            128,
+            16908342,
+            256,
+            512,
+            131072
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793404624.668,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404624.679,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "details",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793404624.725,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404624725,
+            "elapsed_ms": 119705,
+            "text": "Szczegóły",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404626.254,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:search",
+      "phrases": [
+        "Szukaj, Edit box",
+        "Double-tap to edit text, Double-tap and hold to long press"
+      ],
+      "words": 13,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsText": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu",
+        "detailsSelectionStart": 12,
+        "detailsSelectionEnd": 12,
+        "focusId": "details"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/search",
+          "label": "Szukaj",
+          "text": "Szukaj",
+          "role": "android.widget.EditText",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": true,
+          "actions": [
+            4,
+            8,
+            1,
+            128,
+            16,
+            32,
+            16908342,
+            2097152
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793404626.781,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404626.792,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "search",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793404626.846,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404626846,
+            "elapsed_ms": 121826,
+            "text": "Szukaj, Edit box",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404627.357,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404627357,
+            "elapsed_ms": 122337,
+            "text": "Double-tap to edit text, Double-tap and hold to long press",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404628.326,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    }
+  ],
+  "error": null,
+  "tts_positive": true,
+  "reader_positive": true,
+  "reader_positive_after": true
+}

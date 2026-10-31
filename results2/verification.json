@@ -1,0 +1,27 @@
+[
+  {
+    "command": "python3 scripts2/curate.py --verify",
+    "exit_code": 0,
+    "output": "{\"projections_verified\": 14, \"raw_sources_verified\": 14, \"status\": \"PASS\"}"
+  },
+  {
+    "command": "python3 scripts2/verify_results.py",
+    "exit_code": 0,
+    "output": "{\"status\": \"PASS\", \"verified_sources\": 14, \"summary\": \"results2/summary.json\"}"
+  },
+  {
+    "command": "python3 -m unittest discover -s scripts2 -p \"test_*.py\" -v",
+    "exit_code": 0,
+    "output": "test_checksum_rejects_changed_evidence (test_artifacts.ArtifactTests.test_checksum_rejects_changed_evidence) ... ok\ntest_missing_emission_rejected_after_rehash (test_artifacts.ArtifactTests.test_missing_emission_rejected_after_rehash) ... ok\ntest_missing_repeat_rejected_after_rehash (test_artifacts.ArtifactTests.test_missing_repeat_rejected_after_rehash) ... ok\ntest_bursts_sort (test_metrics.MetricsTests.test_bursts_sort) ... ok\ntest_device_static_restoration (test_metrics.MetricsTests.test_device_static_restoration) ... ok\ntest_harness_call_signatures (test_metrics.MetricsTests.test_harness_call_signatures) ... ok\ntest_messages_dedup (test_metrics.MetricsTests.test_messages_dedup) ... ok\ntest_missing_route_not_zero (test_metrics.MetricsTests.test_missing_route_not_zero) ... ok\ntest_missing_table_anchor_is_not_count (test_metrics.MetricsTests.test_missing_table_anchor_is_not_count) ... ok\ntest_plain_node_is_not_speech (test_metrics.MetricsTests.test_plain_node_is_not_speech) ... ok\ntest_table_anchor_from_observed_focus (test_metrics.MetricsTests.test_table_anchor_from_observed_focus) ... ok\ntest_words (test_metrics.MetricsTests.test_words) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.570s\n\nOK"
+  },
+  {
+    "command": "node --check macos2/measure.mjs",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "command": "python3 scripts2/publish_check.py",
+    "exit_code": 0,
+    "output": "{\n  \"baseline\": \"d7b8429\",\n  \"protected_files\": 52,\n  \"changed_protected\": [],\n  \"positive_detected\": true,\n  \"scanned\": 110,\n  \"findings\": []\n}"
+  }
+]

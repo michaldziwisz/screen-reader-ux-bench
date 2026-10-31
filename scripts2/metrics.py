@@ -24,8 +24,22 @@ def bursts(result):
  return groups
 
 def android_state(step):
+ if 'state' in step:return step['state']
  rows=[x['payload']['data'] for x in step.get('records',[]) if x['tag']=='UX_APP' and isinstance(x['payload'],dict) and x['payload'].get('kind')=='state']
  return rows[-1] if rows else {}
+
+def android_table_exit(result):
+ first='row_0' if result['presentation']=='RECYCLER' else 'cell_0_0'
+ anchor=next(s for s in result['steps'] if s['kind']=='anchor-table-tab')
+ rows=[s for s in result['steps'] if s['kind']=='table-exit:Tab']
+ skip=0
+ if android_state(anchor).get('focusId')!=first:
+  hits=[i for i,s in enumerate(rows) if android_state(s).get('focusId')==first]
+  if not hits:return {'steps':None,'reached':False,'anchor_valid':False}
+  skip=hits[0]+1
+ for i,s in enumerate(rows[skip:],1):
+  if android_state(s).get('focusId')=='after_files':return {'steps':i,'reached':True,'anchor_valid':skip==0,'pre_anchor_steps_excluded':skip}
+ return {'steps':None,'reached':False,'pre_anchor_steps_excluded':skip}
 
 def android_focus(step):
  return [x['payload'].get('node',{}) for x in step.get('records',[]) if x['tag']=='UX_AX' and isinstance(x['payload'],dict) and x['payload'].get('event')==32768]

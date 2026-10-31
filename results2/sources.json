@@ -1,0 +1,92 @@
+[
+  {
+    "run": 41142135669,
+    "platform": "ios",
+    "source": "wyniki/campaign2/41142135669/ios2-measure/attachments/2D1636A4-1BB0-416E-A6F7-1F5FFE9ACFF7.json",
+    "target": "ios-NAZWA.json"
+  },
+  {
+    "run": 41142135669,
+    "platform": "ios",
+    "source": "wyniki/campaign2/41142135669/ios2-measure/attachments/76769723-2D91-4DF3-9C44-7545B39CCB63.json",
+    "target": "ios-STAN.json"
+  },
+  {
+    "run": 41142135669,
+    "platform": "ios",
+    "source": "wyniki/campaign2/41142135669/ios2-measure/app-runtime/1-bench2-NAZWA.json",
+    "target": "ios-NAZWA-runtime.json"
+  },
+  {
+    "run": 41142135669,
+    "platform": "ios",
+    "source": "wyniki/campaign2/41142135669/ios2-measure/app-runtime/0-bench2-STAN.json",
+    "target": "ios-STAN-runtime.json"
+  },
+  {
+    "run": 41142719171,
+    "platform": "android",
+    "source": "wyniki/campaign2/41142719171/android2-measure/out/GESTY-EXTRA.json",
+    "target": "android-gestures.json"
+  },
+  {
+    "run": 41144225222,
+    "platform": "android",
+    "source": "wyniki/campaign2/41144225222/android2-measure/out/NAZWA-TABLE.json",
+    "target": "android-NAZWA-TABLE.json"
+  },
+  {
+    "run": 41144225222,
+    "platform": "android",
+    "source": "wyniki/campaign2/41144225222/android2-measure/out/NAZWA-RECYCLER.json",
+    "target": "android-NAZWA-RECYCLER.json",
+    "exclude_burst_modes": [
+      "toast"
+    ]
+  },
+  {
+    "run": 41144225222,
+    "platform": "android",
+    "source": "wyniki/campaign2/41144225222/android2-measure/out/STAN-RECYCLER.json",
+    "target": "android-STAN-RECYCLER.json",
+    "exclude_burst_modes": [
+      "toast"
+    ]
+  },
+  {
+    "run": 41145131192,
+    "platform": "macos",
+    "source": "wyniki/campaign2/41145131192/macos2-measure/STAN.json",
+    "target": "macos-STAN.json"
+  },
+  {
+    "run": 41145131192,
+    "platform": "macos",
+    "source": "wyniki/campaign2/41145131192/macos2-measure/NAZWA.json",
+    "target": "macos-NAZWA.json"
+  },
+  {
+    "run": 41146425924,
+    "platform": "android",
+    "source": "wyniki/campaign2/41146425924/android2-measure/out/STAN-TOAST.json",
+    "target": "android-STAN-TOAST.json"
+  },
+  {
+    "run": 41146425924,
+    "platform": "android",
+    "source": "wyniki/campaign2/41146425924/android2-measure/out/NAZWA-TOAST.json",
+    "target": "android-NAZWA-TOAST.json"
+  },
+  {
+    "run": 41147107630,
+    "platform": "android",
+    "source": "wyniki/campaign2/41147107630/android2-measure/out/NAZWA-READONLY.json",
+    "target": "android-NAZWA-READONLY.json"
+  },
+  {
+    "run": 41147107630,
+    "platform": "android",
+    "source": "wyniki/campaign2/41147107630/android2-measure/out/STAN-READONLY.json",
+    "target": "android-STAN-READONLY.json"
+  }
+]

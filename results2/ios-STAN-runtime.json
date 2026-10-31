@@ -1,0 +1,2784 @@
+{
+  "events": [
+    {
+      "data": {
+        "records": 20,
+        "voiceOverRunning": false
+      },
+      "kind": "ready",
+      "time": 1793401719.820148
+    },
+    {
+      "data": {
+        "expanded": true,
+        "item": 0
+      },
+      "kind": "folder",
+      "time": 1793401728.09756
+    },
+    {
+      "data": {
+        "expanded": true,
+        "item": 1
+      },
+      "kind": "folder",
+      "time": 1793401732.659277
+    },
+    {
+      "data": {
+        "expanded": true,
+        "item": 2
+      },
+      "kind": "folder",
+      "time": 1793401734.327709
+    },
+    {
+      "data": 1,
+      "kind": "fileSelected",
+      "time": 1793401735.855705
+    },
+    {
+      "data": {
+        "mode": "plain",
+        "posted": false,
+        "text": "Kontrola komunikatu plain",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401736.975158
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Kontrola komunikatu announcement",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401738.42227
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 1 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401739.757958
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 2 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401739.784312
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 3 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401739.804264
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 4 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401739.816618
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 5 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401739.834052
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 1 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401741.122789
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 2 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401741.142097
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 3 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401741.1600928
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 4 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401741.186448
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 5 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401741.200914
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 1 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401742.6017761
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 2 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401742.616562
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 3 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401742.634521
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 4 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401742.654211
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 5 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401742.664371
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 1 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401744.104687
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 2 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401744.115941
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 3 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401744.12745
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 4 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401744.137497
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 5 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401744.149627
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 1 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401745.240426
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 2 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401745.2573872
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 3 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401745.2747998
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 4 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401745.287325
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 5 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401745.2993631
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 1 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401746.329585
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 2 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401746.33876
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 3 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401746.3514462
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 4 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401746.366472
+    },
+    {
+      "data": {
+        "mode": "announcement",
+        "posted": true,
+        "text": "Plik 5 z 5 skopiowany",
+        "voiceOverRunning": false
+      },
+      "kind": "emit",
+      "time": 1793401746.376205
+    },
+    {
+      "data": true,
+      "kind": "export",
+      "time": 1793401747.438047
+    }
+  ],
+  "evidence": "runtime_app_properties_not_reader",
+  "fileSelected": 1,
+  "semantics": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "containerType": 0,
+                "groupChildren": false,
+                "header": true,
+                "id": "heading_tools",
+                "isElement": true,
+                "label": "Narzędzia",
+                "traits": 65536,
+                "value": ""
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "Nowy",
+                        "traits": 64,
+                        "value": ""
+                      }
+                    ],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "button_0",
+                    "isElement": true,
+                    "label": "Nowy",
+                    "traits": 1,
+                    "value": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "Otwórz",
+                        "traits": 64,
+                        "value": ""
+                      }
+                    ],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "button_1",
+                    "isElement": true,
+                    "label": "Otwórz",
+                    "traits": 1,
+                    "value": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "Zapisz",
+                        "traits": 64,
+                        "value": ""
+                      }
+                    ],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "button_2",
+                    "isElement": true,
+                    "label": "Zapisz",
+                    "traits": 1,
+                    "value": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "Usuń",
+                        "traits": 64,
+                        "value": ""
+                      }
+                    ],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "button_3",
+                    "isElement": true,
+                    "label": "Usuń",
+                    "traits": 1,
+                    "value": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "Kopiuj",
+                        "traits": 64,
+                        "value": ""
+                      }
+                    ],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "button_4",
+                    "isElement": true,
+                    "label": "Kopiuj",
+                    "traits": 1,
+                    "value": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "Wklej",
+                        "traits": 64,
+                        "value": ""
+                      }
+                    ],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "button_5",
+                    "isElement": true,
+                    "label": "Wklej",
+                    "traits": 1,
+                    "value": ""
+                  }
+                ],
+                "containerType": 0,
+                "groupChildren": true,
+                "header": false,
+                "id": "",
+                "isElement": false,
+                "label": "",
+                "traits": 0,
+                "value": ""
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": false,
+                    "label": "",
+                    "traits": 0,
+                    "value": ""
+                  },
+                  {
+                    "children": [],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": false,
+                    "label": "",
+                    "traits": 0,
+                    "value": ""
+                  },
+                  {
+                    "children": [],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": true,
+                    "label": "Szukaj",
+                    "traits": 64,
+                    "value": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      }
+                    ],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": false,
+                    "label": "",
+                    "traits": 0,
+                    "value": ""
+                  }
+                ],
+                "containerType": 0,
+                "groupChildren": false,
+                "header": false,
+                "id": "search",
+                "isElement": true,
+                "label": "Szukaj",
+                "traits": 262144,
+                "value": "Szukaj"
+              }
+            ],
+            "containerType": 4,
+            "groupChildren": true,
+            "header": false,
+            "id": "group_tools",
+            "isElement": false,
+            "label": "Narzędzia",
+            "traits": 0,
+            "value": ""
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": true,
+                    "id": "heading_folders",
+                    "isElement": true,
+                    "label": "Foldery",
+                    "traits": 65536,
+                    "value": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Dokumenty",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "chevron.forward",
+                                "isElement": false,
+                                "label": "Forward",
+                                "traits": 4,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "folder_0",
+                            "isElement": false,
+                            "label": "Dokumenty",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "folder_0",
+                        "isElement": true,
+                        "label": "Dokumenty",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Zdjęcia",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "chevron.forward",
+                                "isElement": false,
+                                "label": "Forward",
+                                "traits": 4,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "folder_9",
+                            "isElement": false,
+                            "label": "Zdjęcia",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "folder_9",
+                        "isElement": true,
+                        "label": "Zdjęcia",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Muzyka",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "folder_12",
+                        "isElement": true,
+                        "label": "Muzyka",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Umowy",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "chevron.forward",
+                                "isElement": false,
+                                "label": "Forward",
+                                "traits": 4,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "folder_1",
+                            "isElement": false,
+                            "label": "Umowy",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "folder_1",
+                        "isElement": true,
+                        "label": "Umowy",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Faktury",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "chevron.forward",
+                                "isElement": false,
+                                "label": "Forward",
+                                "traits": 4,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "folder_4",
+                            "isElement": false,
+                            "label": "Faktury",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "folder_4",
+                        "isElement": true,
+                        "label": "Faktury",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Raporty",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "folder_8",
+                        "isElement": true,
+                        "label": "Raporty",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Najem",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "folder_2",
+                        "isElement": true,
+                        "label": "Najem",
+                        "traits": 8,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Praca",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "folder_3",
+                        "isElement": true,
+                        "label": "Praca",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "Vertical scroll bar, 1 page",
+                        "traits": 4096,
+                        "value": "0%"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "Horizontal scroll bar, 1 page",
+                        "traits": 4096,
+                        "value": "0%"
+                      }
+                    ],
+                    "containerType": 4,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "folders",
+                    "isElement": false,
+                    "label": "Foldery",
+                    "traits": 0,
+                    "value": ""
+                  }
+                ],
+                "containerType": 4,
+                "groupChildren": true,
+                "header": false,
+                "id": "group_folders",
+                "isElement": false,
+                "label": "Foldery",
+                "traits": 0,
+                "value": ""
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": true,
+                    "id": "heading_files",
+                    "isElement": true,
+                    "label": "Pliki",
+                    "traits": 65536,
+                    "value": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: zsynchronizowany; Rozmiar: 12 KB; Data: 01.10.2026; Nazwa: Umowa najmu",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_0",
+                        "isElement": true,
+                        "label": "Stan: zsynchronizowany; Rozmiar: 12 KB; Data: 01.10.2026; Nazwa: Umowa najmu",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: zsynchronizowany; Rozmiar: 49 KB; Data: 02.10.2026; Nazwa: Faktura marzec",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_1",
+                        "isElement": true,
+                        "label": "Stan: zsynchronizowany; Rozmiar: 49 KB; Data: 02.10.2026; Nazwa: Faktura marzec",
+                        "traits": 8,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: oczekuje; Rozmiar: 86 KB; Data: 03.10.2026; Nazwa: Raport kwartalny",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_2",
+                        "isElement": true,
+                        "label": "Stan: oczekuje; Rozmiar: 86 KB; Data: 03.10.2026; Nazwa: Raport kwartalny",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: zsynchronizowany; Rozmiar: 123 KB; Data: 04.10.2026; Nazwa: Zdjęcie paszportowe",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_3",
+                        "isElement": true,
+                        "label": "Stan: zsynchronizowany; Rozmiar: 123 KB; Data: 04.10.2026; Nazwa: Zdjęcie paszportowe",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: błąd; Rozmiar: 160 KB; Data: 05.10.2026; Nazwa: Notatki ze spotkania",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_4",
+                        "isElement": true,
+                        "label": "Stan: błąd; Rozmiar: 160 KB; Data: 05.10.2026; Nazwa: Notatki ze spotkania",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: zsynchronizowany; Rozmiar: 197 KB; Data: 06.10.2026; Nazwa: Budżet domowy",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_5",
+                        "isElement": true,
+                        "label": "Stan: zsynchronizowany; Rozmiar: 197 KB; Data: 06.10.2026; Nazwa: Budżet domowy",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: zsynchronizowany; Rozmiar: 234 KB; Data: 07.10.2026; Nazwa: Wniosek urlopowy",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_6",
+                        "isElement": true,
+                        "label": "Stan: zsynchronizowany; Rozmiar: 234 KB; Data: 07.10.2026; Nazwa: Wniosek urlopowy",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: oczekuje; Rozmiar: 271 KB; Data: 08.10.2026; Nazwa: Faktura kwiecień",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_7",
+                        "isElement": true,
+                        "label": "Stan: oczekuje; Rozmiar: 271 KB; Data: 08.10.2026; Nazwa: Faktura kwiecień",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: zsynchronizowany; Rozmiar: 308 KB; Data: 09.10.2026; Nazwa: Lista zakupów",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_8",
+                        "isElement": true,
+                        "label": "Stan: zsynchronizowany; Rozmiar: 308 KB; Data: 09.10.2026; Nazwa: Lista zakupów",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: błąd; Rozmiar: 345 KB; Data: 10.10.2026; Nazwa: Opis projektu",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_9",
+                        "isElement": true,
+                        "label": "Stan: błąd; Rozmiar: 345 KB; Data: 10.10.2026; Nazwa: Opis projektu",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: zsynchronizowany; Rozmiar: 382 KB; Data: 11.10.2026; Nazwa: Harmonogram prac",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_10",
+                        "isElement": true,
+                        "label": "Stan: zsynchronizowany; Rozmiar: 382 KB; Data: 11.10.2026; Nazwa: Harmonogram prac",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: zsynchronizowany; Rozmiar: 419 KB; Data: 12.10.2026; Nazwa: Kosztorys remontu",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_11",
+                        "isElement": true,
+                        "label": "Stan: zsynchronizowany; Rozmiar: 419 KB; Data: 12.10.2026; Nazwa: Kosztorys remontu",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: oczekuje; Rozmiar: 456 KB; Data: 13.10.2026; Nazwa: Prezentacja dla zarządu",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_12",
+                        "isElement": true,
+                        "label": "Stan: oczekuje; Rozmiar: 456 KB; Data: 13.10.2026; Nazwa: Prezentacja dla zarządu",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: zsynchronizowany; Rozmiar: 493 KB; Data: 14.10.2026; Nazwa: Gwarancja pralki",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_13",
+                        "isElement": true,
+                        "label": "Stan: zsynchronizowany; Rozmiar: 493 KB; Data: 14.10.2026; Nazwa: Gwarancja pralki",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": false,
+                                "label": "",
+                                "traits": 0,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "containerType": 0,
+                                "groupChildren": false,
+                                "header": false,
+                                "id": "",
+                                "isElement": true,
+                                "label": "Stan: błąd; Rozmiar: 530 KB; Data: 15.10.2026; Nazwa: Instrukcja routera",
+                                "traits": 64,
+                                "value": ""
+                              }
+                            ],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": true,
+                        "header": false,
+                        "id": "row_14",
+                        "isElement": true,
+                        "label": "Stan: błąd; Rozmiar: 530 KB; Data: 15.10.2026; Nazwa: Instrukcja routera",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "Vertical scroll bar, 2 pages",
+                        "traits": 4096,
+                        "value": "0%"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "Horizontal scroll bar, 1 page",
+                        "traits": 4096,
+                        "value": "0%"
+                      }
+                    ],
+                    "containerType": 4,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "files",
+                    "isElement": false,
+                    "label": "Pliki",
+                    "traits": 0,
+                    "value": ""
+                  }
+                ],
+                "containerType": 4,
+                "groupChildren": true,
+                "header": false,
+                "id": "group_files",
+                "isElement": false,
+                "label": "Pliki",
+                "traits": 0,
+                "value": ""
+              }
+            ],
+            "containerType": 0,
+            "groupChildren": true,
+            "header": false,
+            "id": "",
+            "isElement": false,
+            "label": "",
+            "traits": 0,
+            "value": ""
+          },
+          {
+            "children": [
+              {
+                "children": [],
+                "containerType": 0,
+                "groupChildren": false,
+                "header": true,
+                "id": "heading_details",
+                "isElement": true,
+                "label": "Szczegóły",
+                "traits": 65536,
+                "value": ""
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": false,
+                    "label": "",
+                    "traits": 0,
+                    "value": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          },
+                          {
+                            "children": [],
+                            "containerType": 0,
+                            "groupChildren": false,
+                            "header": false,
+                            "id": "",
+                            "isElement": false,
+                            "label": "",
+                            "traits": 0,
+                            "value": ""
+                          }
+                        ],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      }
+                    ],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": false,
+                    "label": "",
+                    "traits": 0,
+                    "value": ""
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      }
+                    ],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": false,
+                    "label": "Horizontal scroll bar, 1 page",
+                    "traits": 4096,
+                    "value": "0%"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "containerType": 0,
+                        "groupChildren": false,
+                        "header": false,
+                        "id": "",
+                        "isElement": false,
+                        "label": "",
+                        "traits": 0,
+                        "value": ""
+                      }
+                    ],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": false,
+                    "label": "Vertical scroll bar, 1 page",
+                    "traits": 4096,
+                    "value": "0%"
+                  }
+                ],
+                "containerType": 0,
+                "groupChildren": false,
+                "header": false,
+                "id": "details",
+                "isElement": true,
+                "label": "Szczegóły",
+                "traits": 140737488355392,
+                "value": "Umowa najmu\nUtworzono: 01.10.2026\nRozmiar: 12 KB\nStan: zsynchronizowany\nUdostępniono: nikomu"
+              }
+            ],
+            "containerType": 4,
+            "groupChildren": true,
+            "header": false,
+            "id": "group_details",
+            "isElement": false,
+            "label": "Szczegóły",
+            "traits": 0,
+            "value": ""
+          },
+          {
+            "children": [],
+            "containerType": 0,
+            "groupChildren": false,
+            "header": false,
+            "id": "status",
+            "isElement": true,
+            "label": "Plik 5 z 5 skopiowany",
+            "traits": 64,
+            "value": ""
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": false,
+                    "label": "Zmień etykietę",
+                    "traits": 64,
+                    "value": ""
+                  }
+                ],
+                "containerType": 0,
+                "groupChildren": false,
+                "header": false,
+                "id": "plain",
+                "isElement": true,
+                "label": "Zmień etykietę",
+                "traits": 1,
+                "value": ""
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": false,
+                    "label": "Ogłoś",
+                    "traits": 64,
+                    "value": ""
+                  }
+                ],
+                "containerType": 0,
+                "groupChildren": false,
+                "header": false,
+                "id": "announcement",
+                "isElement": true,
+                "label": "Ogłoś",
+                "traits": 1,
+                "value": ""
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": false,
+                    "label": "Seria",
+                    "traits": 64,
+                    "value": ""
+                  }
+                ],
+                "containerType": 0,
+                "groupChildren": false,
+                "header": false,
+                "id": "burst",
+                "isElement": true,
+                "label": "Seria",
+                "traits": 1,
+                "value": ""
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "containerType": 0,
+                    "groupChildren": false,
+                    "header": false,
+                    "id": "",
+                    "isElement": false,
+                    "label": "Zapisz pomiar",
+                    "traits": 64,
+                    "value": ""
+                  }
+                ],
+                "containerType": 0,
+                "groupChildren": false,
+                "header": false,
+                "id": "export",
+                "isElement": true,
+                "label": "Zapisz pomiar",
+                "traits": 1,
+                "value": ""
+              }
+            ],
+            "containerType": 0,
+            "groupChildren": true,
+            "header": false,
+            "id": "",
+            "isElement": false,
+            "label": "",
+            "traits": 0,
+            "value": ""
+          }
+        ],
+        "containerType": 0,
+        "groupChildren": true,
+        "header": false,
+        "id": "",
+        "isElement": false,
+        "label": "",
+        "traits": 0,
+        "value": ""
+      }
+    ],
+    "containerType": 0,
+    "groupChildren": false,
+    "header": false,
+    "id": "",
+    "isElement": false,
+    "label": "",
+    "traits": 0,
+    "value": ""
+  },
+  "variant": "STAN"
+}

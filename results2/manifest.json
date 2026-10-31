@@ -1,0 +1,148 @@
+[
+  {
+    "run": 41142135669,
+    "platform": "ios",
+    "source": "wyniki/campaign2/41142135669/ios2-measure/attachments/2D1636A4-1BB0-416E-A6F7-1F5FFE9ACFF7.json",
+    "target": "ios-NAZWA.json",
+    "head_sha": "467ed70010ed7ac9755d7de9dd16212c987579e2",
+    "source_sha256": "965c8f25af395ad4479b15d7d33a14128e3a1685c7e1727de185d2af619c4020",
+    "projection_sha256": "f77620daae24aa6222cd2173078abca11286294c0cd935bb21bb1e50a86f9f29",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41142135669"
+  },
+  {
+    "run": 41142135669,
+    "platform": "ios",
+    "source": "wyniki/campaign2/41142135669/ios2-measure/attachments/76769723-2D91-4DF3-9C44-7545B39CCB63.json",
+    "target": "ios-STAN.json",
+    "head_sha": "467ed70010ed7ac9755d7de9dd16212c987579e2",
+    "source_sha256": "5541150b2e0f968c3ee4dcf66313b2ddbce47b137f6549053dd251c554563d56",
+    "projection_sha256": "9ba322e8286ab849d9ea5fa22d4efaf384e0e84fa19b9f2ad3241e1189d5841d",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41142135669"
+  },
+  {
+    "run": 41142135669,
+    "platform": "ios",
+    "source": "wyniki/campaign2/41142135669/ios2-measure/app-runtime/1-bench2-NAZWA.json",
+    "target": "ios-NAZWA-runtime.json",
+    "head_sha": "467ed70010ed7ac9755d7de9dd16212c987579e2",
+    "source_sha256": "cc64a1782ae68e7c7ca4905444afc64c92cd78596848d0ae5c00efb8d6f16595",
+    "projection_sha256": "6d40b9edb3e3bc836f7b14a84ffc674e5ecb8f6d800788095ca8c2e683bf024a",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41142135669"
+  },
+  {
+    "run": 41142135669,
+    "platform": "ios",
+    "source": "wyniki/campaign2/41142135669/ios2-measure/app-runtime/0-bench2-STAN.json",
+    "target": "ios-STAN-runtime.json",
+    "head_sha": "467ed70010ed7ac9755d7de9dd16212c987579e2",
+    "source_sha256": "b36943590cda734aaf88cad99f3a67b5fdf4e9a17577564f044b4210f296b762",
+    "projection_sha256": "77325e28365f8edc40096c325d6a0f051af9fdd09833dc3288dbafa5cdd37e54",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41142135669"
+  },
+  {
+    "run": 41142719171,
+    "platform": "android",
+    "source": "wyniki/campaign2/41142719171/android2-measure/out/GESTY-EXTRA.json",
+    "target": "android-gestures.json",
+    "head_sha": "4adfc39310d7e6683b051c4e3895262a68a74f41",
+    "source_sha256": "8d2d9245b0ceea55e1303191276127de501bf65ebfbbda69223c1a0ff9c02d31",
+    "projection_sha256": "10a712c41a9b4eea086134675601ae66d8ba2bf3a50958c54eead8d501bfa755",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41142719171"
+  },
+  {
+    "run": 41144225222,
+    "platform": "android",
+    "source": "wyniki/campaign2/41144225222/android2-measure/out/NAZWA-TABLE.json",
+    "target": "android-NAZWA-TABLE.json",
+    "head_sha": "7257fac0686987fea56b4bf2289441b899ea73a1",
+    "source_sha256": "b5e5fb32e7e5d9f6d453bdd5a7fdc23d6583401234cf5ff2f111f54fdf10cc2a",
+    "projection_sha256": "1ba250bac4143bf81da692158c488d23bc7c316a5937ce5d5a2a3216608bb4e3",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41144225222"
+  },
+  {
+    "run": 41144225222,
+    "platform": "android",
+    "source": "wyniki/campaign2/41144225222/android2-measure/out/NAZWA-RECYCLER.json",
+    "target": "android-NAZWA-RECYCLER.json",
+    "exclude_burst_modes": [
+      "toast"
+    ],
+    "head_sha": "7257fac0686987fea56b4bf2289441b899ea73a1",
+    "source_sha256": "ff91f2fd2b98c4812f4e9eaf8cca48acb39722ca44975bf5e98ff16e8e76526c",
+    "projection_sha256": "fb99d8450d613011104d6961158c773f2abd42de7ae0c418a48a88dde4907152",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41144225222"
+  },
+  {
+    "run": 41144225222,
+    "platform": "android",
+    "source": "wyniki/campaign2/41144225222/android2-measure/out/STAN-RECYCLER.json",
+    "target": "android-STAN-RECYCLER.json",
+    "exclude_burst_modes": [
+      "toast"
+    ],
+    "head_sha": "7257fac0686987fea56b4bf2289441b899ea73a1",
+    "source_sha256": "0186bc7ddaad5c65a20372870f488ebfbf39ee3ff00751bcb67b715fd5f974ed",
+    "projection_sha256": "ba484be7c466e068b96ab9bc555f9cc6f2e6fe71a4286e838e2e4b398940ebd3",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41144225222"
+  },
+  {
+    "run": 41145131192,
+    "platform": "macos",
+    "source": "wyniki/campaign2/41145131192/macos2-measure/STAN.json",
+    "target": "macos-STAN.json",
+    "head_sha": "f1791024d965a78035a4b78a7adfe0b6649cecd1",
+    "source_sha256": "c6ad999a51b86bb1a734560b5e64ab3588a6bb4dca15e67d708076ece5675f36",
+    "projection_sha256": "e4d97d50f63a4f6cb25cc094d1d62323bb78f84a5754d2df47150b3696936ee9",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41145131192"
+  },
+  {
+    "run": 41145131192,
+    "platform": "macos",
+    "source": "wyniki/campaign2/41145131192/macos2-measure/NAZWA.json",
+    "target": "macos-NAZWA.json",
+    "head_sha": "f1791024d965a78035a4b78a7adfe0b6649cecd1",
+    "source_sha256": "8bff8379658820e8aca9381e427fd34c0e2de891d7e2e9f9e261b2888b583302",
+    "projection_sha256": "5e2cdbae7cae0b709648d1d2f10ca3712a8c4f89735424f361eebf351fddd6cc",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41145131192"
+  },
+  {
+    "run": 41146425924,
+    "platform": "android",
+    "source": "wyniki/campaign2/41146425924/android2-measure/out/STAN-TOAST.json",
+    "target": "android-STAN-TOAST.json",
+    "head_sha": "cb510a92d7dbd4af1eb0a533c9b4a7155ebb3af1",
+    "source_sha256": "4596a59eab136cf7b6b07ec73a8120ee4c43f4942e66f106d7e7f7bd5900f62b",
+    "projection_sha256": "69a2405e4f6c1309ba2adae851b24f16bc672b0dc35236aa1c2b6a03467b6118",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41146425924"
+  },
+  {
+    "run": 41146425924,
+    "platform": "android",
+    "source": "wyniki/campaign2/41146425924/android2-measure/out/NAZWA-TOAST.json",
+    "target": "android-NAZWA-TOAST.json",
+    "head_sha": "cb510a92d7dbd4af1eb0a533c9b4a7155ebb3af1",
+    "source_sha256": "7a6c3c05e69a43b58570bec4d2a09f215dc7f19adb59fcaf20870525ea4fa6b0",
+    "projection_sha256": "f52e7983b568dda58529d00e4e2dfe65120eaadc7d6ea88ddc2e2cf4305bc8a8",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41146425924"
+  },
+  {
+    "run": 41147107630,
+    "platform": "android",
+    "source": "wyniki/campaign2/41147107630/android2-measure/out/NAZWA-READONLY.json",
+    "target": "android-NAZWA-READONLY.json",
+    "head_sha": "74397feaa677d57b0f41fa8c9b17174a91b702ea",
+    "source_sha256": "eff0c155984a33f3e4e728fabd4f31fbfd69e702c739b71708278972fac1553e",
+    "projection_sha256": "28e8b4c65a28fab97f4a869a16dd897886a904bd490dea20e87c904ea2528214",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41147107630"
+  },
+  {
+    "run": 41147107630,
+    "platform": "android",
+    "source": "wyniki/campaign2/41147107630/android2-measure/out/STAN-READONLY.json",
+    "target": "android-STAN-READONLY.json",
+    "head_sha": "74397feaa677d57b0f41fa8c9b17174a91b702ea",
+    "source_sha256": "6b4fd7ce2de94418652919dbef0a7af961f2a75b0756c9ba12c53e2a676e9fb1",
+    "projection_sha256": "e811a329672008bca7b9ac8f143c67674759ca4ebab3032081283364b149b232",
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41147107630"
+  }
+]

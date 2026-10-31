@@ -1,0 +1,1329 @@
+{
+  "variant": "NAZWA",
+  "presentation": "TOAST",
+  "evidence": "live_reader",
+  "steps": [
+    {
+      "kind": "positive-tts",
+      "phrases": [
+        "Kontrola kanału mowy"
+      ],
+      "words": 3,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404167.344,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL probe activity=true observer=true"
+        },
+        {
+          "time": 1793404167.357,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404167357,
+            "elapsed_ms": 76629,
+            "text": "Kontrola kanału mowy",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404172.527,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:row_0",
+      "phrases": [
+        "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany, 1 of 20, In list, 20 items",
+        "Google Play Protect is turned on, This feature protects your device from harmful apps",
+        "Double-tap to activate"
+      ],
+      "words": 34,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/row_0",
+          "label": "",
+          "text": "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany",
+          "role": "android.widget.TextView",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            1,
+            128,
+            16,
+            16908342,
+            256,
+            512,
+            131072
+          ],
+          "item": {
+            "row": 0,
+            "column": 0
+          }
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793404173.459,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404173.561,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "row_0",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793404173.878,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404173878,
+            "elapsed_ms": 83150,
+            "text": "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany, 1 of 20, In list, 20 items",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404174.114,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404174114,
+            "elapsed_ms": 83386,
+            "text": "Google Play Protect is turned on, This feature protects your device from harmful apps",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404174.427,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404174427,
+            "elapsed_ms": 83699,
+            "text": "Double-tap to activate",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404175.179,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:search",
+      "phrases": [
+        "Editing, Szukaj, Edit box, Out of list",
+        "Double-tap and hold to long press"
+      ],
+      "words": 13,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/search",
+          "label": "Szukaj",
+          "text": "Szukaj",
+          "role": "android.widget.EditText",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": true,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": true,
+          "actions": [
+            4,
+            8,
+            2,
+            128,
+            16,
+            32,
+            16908342,
+            2097152,
+            16908372
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793404176.647,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404176.672,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "search",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793404176.957,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404176957,
+            "elapsed_ms": 86229,
+            "text": "Editing, Szukaj, Edit box, Out of list",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404178.078,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404178078,
+            "elapsed_ms": 87350,
+            "text": "Double-tap and hold to long press",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404178.363,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "single:toast",
+      "phrases": [
+        "Kontrola komunikatu toast"
+      ],
+      "words": 3,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 20,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404181.264,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL emit activity=true observer=true"
+        },
+        {
+          "time": 1793404181.264,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404181264,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Kontrola komunikatu toast"
+            }
+          }
+        },
+        {
+          "time": 1793404182.05,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404182050,
+            "elapsed_ms": 91322,
+            "text": "Kontrola komunikatu toast",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404201.576,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "burst:toast:1",
+      "phrases": [
+        "Plik 1 z 5 skopiowany",
+        "Plik 2 z 5 skopiowany",
+        "Plik 3 z 5 skopiowany",
+        "Plik 4 z 5 skopiowany",
+        "Plik 5 z 5 skopiowany"
+      ],
+      "words": 25,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 20,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404203.58,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL emit activity=true observer=true"
+        },
+        {
+          "time": 1793404203.581,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404203581,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 1 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404203.609,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404203609,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 2 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404203.611,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404203611,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 3 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404203.612,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404203612,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 4 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404203.618,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404203618,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 5 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404203.937,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404203937,
+            "elapsed_ms": 113209,
+            "text": "Plik 1 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404206.053,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404206053,
+            "elapsed_ms": 115325,
+            "text": "Plik 2 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404208.61,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404208610,
+            "elapsed_ms": 117882,
+            "text": "Plik 3 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404211.283,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404211283,
+            "elapsed_ms": 120555,
+            "text": "Plik 4 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404214.11,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404214110,
+            "elapsed_ms": 123382,
+            "text": "Plik 5 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404223.862,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "burst:toast:2",
+      "phrases": [
+        "Plik 1 z 5 skopiowany",
+        "Plik 2 z 5 skopiowany",
+        "Plik 3 z 5 skopiowany",
+        "Plik 4 z 5 skopiowany",
+        "Plik 5 z 5 skopiowany"
+      ],
+      "words": 25,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 20,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404224.518,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL emit activity=true observer=true"
+        },
+        {
+          "time": 1793404224.518,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404224518,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 1 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404224.551,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404224550,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 2 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404224.63,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404224630,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 3 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404224.655,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404224655,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 4 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404224.658,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404224658,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 5 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404225.791,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404225791,
+            "elapsed_ms": 135063,
+            "text": "Plik 1 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404227.058,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404227057,
+            "elapsed_ms": 136330,
+            "text": "Plik 2 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404229.604,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404229603,
+            "elapsed_ms": 138875,
+            "text": "Plik 3 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404232.172,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404232172,
+            "elapsed_ms": 141444,
+            "text": "Plik 4 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404234.706,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404234706,
+            "elapsed_ms": 143978,
+            "text": "Plik 5 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404244.789,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "burst:toast:3",
+      "phrases": [
+        "Plik 1 z 5 skopiowany",
+        "Plik 2 z 5 skopiowany",
+        "Plik 3 z 5 skopiowany",
+        "Plik 4 z 5 skopiowany",
+        "Plik 5 z 5 skopiowany"
+      ],
+      "words": 25,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 20,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404245.981,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL emit activity=true observer=true"
+        },
+        {
+          "time": 1793404245.981,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404245981,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 1 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404245.994,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404245993,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 2 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404246.006,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404246006,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 3 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404246.03,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404246029,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 4 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404246.058,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404246057,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 5 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404246.156,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404246156,
+            "elapsed_ms": 155428,
+            "text": "Plik 1 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404248.495,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404248495,
+            "elapsed_ms": 157767,
+            "text": "Plik 2 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404251.161,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404251161,
+            "elapsed_ms": 160433,
+            "text": "Plik 3 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404253.628,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404253628,
+            "elapsed_ms": 162900,
+            "text": "Plik 4 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404256.248,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404256248,
+            "elapsed_ms": 165520,
+            "text": "Plik 5 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404266.153,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "burst:toast:4",
+      "phrases": [
+        "Plik 1 z 5 skopiowany",
+        "Plik 2 z 5 skopiowany",
+        "Plik 3 z 5 skopiowany",
+        "Plik 4 z 5 skopiowany",
+        "Plik 5 z 5 skopiowany"
+      ],
+      "words": 25,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 20,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404267.043,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL emit activity=true observer=true"
+        },
+        {
+          "time": 1793404267.043,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404267043,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 1 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404267.056,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404267055,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 2 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404267.059,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404267059,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 3 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404267.068,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404267068,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 4 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404267.069,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404267069,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 5 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404267.148,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404267148,
+            "elapsed_ms": 176420,
+            "text": "Plik 1 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404269.413,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404269413,
+            "elapsed_ms": 178685,
+            "text": "Plik 2 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404272.032,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404272032,
+            "elapsed_ms": 181304,
+            "text": "Plik 3 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404274.637,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404274637,
+            "elapsed_ms": 183909,
+            "text": "Plik 4 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404277.213,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404277213,
+            "elapsed_ms": 186485,
+            "text": "Plik 5 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404287.128,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "burst:toast:5",
+      "phrases": [
+        "Plik 1 z 5 skopiowany",
+        "Plik 2 z 5 skopiowany",
+        "Showing split keyboard",
+        "Plik 3 z 5 skopiowany",
+        "Plik 4 z 5 skopiowany",
+        "Plik 5 z 5 skopiowany"
+      ],
+      "words": 28,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 20,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404287.543,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL emit activity=true observer=true"
+        },
+        {
+          "time": 1793404287.543,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404287543,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 1 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404287.546,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404287546,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 2 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404287.547,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404287547,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 3 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404287.549,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404287548,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 4 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404287.549,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404287549,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 5 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404287.601,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404287601,
+            "elapsed_ms": 196873,
+            "text": "Plik 1 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404289.932,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404289932,
+            "elapsed_ms": 199204,
+            "text": "Plik 2 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404292.037,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404292037,
+            "elapsed_ms": 201309,
+            "text": "Showing split keyboard",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404292.686,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404292686,
+            "elapsed_ms": 201958,
+            "text": "Plik 3 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404295.084,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404295083,
+            "elapsed_ms": 204356,
+            "text": "Plik 4 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404297.741,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404297740,
+            "elapsed_ms": 207013,
+            "text": "Plik 5 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404307.62,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "burst:toast:6",
+      "phrases": [
+        "Plik 1 z 5 skopiowany",
+        "Plik 2 z 5 skopiowany",
+        "Plik 3 z 5 skopiowany",
+        "Plik 4 z 5 skopiowany",
+        "Plik 5 z 5 skopiowany"
+      ],
+      "words": 25,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 20,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [],
+      "evidence_records": [
+        {
+          "time": 1793404308.094,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL emit activity=true observer=true"
+        },
+        {
+          "time": 1793404308.094,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404308094,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 1 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404308.097,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404308097,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 2 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404308.098,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404308098,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 3 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404308.099,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404308099,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 4 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404308.099,
+          "tag": "UX_APP",
+          "payload": {
+            "time_ms": 1793404308099,
+            "kind": "emit",
+            "data": {
+              "mode": "toast",
+              "text": "Plik 5 z 5 skopiowany"
+            }
+          }
+        },
+        {
+          "time": 1793404308.147,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404308147,
+            "elapsed_ms": 217419,
+            "text": "Plik 1 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404310.464,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404310463,
+            "elapsed_ms": 219736,
+            "text": "Plik 2 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404313.029,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404313029,
+            "elapsed_ms": 222301,
+            "text": "Plik 3 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404315.616,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404315615,
+            "elapsed_ms": 224887,
+            "text": "Plik 4 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404318.195,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404318195,
+            "elapsed_ms": 227467,
+            "text": "Plik 5 z 5 skopiowany",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404328.136,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:row_0",
+      "phrases": [
+        "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany, 1 of 20, In list, 20 items",
+        "Double-tap to activate"
+      ],
+      "words": 20,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/row_0",
+          "label": "",
+          "text": "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany",
+          "role": "android.widget.TextView",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": false,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": false,
+          "actions": [
+            4,
+            8,
+            1,
+            128,
+            16,
+            16908342,
+            256,
+            512,
+            131072
+          ],
+          "item": {
+            "row": 0,
+            "column": 0
+          }
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793404328.458,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404328.469,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "row_0",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793404328.523,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404328523,
+            "elapsed_ms": 237795,
+            "text": "Nazwa: Umowa najmu; Data: 01.10.2026; Rozmiar: 12 KB; Stan: zsynchronizowany, 1 of 20, In list, 20 items",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404329.042,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404329041,
+            "elapsed_ms": 238313,
+            "text": "Double-tap to activate",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404329.995,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    },
+    {
+      "kind": "focus:search",
+      "phrases": [
+        "Editing, Szukaj, Edit box, Out of list",
+        "Double-tap and hold to long press"
+      ],
+      "words": 13,
+      "command_result": "Broadcasting: Intent { flg=0x400000 cmp=org.uxbench2/.Control (has extras) }\nBroadcast completed: result=0\n",
+      "window_seconds": 1.5,
+      "state": {
+        "selectedRow": -1,
+        "selectedFolder": "",
+        "detailsSelectionStart": 0,
+        "detailsSelectionEnd": 0,
+        "focusId": "search"
+      },
+      "accessibility_focus": [
+        {
+          "id": "org.uxbench2:id/search",
+          "label": "Szukaj",
+          "text": "Szukaj",
+          "role": "android.widget.EditText",
+          "heading": false,
+          "pane": "",
+          "state": "",
+          "focused": true,
+          "a11yFocused": true,
+          "selected": false,
+          "visible": true,
+          "editable": true,
+          "actions": [
+            4,
+            8,
+            2,
+            128,
+            16,
+            32,
+            16908342,
+            2097152,
+            16908372
+          ]
+        }
+      ],
+      "evidence_records": [
+        {
+          "time": 1793404330.602,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL action activity=true observer=true"
+        },
+        {
+          "time": 1793404330.607,
+          "tag": "UX_ACTION",
+          "payload": {
+            "target": "search",
+            "action": 64,
+            "ok": true
+          }
+        },
+        {
+          "time": 1793404330.646,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404330646,
+            "elapsed_ms": 239918,
+            "text": "Editing, Szukaj, Edit box, Out of list",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404331.169,
+          "tag": "UX_TTS",
+          "payload": {
+            "time_ms": 1793404331169,
+            "elapsed_ms": 240441,
+            "text": "Double-tap and hold to long press",
+            "language": "pol"
+          }
+        },
+        {
+          "time": 1793404332.145,
+          "tag": "UX_ACTION",
+          "payload": "CONTROL state activity=true observer=true"
+        }
+      ]
+    }
+  ],
+  "error": null,
+  "tts_positive": true,
+  "reader_positive": true,
+  "reader_positive_after": true
+}

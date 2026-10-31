@@ -1,0 +1,611 @@
+{
+  "ios-NAZWA.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41142135669",
+    "record_label": {
+      "text": "Nazwa: Faktura marzec; Data: 02.10.2026; Rozmiar: 49 KB; Stan: zsynchronizowany",
+      "words": 10,
+      "name_word": 2
+    },
+    "unique_records": 20,
+    "outline_by_stage": {
+      "initial": [
+        "folder_0",
+        "folder_12",
+        "folder_9"
+      ],
+      "expanded_Dokumenty": [
+        "folder_0",
+        "folder_1",
+        "folder_12",
+        "folder_4",
+        "folder_8",
+        "folder_9"
+      ],
+      "expanded_Umowy": [
+        "folder_0",
+        "folder_1",
+        "folder_12",
+        "folder_2",
+        "folder_3",
+        "folder_4",
+        "folder_8",
+        "folder_9"
+      ]
+    }
+  },
+  "ios-STAN.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41142135669",
+    "record_label": {
+      "text": "Stan: zsynchronizowany; Rozmiar: 49 KB; Data: 02.10.2026; Nazwa: Faktura marzec",
+      "words": 10,
+      "name_word": 9
+    },
+    "unique_records": 20,
+    "outline_by_stage": {
+      "initial": [
+        "folder_0",
+        "folder_12",
+        "folder_9"
+      ],
+      "expanded_Dokumenty": [
+        "folder_0",
+        "folder_1",
+        "folder_12",
+        "folder_4",
+        "folder_8",
+        "folder_9"
+      ],
+      "expanded_Umowy": [
+        "folder_0",
+        "folder_1",
+        "folder_12",
+        "folder_2",
+        "folder_3",
+        "folder_4",
+        "folder_8",
+        "folder_9"
+      ]
+    }
+  },
+  "ios-NAZWA-runtime.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41142135669",
+    "emission_count": 32,
+    "header_count": 4
+  },
+  "ios-STAN-runtime.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41142135669",
+    "emission_count": 32,
+    "header_count": 4
+  },
+  "android-gestures.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41142719171"
+  },
+  "android-NAZWA-TABLE.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41144225222",
+    "search_route": {
+      "steps": 7,
+      "reached": true,
+      "words": 63
+    },
+    "table_exit": {
+      "steps": 80,
+      "reached": true,
+      "anchor_valid": true,
+      "pre_anchor_steps_excluded": 0
+    }
+  },
+  "android-NAZWA-RECYCLER.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41144225222",
+    "excluded_burst_modes": [
+      "toast"
+    ],
+    "bursts": {
+      "plain": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "polite": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ],
+      "assertive": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ],
+      "snackbar": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ]
+    },
+    "search_route": {
+      "steps": 7,
+      "reached": true,
+      "words": 46
+    },
+    "table_exit": {
+      "steps": 20,
+      "reached": true,
+      "anchor_valid": false,
+      "pre_anchor_steps_excluded": 7
+    },
+    "record_primary": {
+      "text": "Nazwa: Faktura marzec; Data: 02.10.2026; Rozmiar: 49 KB; Stan: zsynchronizowany, 2 of 20",
+      "words": 13,
+      "name_word": 2
+    },
+    "record_window": {
+      "text": "Nazwa: Faktura marzec; Data: 02.10.2026; Rozmiar: 49 KB; Stan: zsynchronizowany, 2 of 20 Double-tap to activate",
+      "words": 16,
+      "name_word": 2
+    }
+  },
+  "android-STAN-RECYCLER.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41144225222",
+    "excluded_burst_modes": [
+      "toast"
+    ],
+    "bursts": {
+      "plain": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "polite": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ],
+      "assertive": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ],
+      "snackbar": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ]
+    },
+    "search_route": {
+      "steps": 7,
+      "reached": true,
+      "words": 63
+    },
+    "table_exit": {
+      "steps": 20,
+      "reached": true,
+      "anchor_valid": true,
+      "pre_anchor_steps_excluded": 0
+    },
+    "record_primary": {
+      "text": "Stan: zsynchronizowany; Rozmiar: 49 KB; Data: 02.10.2026; Nazwa: Faktura marzec, 2 of 20",
+      "words": 13,
+      "name_word": 9
+    },
+    "record_window": {
+      "text": "Stan: zsynchronizowany; Rozmiar: 49 KB; Data: 02.10.2026; Nazwa: Faktura marzec, 2 of 20 Double-tap to activate",
+      "words": 16,
+      "name_word": 9
+    }
+  },
+  "macos-STAN.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41145131192",
+    "excluded_burst_modes": [],
+    "bursts": {
+      "plain": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "low": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ],
+      "medium": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ],
+      "high": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ]
+    },
+    "search_route": {
+      "steps": 7,
+      "reached": true,
+      "words": 21
+    },
+    "table_exit": {
+      "steps": 2,
+      "reached": true,
+      "words": 12
+    },
+    "record_primary": {
+      "text": "zsynchronizowany 49 KB 02.10.2026 Faktura marzec",
+      "words": 6,
+      "name_word": 5
+    },
+    "record_window": {
+      "text": "zsynchronizowany 49 KB 02.10.2026 Faktura marzec",
+      "words": 6,
+      "name_word": 5
+    },
+    "paced_control": [
+      "Kontrola 1 z 5",
+      "Kontrola 2 z 5",
+      "Kontrola 3 z 5",
+      "Kontrola 4 z 5",
+      "Kontrola 5 z 5"
+    ]
+  },
+  "macos-NAZWA.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41145131192",
+    "excluded_burst_modes": [],
+    "bursts": {
+      "plain": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "low": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ],
+      "medium": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ],
+      "high": [
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ],
+        [
+          5
+        ]
+      ]
+    },
+    "search_route": {
+      "steps": 7,
+      "reached": true,
+      "words": 21
+    },
+    "table_exit": {
+      "steps": 2,
+      "reached": true,
+      "words": 12
+    },
+    "record_primary": {
+      "text": "Faktura marzec 02.10.2026 49 KB zsynchronizowany",
+      "words": 6,
+      "name_word": 1
+    },
+    "record_window": {
+      "text": "Faktura marzec 02.10.2026 49 KB zsynchronizowany",
+      "words": 6,
+      "name_word": 1
+    },
+    "paced_control": [
+      "Kontrola 1 z 5",
+      "Kontrola 2 z 5",
+      "Kontrola 3 z 5",
+      "Kontrola 4 z 5",
+      "Kontrola 5 z 5"
+    ]
+  },
+  "android-STAN-TOAST.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41146425924",
+    "excluded_burst_modes": [],
+    "bursts": {
+      "toast": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ]
+    }
+  },
+  "android-NAZWA-TOAST.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41146425924",
+    "excluded_burst_modes": [],
+    "bursts": {
+      "toast": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ]
+    }
+  },
+  "android-NAZWA-READONLY.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41147107630",
+    "readonly": {
+      "editable": false,
+      "role": "android.widget.TextView",
+      "set_text_allowed": false,
+      "unchanged": true
+    }
+  },
+  "android-STAN-READONLY.json": {
+    "run_url": "https://github.com/michaldziwisz/screen-reader-ux-bench/actions/runs/41147107630",
+    "readonly": {
+      "editable": false,
+      "role": "android.widget.TextView",
+      "set_text_allowed": false,
+      "unchanged": true
+    }
+  }
+}

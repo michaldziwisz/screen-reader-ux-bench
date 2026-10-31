@@ -15,7 +15,9 @@ Sonda wymaga `CI=true` oraz emulatora, nie dotyka Windows ani czytnika na hości
 
 Każdy krok ma znacznik w logcat. Liczone są wyłącznie wpisy po znaczniku. Mowa to tekst na wejściu własnego `TextToSpeechService`, po którym silnik oddaje krótki bufor ciszy. Nie jest to nagranie, czas słuchania ani dowód dokończenia wypowiedzi.
 
-Każdy mechanizm komunikatu ma pojedynczą próbę oraz serię wysyłaną w jednej pętli głównego wątku, powtórzoną sześciokrotnie. Okno serii trwa dziewięć sekund. Zwykła etykieta nie ma regionu live ani jawnego zdarzenia ogłoszenia; system nadal może sam wysłać zdarzenie zmiany tekstu. Nie wolno utożsamiać braku jawnego wywołania aplikacji z brakiem jakichkolwiek zdarzeń frameworka. Toast i Snackbar mają własne reguły kolejkowania oraz zastępowania, odmienne od regionów live.
+Każdy mechanizm komunikatu ma pojedynczą próbę oraz serię wysyłaną w jednej pętli głównego wątku, powtórzoną sześciokrotnie. Okno serii trwa dziewięć sekund, a dla Toast dwadzieścia sekund. Krótsze okno Toast okazało się niewystarczające: komunikaty przechodziły do następnej próby. Zwykła etykieta nie ma regionu live ani jawnego zdarzenia ogłoszenia; system nadal może sam wysłać zdarzenie zmiany tekstu. Nie wolno utożsamiać braku jawnego wywołania aplikacji z brakiem jakichkolwiek zdarzeń frameworka. Toast i Snackbar mają własne reguły kolejkowania oraz zastępowania, odmienne od regionów live.
+
+Dostępne są też izolowane scenariusze `gh workflow run android2.yml -f scenario=gestures`, `scenario=toast` i `scenario=readonly`. Ostatni sprawdza TextView z zaznaczaniem tekstu, w tym odmowę ACTION_SET_TEXT i niezmienność treści. Zastępuje wcześniejszy wariant EditText z `keyListener=null`, który nadal wystawiał `editable=true`. Historyczne dane pozostają przypisane do swoich commitów i przebiegów.
 
 ## Telefon fizyczny: przygotowane, nieuruchomione
 
